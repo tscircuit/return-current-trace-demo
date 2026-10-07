@@ -10,11 +10,13 @@
     "render": "python scripts/render.py",
     "verify": "python scripts/verify.py",
     "test": "bun test",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "build:pcb": "bun scripts/em/build-pcb-view.ts && bun build scripts/em/pcb-view.ts --target browser --minify --outfile public/em/latest/pcb-view.js"
   },
   "dependencies": {
     "@tscircuit/solver-utils": "0.0.21",
     "circuit-json": "0.0.515",
+    "circuit-to-canvas": "0.0.134",
     "graphics-debug": "0.0.76",
     "transformation-matrix": "2.16.1",
     "zod": "3.25.76"
