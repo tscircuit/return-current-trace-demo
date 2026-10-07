@@ -1,0 +1,17 @@
+{
+  "input_current_change_percent": 7.207219966517248,
+  "reactance_change_percent": 6.785765061103803,
+  "first_order": {
+    "real": 41.77340474394666,
+    "imag": -182.44228286964346,
+    "magnitude": 187.16357530937634,
+    "phase_deg": -77.10341849378396
+  },
+  "second_order": {
+    "real": 44.20219276725973,
+    "imag": -195.72362846644404,
+    "magnitude": 200.65286587912124,
+    "phase_deg": -77.27382417084465
+  },
+  "summary": "First \u2192 second element order on the same mesh: input-current magnitude changed 7.2%; reactance changed 6.8%. This does not validate local-density peaks, crop extent or test fixtures. These are provisional normalized EM results."
+}

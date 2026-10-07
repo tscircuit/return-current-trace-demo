@@ -67,3 +67,17 @@ After solving and exporting, also integrate barrel currents and refresh the imag
 For the memory case use `render_memory.py`, `render_png_memory.py`, and output directory `public/em/memory`. Via integration samples the copper-barrel surface current at z=1.55, 1.4, .2 and .05 mm. Its units are A before display conversion to mA; it is separate from horizontal surface-current density.
 
 The reference convergence checks compare first-order and second-order solutions on the same mesh. The processor also has a first-order run with a .05 mm mesh target. Current magnitude changed 6.7% with element order for the processor and 2.8% for memory; reactance changed approximately 51% and 59%. These checks show why the first coarse result must not be treated as accurate absolute density or a layout signoff. Further mesh, crop, air-padding and material/fixture validation is required.
+
+## U1 processor heatmaps
+
+The latest-snapshot U1 runs are `data/em-u1-ddr-d8` and `data/em-u1-ddr-d13`. They cover x [-3, 4], y [-10, -3] mm. DDR_D8 is top-only within this crop; its first via is farther downstream. DDR_D13 includes its processor dogbone via. The source is an assumed vertical 50 Ω fixture from the actual U1 signal pad to inner1; the load joins the clipped signal trace to its adjacent plane. These are normalized test fixtures, not package/driver models.
+
+```sh
+.venv-em/bin/python scripts/em/prepare-processor.py DDR_D8
+.venv-em/bin/python scripts/em/prepare-processor.py DDR_D13
+.venv-em/bin/python scripts/em/run-processor.py
+bun run build:pcb
+.venv-em/bin/python scripts/em/build-latest-page.py
+```
+
+`run-processor.py` meshes and solves each crop at first and second element order sequentially, exports physical normalized currents and renders four layers. In the viewer, U1 overview and processor-pad modes load the selected connection's U1 result. The downstream and memory DDR_D8 datasets remain separate. Unsolved connections expose PCB inspection only. The white dashed box identifies the simulated region; no heat is extrapolated outside it.
