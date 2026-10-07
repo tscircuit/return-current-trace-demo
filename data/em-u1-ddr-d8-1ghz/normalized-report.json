@@ -1,0 +1,70 @@
+{
+  "finite_element_order": 2,
+  "solver": "Palace v0.14.0",
+  "frequency_hz": 1000000000.0,
+  "config_file": "palace-order2.json",
+  "postprocessing_folder": "postpro-order2",
+  "input_voltage_V": {
+    "real": 1.0,
+    "imag": 0.0,
+    "magnitude": 1.0,
+    "phase_deg": 0.0
+  },
+  "input_current_A": {
+    "real": 0.016644724271633916,
+    "imag": -0.0009202495373092682,
+    "magnitude": 0.016670144129240068,
+    "phase_deg": -3.1645336058548925
+  },
+  "load_voltage_V": {
+    "real": 0.8221172972148099,
+    "imag": -0.15044265465016265,
+    "magnitude": 0.835769012776839,
+    "phase_deg": -10.370054770317623
+  },
+  "load_current_A": {
+    "real": 0.01644234594430138,
+    "imag": -0.003008853093003383,
+    "magnitude": 0.016715380255541902,
+    "phase_deg": -10.370054770314862
+  },
+  "input_impedance_ohm": {
+    "real": 59.896010434226305,
+    "imag": 3.3115163092669913,
+    "magnitude": 59.987483746223994,
+    "phase_deg": 3.1645336058548925
+  },
+  "source_reference_ohm": 50,
+  "load_ohm": 50,
+  "port_csv_normalization_factor": {
+    "real": 0.12955866513592676,
+    "imag": -0.0032535734410760494,
+    "magnitude": 0.129599511773539,
+    "phase_deg": -1.438551820435627
+  },
+  "field_normalization_factor": {
+    "real": -0.12955866513592676,
+    "imag": 0.0032535734410760494,
+    "magnitude": 0.129599511773539,
+    "phase_deg": 178.5614481795644
+  },
+  "native_port_voltage_axis": "GND minus signal",
+  "displayed_input_voltage_axis": "signal minus GND",
+  "surface_current_units": "A/m",
+  "surface_current_SI_scale": 51.5210513090037,
+  "phasor_convention": "exp(+j omega t), terminal phasor magnitude 1 V; Palace documentation describes peak phasors",
+  "s11_db": -20.45341452387,
+  "s21_db": -0.8000420512181,
+  "board_snapshot_sha256": "80ef96cf94a1dac4f3d062f694fe71529a9a57f5a1dd6e8b1abdf92302968b13",
+  "board_url": "https://tscircuit.com/astra/am3352-sbc#pcb",
+  "scope": "Isolated DDR_D8 U1 processor pad / escape, other signal/power copper omitted",
+  "fixture": "1 GHz, 1 V normalized; 50 ohm test ports. U1 signal pad input to inner1 GND; trace-cut load to adjacent GND plane (inner1 for top, inner2 for bottom). These are assumed normalized test fixtures, not a package or DDR driver model.",
+  "via_spans": "GND top-to-inner1; signal top-to-bottom, as exported. No unexported stubs or GND connections to inner2 inferred. Fabrication spans unknown.",
+  "accuracy": "Provisional; local-density, frequency-specific mesh, crop and fixture convergence not established",
+  "display_ground_faces_mm": {
+    "top": 1.635,
+    "inner1": 1.4175,
+    "inner2": 0.1825,
+    "bottom": -0.035
+  }
+}

@@ -1,0 +1,3 @@
+{
+  "summary": "Independent second-order Maxwell solve on the same mesh as the 400 MHz run. Element-order and mesh convergence have not been checked at this frequency. Absolute values apply to the assumed 1 V peak / 50 \u03a9 fixtures; these are provisional results."
+}

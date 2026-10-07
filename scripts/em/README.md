@@ -81,3 +81,10 @@ bun run build:pcb
 ```
 
 `run-processor.py` meshes and solves each crop at first and second element order sequentially, exports physical normalized currents and renders four layers. In the viewer, U1 overview and processor-pad modes load the selected connection's U1 result. The downstream and memory DDR_D8 datasets remain separate. Unsolved connections expose PCB inspection only. The white dashed box identifies the simulated region; no heat is extrapolated outside it.
+
+
+## U1 frequency comparison
+
+Generate the base meshes with `run-processor.py` first if they are absent (mesh files are not checked in). `python scripts/em/run-frequency-sweep.py` runs independent second-order Palace solves at 1 GHz and 4 GHz for DDR_D13 and DDR_D8, reusing their 400 MHz meshes and exact geometry/fixtures. It exports separate SI port phasors and four-layer fields for each case; heatmaps are not rescaled from another frequency. The existing second-order 400 MHz runs complete the three-frequency comparison. All use 1 V peak normalized signal-to-GND excitation and 50 Ω fixtures. FR4 permittivity/loss tangent are held constant; frequency-specific mesh/crop convergence has not been established.
+
+The viewer’s frequency selector applies to the U1 processor cases and keeps the camera fixed while switching. A common 0.01–100 A/m colour scale and a current/impedance comparison table support inspection. Downstream and memory cases remain 400 MHz only. The GND checkbox highlights actual exported net pads/vias/traces in magenta. A separately labelled ring marks the assumed source return terminal on inner1 directly below the signal pad; it must not be confused with an actual processor GND pad. Nearest real U1 GND pads are labelled for context. No extra void outlines are drawn.

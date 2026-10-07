@@ -1,0 +1,170 @@
+{
+  "top": [
+    {
+      "pcb_via_id": "pcb_via_102",
+      "x": 2.4,
+      "y": -4,
+      "z_sample_mm": 1.55,
+      "barrel_present_at_sample": true,
+      "real_A": 3.401432241423308e-08,
+      "imag_A": -2.6090269933040644e-07,
+      "magnitude_mA": 0.0002631106091498248
+    },
+    {
+      "pcb_via_id": "pcb_via_106",
+      "x": -0.8000000000000003,
+      "y": -3.2,
+      "z_sample_mm": 1.55,
+      "barrel_present_at_sample": true,
+      "real_A": -3.439863369147922e-08,
+      "imag_A": -2.3584675147049483e-07,
+      "magnitude_mA": 0.0002383420990488796
+    },
+    {
+      "pcb_via_id": "pcb_via_107",
+      "x": -1.1102230246251565e-16,
+      "y": -3.2,
+      "z_sample_mm": 1.55,
+      "barrel_present_at_sample": true,
+      "real_A": 9.821001603935409e-08,
+      "imag_A": -2.313997025963003e-07,
+      "magnitude_mA": 0.00025137826002283173
+    },
+    {
+      "pcb_via_id": "pcb_via_108",
+      "x": 2.4,
+      "y": -3.2,
+      "z_sample_mm": 1.55,
+      "barrel_present_at_sample": true,
+      "real_A": 2.1857890356025145e-07,
+      "imag_A": -2.2516188283999705e-07,
+      "magnitude_mA": 0.0003138066451904011
+    }
+  ],
+  "inner1": [
+    {
+      "pcb_via_id": "pcb_via_102",
+      "x": 2.4,
+      "y": -4,
+      "z_sample_mm": 1.45,
+      "barrel_present_at_sample": true,
+      "real_A": -7.616298857565651e-08,
+      "imag_A": -2.650267011015603e-07,
+      "magnitude_mA": 0.00027575342813018907
+    },
+    {
+      "pcb_via_id": "pcb_via_106",
+      "x": -0.8000000000000003,
+      "y": -3.2,
+      "z_sample_mm": 1.45,
+      "barrel_present_at_sample": true,
+      "real_A": 7.242413993524544e-08,
+      "imag_A": -2.403103852091637e-07,
+      "magnitude_mA": 0.0002509867273079129
+    },
+    {
+      "pcb_via_id": "pcb_via_107",
+      "x": -1.1102230246251565e-16,
+      "y": -3.2,
+      "z_sample_mm": 1.45,
+      "barrel_present_at_sample": true,
+      "real_A": -3.846497437482903e-07,
+      "imag_A": -2.6224251055348367e-07,
+      "magnitude_mA": 0.0004655389991257654
+    },
+    {
+      "pcb_via_id": "pcb_via_108",
+      "x": 2.4,
+      "y": -3.2,
+      "z_sample_mm": 1.45,
+      "barrel_present_at_sample": true,
+      "real_A": 1.6798002898388287e-07,
+      "imag_A": -2.2524654143588584e-07,
+      "magnitude_mA": 0.0002809862889292899
+    }
+  ],
+  "inner2": [
+    {
+      "pcb_via_id": "pcb_via_102",
+      "x": 2.4,
+      "y": -4,
+      "z_sample_mm": 0.25,
+      "barrel_present_at_sample": false,
+      "real_A": 0.0,
+      "imag_A": 0.0,
+      "magnitude_mA": 0.0
+    },
+    {
+      "pcb_via_id": "pcb_via_106",
+      "x": -0.8000000000000003,
+      "y": -3.2,
+      "z_sample_mm": 0.25,
+      "barrel_present_at_sample": false,
+      "real_A": 0.0,
+      "imag_A": 0.0,
+      "magnitude_mA": 0.0
+    },
+    {
+      "pcb_via_id": "pcb_via_107",
+      "x": -1.1102230246251565e-16,
+      "y": -3.2,
+      "z_sample_mm": 0.25,
+      "barrel_present_at_sample": false,
+      "real_A": 0.0,
+      "imag_A": 0.0,
+      "magnitude_mA": 0.0
+    },
+    {
+      "pcb_via_id": "pcb_via_108",
+      "x": 2.4,
+      "y": -3.2,
+      "z_sample_mm": 0.25,
+      "barrel_present_at_sample": false,
+      "real_A": 0.0,
+      "imag_A": 0.0,
+      "magnitude_mA": 0.0
+    }
+  ],
+  "bottom": [
+    {
+      "pcb_via_id": "pcb_via_102",
+      "x": 2.4,
+      "y": -4,
+      "z_sample_mm": 0.05,
+      "barrel_present_at_sample": false,
+      "real_A": 0.0,
+      "imag_A": 0.0,
+      "magnitude_mA": 0.0
+    },
+    {
+      "pcb_via_id": "pcb_via_106",
+      "x": -0.8000000000000003,
+      "y": -3.2,
+      "z_sample_mm": 0.05,
+      "barrel_present_at_sample": false,
+      "real_A": 0.0,
+      "imag_A": 0.0,
+      "magnitude_mA": 0.0
+    },
+    {
+      "pcb_via_id": "pcb_via_107",
+      "x": -1.1102230246251565e-16,
+      "y": -3.2,
+      "z_sample_mm": 0.05,
+      "barrel_present_at_sample": false,
+      "real_A": 0.0,
+      "imag_A": 0.0,
+      "magnitude_mA": 0.0
+    },
+    {
+      "pcb_via_id": "pcb_via_108",
+      "x": 2.4,
+      "y": -3.2,
+      "z_sample_mm": 0.05,
+      "barrel_present_at_sample": false,
+      "real_A": 0.0,
+      "imag_A": 0.0,
+      "magnitude_mA": 0.0
+    }
+  ]
+}

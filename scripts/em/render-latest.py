@@ -12,6 +12,7 @@ from matplotlib.colors import LogNorm,LinearSegmentedColormap
 from shapely import wkt
 ROOT=Path(__file__).resolve().parents[2];folder=Path(sys.argv[1]);out=Path(sys.argv[2]);out.mkdir(parents=True,exist_ok=True)
 c=json.load(open(ROOT/'data/board.circuit.json'));case=json.load(open(folder/'case-input.json'));data=json.load(open(folder/'surface-triangles.json'));report=json.load(open(folder/'normalized-report.json'));vias=json.load(open(folder/'via-currents.json'));x0,y0,x1,y1=case['bounds_mm'];view=[x0-.5,-y1-.5,x1-x0+1,y1-y0+1]
+freq=report['frequency_hz'];frequency_label=f'{freq/1e9:g} GHz' if freq>=1e9 else f'{freq/1e6:g} MHz'
 ns='http://www.w3.org/2000/svg';ET.register_namespace('',ns)
 def node(parent,name,attrs):return ET.SubElement(parent,'{'+ns+'}'+name,{k:str(v) for k,v in attrs.items()})
 def path(xy):return 'M'+' L'.join(f'{x:.6f},{-y:.6f}' for x,y in xy)
@@ -28,7 +29,7 @@ selected=[[(x,-y) for x,y in s['xy']] for s in case['trace_segments']]
 marks=[[*case['source_xy'],'Input fixture'],[*case['load_xy'],'50 Ω load'],*[ [v['x'],v['y'],'Signal via: top ↔ bottom'] for v in case['signal_vias']]]
 if case.get('package_ground_xy'):marks.append([*case['package_ground_xy'],'Assumed package GND'])
 for layer,items in data.items():
- root=ET.Element('{'+ns+'}svg',{'viewBox':' '.join(map(str,view)),'role':'img','aria-label':f"{case.get('trace_name','DDR_D8')} {case.get('region_title',folder.name.split('-')[-1])} {layer}, 400 MHz, latest PCB"})
+ root=ET.Element('{'+ns+'}svg',{'viewBox':' '.join(map(str,view)),'role':'img','aria-label':f"{case.get('trace_name','DDR_D8')} {case.get('region_title',folder.name.split('-')[-1])} {layer}, {frequency_label}, latest PCB"})
  node(root,'rect',{'x':view[0],'y':view[1],'width':view[2],'height':view[3],'fill':'#08211d'})
  for xy in context:node(root,'path',{'d':'M'+' L'.join(f'{x},{y}' for x,y in xy),'fill':'none','stroke':'#a0bdb3','stroke-width':.025,'opacity':.22})
  for p in pads:
@@ -57,9 +58,9 @@ for layer,items in data.items():
  for x,y,d,_ in cells.values():ax.arrow(x-.10*d[0],y-.10*d[1],.20*d[0],.20*d[1],width=.005,head_width=.08,head_length=.07,length_includes_head=True,color='#fff6de',alpha=.8)
  for v in [v for v in vias[layer] if v.get('barrel_present_at_sample',True)]:ax.plot(v['x'],-v['y'],'o',color='#d996ff',markersize=5,markeredgecolor='white')
  for x,y,label in marks:ax.annotate(label,xy=(x,-y),xytext=((-100,-28) if label=='Input fixture' else (12,10)),textcoords='offset points',color='white',fontsize=8,arrowprops={'arrowstyle':'->','color':'white'},bbox={'facecolor':'#08211d','alpha':.85,'edgecolor':'none'})
- ax.set_xlim(view[0],view[0]+view[2]);ax.set_ylim(view[1]+view[3],view[1]);ax.set_aspect('equal');ax.set_xlabel('x (mm)');ax.set_ylabel('−y (mm)');ax.set_title(f"{case.get('trace_name','DDR_D8')} {case.get('region_title',folder.name.split('-')[-1])} · {layer}\n400 MHz · 1 V normalized · 50 Ω test fixtures",fontsize=12);fig.colorbar(matplotlib.cm.ScalarMappable(norm=norm,cmap=cmap),ax=ax,label='GND surface current |K| (A/m)',fraction=.046,pad=.04);fig.text(.08,.015,'Cyan: selected signal. White arrows: return direction at phase 0°. Purple: GND vias. Provisional EM.',fontsize=8);fig.tight_layout(rect=(0,.03,1,1));fig.savefig(out/f'{layer}.png');plt.close(fig)
+ ax.set_xlim(view[0],view[0]+view[2]);ax.set_ylim(view[1]+view[3],view[1]);ax.set_aspect('equal');ax.set_xlabel('x (mm)');ax.set_ylabel('−y (mm)');ax.set_title(f"{case.get('trace_name','DDR_D8')} {case.get('region_title',folder.name.split('-')[-1])} · {layer}\n{frequency_label} · 1 V normalized · 50 Ω test fixtures",fontsize=12);fig.colorbar(matplotlib.cm.ScalarMappable(norm=norm,cmap=cmap),ax=ax,label='GND surface current |K| (A/m)',fraction=.046,pad=.04);fig.text(.08,.015,'Cyan: selected signal. White arrows: return direction at phase 0°. Purple: GND vias. Provisional EM.',fontsize=8);fig.tight_layout(rect=(0,.03,1,1));fig.savefig(out/f'{layer}.png');plt.close(fig)
 for name in ['normalized-report.json','mesh-summary.json','via-currents.json','convergence.json','provenance.json']:
  if (folder/name).exists():(out/('report.json' if name=='normalized-report.json' else name)).write_bytes((folder/name).read_bytes())
 (out/'palace.json').write_bytes((folder/report['config_file']).read_bytes())
-(out/'view-data.json').write_text(json.dumps({'viewBox':view,'marks':[[x,-y,label] for x,y,label in marks],'case':folder.name.split('-')[-1],'bounds_mm':case['bounds_mm']}))
+(out/'view-data.json').write_text(json.dumps({'viewBox':view,'marks':[[x,-y,label] for x,y,label in marks],'case':folder.name.split('-')[-1],'bounds_mm':case['bounds_mm'],'source_xy':case['source_xy'],'source_return_xy':case.get('package_ground_xy',case['source_xy']),'source_return_layer':'inner1' if case.get('source_points') else 'top','source_return_z_mm':1.4175 if case.get('source_points') else 1.6,'source_return_kind':'assumed plane terminal directly beneath signal pad' if case.get('source_points') else 'package GND pad'}))
 print('Rendered four layers from latest board',report['board_snapshot_sha256'])

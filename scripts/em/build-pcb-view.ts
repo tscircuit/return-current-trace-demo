@@ -5,5 +5,12 @@ const st=new Map(c.filter((e:any)=>e.type==='source_trace').map((e:any)=>[e.sour
 const connections=c.filter((e:any)=>e.type==='pcb_trace'&&((st.get(e.source_trace_id) as any)?.name??'').startsWith('DDR_')).map((t:any)=>({name:(st.get(t.source_trace_id) as any).name,id:t.pcb_trace_id,source_trace_id:t.source_trace_id,endpoints:[t.route[0],t.route.at(-1)],em:t===undefined?false:(st.get(t.source_trace_id) as any).name==='DDR_D8'})).sort((a:any,b:any)=>a.name.localeCompare(b.name,undefined,{numeric:true}));
 const sc=new Map(c.filter((e:any)=>e.type==='source_component').map((e:any)=>[e.source_component_id,e]));
 const components=c.filter((e:any)=>e.type==='pcb_component').map((e:any)=>({name:(sc.get(e.source_component_id) as any)?.name??'',center:e.center,width:e.width,height:e.height}));
-writeFileSync('public/em/latest/pcb-data.json',JSON.stringify({elements:c.filter((e:any)=>types.has(e.type)),connections,components}));
+const gnet=c.find((e:any)=>e.type==='source_net'&&e.name==='GND').source_net_id;
+const groundTraces=c.filter((e:any)=>e.type==='source_trace'&&e.connected_source_net_ids?.includes(gnet));
+const groundTraceIds=new Set(groundTraces.map((e:any)=>e.source_trace_id));const groundKeys=new Set(groundTraces.map((e:any)=>e.subcircuit_connectivity_map_key).filter(Boolean));const groundPorts=new Set(groundTraces.flatMap((e:any)=>e.connected_source_port_ids??[]));
+const ports=new Map(c.filter((e:any)=>e.type==='pcb_port').map((e:any)=>[e.pcb_port_id,e]));
+const groundElements=c.filter((e:any)=>e.type==='pcb_copper_pour'?e.source_net_id===gnet:e.type==='pcb_trace'?groundTraceIds.has(e.source_trace_id):e.type==='pcb_via'?groundKeys.has(e.subcircuit_connectivity_map_key):e.type==='pcb_smtpad'?groundPorts.has((ports.get(e.pcb_port_id) as any)?.source_port_id):false);
+const groundIds=groundElements.map((e:any)=>e.pcb_trace_id??e.pcb_via_id??e.pcb_smtpad_id??e.pcb_copper_pour_id);
+const groundPads=groundElements.filter((e:any)=>e.type==='pcb_smtpad').map((e:any)=>({x:e.x,y:e.y,layer:e.layer,componentId:(ports.get(e.pcb_port_id) as any)?.pcb_component_id}));
+writeFileSync('public/em/latest/pcb-data.json',JSON.stringify({elements:c.filter((e:any)=>types.has(e.type)),connections,components,groundIds,groundPads,groundVias:groundElements.filter((e:any)=>e.type==='pcb_via').map((e:any)=>({x:e.x,y:e.y,from_layer:e.from_layer,to_layer:e.to_layer}))}));
 console.log(`Exported latest PCB context and ${connections.length} selectable connections`);
