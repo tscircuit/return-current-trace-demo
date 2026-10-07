@@ -2,7 +2,7 @@
 
 [Live public viewer](https://am3352-ddr-heatmaps.seveibar.chatgpt.site) for individual DDR traces on [astra/am3352-sbc](https://tscircuit.com/astra/am3352-sbc).
 
-The viewer highlights the selected trace on the PCB, overlays modeled GND return density and direction, and zooms into processor and memory dogbones. Labels and arrows remain a fixed screen size. It contains 47 traces × two package-ground contact assumptions, including hypothetical reset and isolated differential-leg cases.
+The earlier approximation viewer highlights the selected trace on the PCB, overlays modeled GND return density and direction, and zooms into processor and memory dogbones. Labels and arrows remain a fixed screen size. It contains 47 traces × two package-ground contact assumptions, including hypothetical reset and isolated differential-leg cases.
 
 ## 400 MHz electromagnetic pilot
 

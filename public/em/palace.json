@@ -2,7 +2,7 @@
   "Problem": {
     "Type": "Driven",
     "Verbose": 2,
-    "Output": "postpro"
+    "Output": "postpro-order2"
   },
   "Model": {
     "Mesh": "mesh.msh",
@@ -75,7 +75,7 @@
     ]
   },
   "Solver": {
-    "Order": 1,
+    "Order": 2,
     "Device": "CPU",
     "Driven": {
       "Samples": [
