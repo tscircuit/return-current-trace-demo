@@ -1,0 +1,125 @@
+{
+  "generator": "Exact Gmsh boundary triangles used by Palace",
+  "mesh_sha256": "13dd347316eac990573ede7d86e6d852d4f3e0902d4fb510aeef46e146e1df6c",
+  "board_sha256": "80ef96cf94a1dac4f3d062f694fe71529a9a57f5a1dd6e8b1abdf92302968b13",
+  "bounds_mm": [
+    -3,
+    -10,
+    4,
+    -2
+  ],
+  "volume_mesh": {
+    "nodes": 32999,
+    "elements": 102384,
+    "ground_vias": 8,
+    "signal_vias": 1,
+    "port_directions": [
+      [
+        -0.44721359549995787,
+        -0.894427190999916,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ]
+  },
+  "connection": "DDR_D13",
+  "source_xy": [
+    1.2000000000000002,
+    -5.2
+  ],
+  "source_return_xy": [
+    2,
+    -3.6
+  ],
+  "kind": "Solver conductor boundary mesh and port apertures. Air and FR4 hidden.",
+  "substrate_visible": false,
+  "groups": [
+    {
+      "role": "ground",
+      "layer": "top",
+      "position_offset": 0,
+      "position_count": 5034,
+      "index_offset": 20136,
+      "index_count": 8904
+    },
+    {
+      "role": "ground",
+      "layer": "bottom",
+      "position_offset": 55752,
+      "position_count": 3240,
+      "index_offset": 68712,
+      "index_count": 6432
+    },
+    {
+      "role": "port",
+      "layer": "source",
+      "position_offset": 94440,
+      "position_count": 84,
+      "index_offset": 94776,
+      "index_count": 96
+    },
+    {
+      "role": "port",
+      "layer": "load",
+      "position_offset": 95160,
+      "position_count": 24,
+      "index_offset": 95256,
+      "index_count": 24
+    },
+    {
+      "role": "ground",
+      "layer": "inner2",
+      "position_offset": 95352,
+      "position_count": 36318,
+      "index_offset": 240624,
+      "index_count": 72132
+    },
+    {
+      "role": "ground",
+      "layer": "inner1",
+      "position_offset": 529152,
+      "position_count": 37146,
+      "index_offset": 677736,
+      "index_count": 72636
+    },
+    {
+      "role": "signal",
+      "layer": "top",
+      "position_offset": 968280,
+      "position_count": 663,
+      "index_offset": 970932,
+      "index_count": 1182
+    },
+    {
+      "role": "signal",
+      "layer": "bottom",
+      "position_offset": 975660,
+      "position_count": 1275,
+      "index_offset": 980760,
+      "index_count": 2406
+    },
+    {
+      "role": "ground",
+      "layer": "barrel",
+      "position_offset": 990384,
+      "position_count": 1920,
+      "index_offset": 998064,
+      "index_count": 1536
+    },
+    {
+      "role": "signal",
+      "layer": "barrel",
+      "position_offset": 1004208,
+      "position_count": 1584,
+      "index_offset": 1010544,
+      "index_count": 1536
+    }
+  ],
+  "triangles": 55628,
+  "binary": "solver-ddr-d13.bin.gz",
+  "bytes": 1016688
+}

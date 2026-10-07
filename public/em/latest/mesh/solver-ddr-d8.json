@@ -1,0 +1,109 @@
+{
+  "generator": "Exact Gmsh boundary triangles used by Palace",
+  "mesh_sha256": "f5c08263c3913aec5c1952f0a37a01be9e8b30af6e3d0f954cb5c2f62493c045",
+  "board_sha256": "80ef96cf94a1dac4f3d062f694fe71529a9a57f5a1dd6e8b1abdf92302968b13",
+  "bounds_mm": [
+    -3,
+    -10,
+    4,
+    -2
+  ],
+  "volume_mesh": {
+    "nodes": 33144,
+    "elements": 102869,
+    "ground_vias": 8,
+    "signal_vias": 0,
+    "port_directions": [
+      [
+        -0.6,
+        -0.8000000000000002,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "connection": "DDR_D8",
+  "source_xy": [
+    -0.4,
+    -6.800000000000001
+  ],
+  "source_return_xy": [
+    2,
+    -3.6
+  ],
+  "kind": "Solver conductor boundary mesh and port apertures. Air and FR4 hidden.",
+  "substrate_visible": false,
+  "groups": [
+    {
+      "role": "ground",
+      "layer": "top",
+      "position_offset": 0,
+      "position_count": 5031,
+      "index_offset": 20124,
+      "index_count": 8898
+    },
+    {
+      "role": "ground",
+      "layer": "inner2",
+      "position_offset": 55716,
+      "position_count": 35406,
+      "index_offset": 197340,
+      "index_count": 71076
+    },
+    {
+      "role": "ground",
+      "layer": "bottom",
+      "position_offset": 481644,
+      "position_count": 3237,
+      "index_offset": 494592,
+      "index_count": 6426
+    },
+    {
+      "role": "port",
+      "layer": "source",
+      "position_offset": 520296,
+      "position_count": 129,
+      "index_offset": 520812,
+      "index_count": 138
+    },
+    {
+      "role": "ground",
+      "layer": "inner1",
+      "position_offset": 521364,
+      "position_count": 36618,
+      "index_offset": 667836,
+      "index_count": 72348
+    },
+    {
+      "role": "signal",
+      "layer": "top",
+      "position_offset": 957228,
+      "position_count": 3729,
+      "index_offset": 972144,
+      "index_count": 7446
+    },
+    {
+      "role": "ground",
+      "layer": "barrel",
+      "position_offset": 1001928,
+      "position_count": 1920,
+      "index_offset": 1009608,
+      "index_count": 1536
+    },
+    {
+      "role": "port",
+      "layer": "load",
+      "position_offset": 1015752,
+      "position_count": 39,
+      "index_offset": 1015908,
+      "index_count": 48
+    }
+  ],
+  "triangles": 55972,
+  "binary": "solver-ddr-d8.bin.gz",
+  "bytes": 1016100
+}

@@ -10,3 +10,9 @@ data/em-*/postpro*/
 data/em-*/surface-triangles*.json
 data/em-*/geometry.json
 .em-mpl-cache/
+
+data/mesh-pcb-processor/board.*
+data/mesh-pcb-processor/model.json
+data/mesh-pcb-processor/preview.json
+data/mesh-pcb-processor/cad-solids.json
+data/mesh-pcb-processor/gmsh.log

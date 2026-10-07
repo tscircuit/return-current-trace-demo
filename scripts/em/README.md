@@ -103,3 +103,18 @@ bun run build:pcb
 ```
 
 The domain is x [-3,4], y [-10,-2] mm, with eight exported GND vias. The runner does first/second-order checks at 400 MHz and independent second-order solves at 1 and 4 GHz on each corrected mesh. All six cases normalize the physical voltage between the two actual pads to 1 V peak. Frequency comparisons share the same geometry and fixtures. Old `data/em-u1-ddr-*` cases use an idealized inner1 source terminal directly underneath the signal pad and are retained as historical fixture experiments. They bypass the GND pad/dogbone return connection and cannot answer that PCB-loop question.
+
+## Interactive 3D mesh inspection
+
+The page's **3D mesh** button opens an orbitable copper-only view of x [-3,4], y [-10,-2] mm. Substrate and air are always hidden. Layers, triangle edges, GND opacity and display-only thickness scaling are adjustable. The PCB converter view retains all copper in the crop; selected-signal/GND isolation is a display filter. Its native CAD surface triangulation is explicitly distinguished from the exact Palace conductor-boundary mesh. Neither display decimates its input triangles. The solver view shares its mesh across the three frequencies.
+
+Reproduce with the converter revision recorded in `public/em/latest/mesh/pcb-processor.json`:
+
+```sh
+bun scripts/em/export-pcb-mesh.ts /path/to/circuit-json-to-gmsh
+python scripts/em/package-mesh-view.py
+bun run build:mesh
+python scripts/em/build-latest-page.py
+```
+
+The exporter uses the pinned board snapshot and a stackup matching the existing assumed EM elevations. It does not use the newer stackup from the converter's AM3352 examples. The converter export is a CAD surface mesh, not a new FEM simulation or a validated tetrahedral replacement. Mesh manifests include counts, board/converter/source-mesh hashes and bounds; binary assets preserve all triangles as float32 vertices / uint32 indices.

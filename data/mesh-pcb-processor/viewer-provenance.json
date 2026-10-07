@@ -1,0 +1,667 @@
+{
+  "generator": "tscircuit/circuit-json-to-gmsh",
+  "converter_commit": "9c7f34b7e502b8339a6659cb268b1540867a672d",
+  "board_sha256": "80ef96cf94a1dac4f3d062f694fe71529a9a57f5a1dd6e8b1abdf92302968b13",
+  "bounds_mm": [
+    -3,
+    -10,
+    4,
+    -2
+  ],
+  "signal_nets": {
+    "DDR_ODT": "source_trace_0",
+    "DDR_D13": "source_trace_1",
+    "DDR_D11": "source_trace_2",
+    "DDR_D2": "source_trace_3",
+    "DDR_D6": "source_trace_4",
+    "DDR_CSn0": "source_trace_5",
+    "DDR_BA0": "source_trace_6",
+    "DDR_A3": "source_trace_7",
+    "DDR_A5": "source_trace_8",
+    "DDR_A7": "source_trace_9",
+    "DDR_RESETn_SIGNAL": "source_net_1",
+    "DDR_D15": "source_trace_11",
+    "DDR_D9": "source_trace_12",
+    "DDR_DQM1": "source_trace_13",
+    "DDR_D0": "source_trace_14",
+    "DDR_DQS0": "source_trace_15",
+    "DDR_DQSn0": "source_trace_16",
+    "DDR_D4": "source_trace_17",
+    "DDR_RASn": "source_trace_18",
+    "DDR_CASn": "source_trace_19",
+    "DDR_WEn": "source_trace_20",
+    "DDR_BA2": "source_trace_21",
+    "DDR_A0": "source_trace_22",
+    "DDR_A2": "source_trace_23",
+    "DDR_A9": "source_trace_24",
+    "DDR_D12": "source_trace_25",
+    "DDR_DQSn1": "source_trace_26",
+    "DDR_DQS1": "source_trace_27",
+    "DDR_D8": "source_trace_28",
+    "DDR_DQM0": "source_trace_29",
+    "DDR_D1": "source_trace_30",
+    "DDR_D7": "source_trace_31",
+    "DDR_CK": "source_trace_32",
+    "DDR_CKn": "source_trace_33",
+    "DDR_A10": "source_trace_34",
+    "DDR_A12": "source_trace_35",
+    "DDR_A1": "source_trace_36",
+    "DDR_A11": "source_trace_37",
+    "DDR_D14": "source_trace_38",
+    "DDR_D10": "source_trace_39",
+    "DDR_D3": "source_trace_40",
+    "DDR_D5": "source_trace_41",
+    "DDR_BA1": "source_trace_42",
+    "DDR_A4": "source_trace_43",
+    "DDR_A6": "source_trace_44",
+    "DDR_A8": "source_trace_45",
+    "DDR_CKE": "source_trace_46"
+  },
+  "ground_net": "source_net_0",
+  "kind": "native Gmsh CAD surface triangulation; not the EM tetrahedral mesh",
+  "stackup": {
+    "layers": [
+      {
+        "name": "top",
+        "copperThicknessMm": 0.035
+      },
+      {
+        "material": "FR4",
+        "dielectricThicknessMm": 0.1825,
+        "dielectricConstant": 4.3
+      },
+      {
+        "name": "inner1",
+        "copperThicknessMm": 0.035
+      },
+      {
+        "material": "FR4",
+        "dielectricThicknessMm": 1.165,
+        "dielectricConstant": 4.3
+      },
+      {
+        "name": "inner2",
+        "copperThicknessMm": 0.035
+      },
+      {
+        "material": "FR4",
+        "dielectricThicknessMm": 0.1825,
+        "dielectricConstant": 4.3
+      },
+      {
+        "name": "bottom",
+        "copperThicknessMm": 0.035
+      }
+    ]
+  },
+  "report": {
+    "gmshVersion": "4.13.1",
+    "simplificationToleranceMm": 0,
+    "simplification": [],
+    "wallSeconds": 17.47758885299845,
+    "cadSeconds": 10.469110908990842,
+    "meshSeconds": 6.208676292997552,
+    "volumeCount": 287,
+    "expectedVolumeMm3": 89.75455806757905,
+    "actualVolumeMm3": 89.75455806757894,
+    "tetrahedra": 0,
+    "materials": [
+      {
+        "name": "copper:source_net_0",
+        "attribute": 1,
+        "volumes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          69,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          145,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          221,
+          222,
+          223,
+          224,
+          225,
+          226,
+          227,
+          228,
+          229
+        ]
+      },
+      {
+        "name": "copper:source_net_1",
+        "attribute": 2,
+        "volumes": [
+          13,
+          46,
+          47,
+          70,
+          71,
+          122,
+          123,
+          146,
+          147,
+          198,
+          199,
+          230,
+          231
+        ]
+      },
+      {
+        "name": "copper:source_net_14",
+        "attribute": 3,
+        "volumes": [
+          232
+        ]
+      },
+      {
+        "name": "copper:source_net_15",
+        "attribute": 4,
+        "volumes": [
+          233,
+          234,
+          235,
+          236
+        ]
+      },
+      {
+        "name": "copper:source_net_27",
+        "attribute": 5,
+        "volumes": [
+          14,
+          15,
+          16,
+          17,
+          237,
+          238,
+          239,
+          240,
+          241,
+          242,
+          243
+        ]
+      },
+      {
+        "name": "copper:source_net_32",
+        "attribute": 6,
+        "volumes": [
+          244,
+          245,
+          246,
+          247,
+          248,
+          249
+        ]
+      },
+      {
+        "name": "copper:source_net_38",
+        "attribute": 7,
+        "volumes": [
+          250
+        ]
+      },
+      {
+        "name": "copper:source_net_39",
+        "attribute": 8,
+        "volumes": [
+          251
+        ]
+      },
+      {
+        "name": "copper:source_port_43",
+        "attribute": 9,
+        "volumes": [
+          252
+        ]
+      },
+      {
+        "name": "copper:source_port_61",
+        "attribute": 10,
+        "volumes": [
+          253
+        ]
+      },
+      {
+        "name": "copper:source_trace_0",
+        "attribute": 11,
+        "volumes": [
+          254
+        ]
+      },
+      {
+        "name": "copper:source_trace_1",
+        "attribute": 12,
+        "volumes": [
+          18,
+          48,
+          72,
+          124,
+          148,
+          200,
+          255
+        ]
+      },
+      {
+        "name": "copper:source_trace_11",
+        "attribute": 13,
+        "volumes": [
+          256
+        ]
+      },
+      {
+        "name": "copper:source_trace_12",
+        "attribute": 14,
+        "volumes": [
+          257
+        ]
+      },
+      {
+        "name": "copper:source_trace_13",
+        "attribute": 15,
+        "volumes": [
+          19,
+          49,
+          73,
+          125,
+          149,
+          201,
+          258
+        ]
+      },
+      {
+        "name": "copper:source_trace_14",
+        "attribute": 16,
+        "volumes": [
+          259
+        ]
+      },
+      {
+        "name": "copper:source_trace_15",
+        "attribute": 17,
+        "volumes": [
+          20,
+          50,
+          74,
+          126,
+          150,
+          202,
+          260
+        ]
+      },
+      {
+        "name": "copper:source_trace_16",
+        "attribute": 18,
+        "volumes": [
+          21,
+          51,
+          75,
+          127,
+          151,
+          203,
+          261
+        ]
+      },
+      {
+        "name": "copper:source_trace_17",
+        "attribute": 19,
+        "volumes": [
+          22,
+          52,
+          76,
+          128,
+          152,
+          204,
+          262
+        ]
+      },
+      {
+        "name": "copper:source_trace_18",
+        "attribute": 20,
+        "volumes": [
+          263
+        ]
+      },
+      {
+        "name": "copper:source_trace_19",
+        "attribute": 21,
+        "volumes": [
+          264
+        ]
+      },
+      {
+        "name": "copper:source_trace_2",
+        "attribute": 22,
+        "volumes": [
+          23,
+          53,
+          77,
+          129,
+          153,
+          205,
+          265
+        ]
+      },
+      {
+        "name": "copper:source_trace_22",
+        "attribute": 23,
+        "volumes": [
+          266
+        ]
+      },
+      {
+        "name": "copper:source_trace_25",
+        "attribute": 24,
+        "volumes": [
+          24,
+          54,
+          78,
+          130,
+          154,
+          206,
+          267
+        ]
+      },
+      {
+        "name": "copper:source_trace_26",
+        "attribute": 25,
+        "volumes": [
+          25,
+          55,
+          79,
+          131,
+          155,
+          207,
+          268
+        ]
+      },
+      {
+        "name": "copper:source_trace_27",
+        "attribute": 26,
+        "volumes": [
+          26,
+          56,
+          80,
+          132,
+          156,
+          208,
+          269
+        ]
+      },
+      {
+        "name": "copper:source_trace_28",
+        "attribute": 27,
+        "volumes": [
+          270
+        ]
+      },
+      {
+        "name": "copper:source_trace_29",
+        "attribute": 28,
+        "volumes": [
+          27,
+          57,
+          81,
+          133,
+          157,
+          209,
+          271
+        ]
+      },
+      {
+        "name": "copper:source_trace_3",
+        "attribute": 29,
+        "volumes": [
+          272,
+          273,
+          274,
+          275
+        ]
+      },
+      {
+        "name": "copper:source_trace_30",
+        "attribute": 30,
+        "volumes": [
+          28,
+          58,
+          82,
+          134,
+          158,
+          210,
+          276
+        ]
+      },
+      {
+        "name": "copper:source_trace_31",
+        "attribute": 31,
+        "volumes": [
+          29,
+          59,
+          83,
+          135,
+          159,
+          211,
+          277
+        ]
+      },
+      {
+        "name": "copper:source_trace_34",
+        "attribute": 32,
+        "volumes": [
+          30,
+          60,
+          84,
+          136,
+          160,
+          212,
+          278
+        ]
+      },
+      {
+        "name": "copper:source_trace_36",
+        "attribute": 33,
+        "volumes": [
+          279
+        ]
+      },
+      {
+        "name": "copper:source_trace_37",
+        "attribute": 34,
+        "volumes": [
+          31,
+          61,
+          85,
+          137,
+          161,
+          213,
+          280
+        ]
+      },
+      {
+        "name": "copper:source_trace_38",
+        "attribute": 35,
+        "volumes": [
+          32,
+          62,
+          86,
+          138,
+          162,
+          214,
+          281
+        ]
+      },
+      {
+        "name": "copper:source_trace_39",
+        "attribute": 36,
+        "volumes": [
+          282
+        ]
+      },
+      {
+        "name": "copper:source_trace_4",
+        "attribute": 37,
+        "volumes": [
+          33,
+          63,
+          87,
+          139,
+          163,
+          215,
+          283
+        ]
+      },
+      {
+        "name": "copper:source_trace_40",
+        "attribute": 38,
+        "volumes": [
+          34,
+          64,
+          88,
+          140,
+          164,
+          216,
+          284
+        ]
+      },
+      {
+        "name": "copper:source_trace_41",
+        "attribute": 39,
+        "volumes": [
+          35,
+          65,
+          89,
+          141,
+          165,
+          217,
+          285
+        ]
+      },
+      {
+        "name": "copper:source_trace_46",
+        "attribute": 40,
+        "volumes": [
+          36,
+          66,
+          90,
+          142,
+          166,
+          218,
+          286
+        ]
+      },
+      {
+        "name": "copper:source_trace_5",
+        "attribute": 41,
+        "volumes": [
+          37,
+          67,
+          91,
+          143,
+          167,
+          219,
+          287
+        ]
+      },
+      {
+        "name": "dielectric:101",
+        "attribute": 42,
+        "volumes": [
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          220
+        ]
+      },
+      {
+        "name": "dielectric:103",
+        "attribute": 43,
+        "volumes": [
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          144
+        ]
+      },
+      {
+        "name": "dielectric:105",
+        "attribute": 44,
+        "volumes": [
+          68
+        ]
+      }
+    ],
+    "sharedInterfaceFaces": 0,
+    "minimumTetQuality": null,
+    "repairs": [],
+    "removedVolumeMm3": -7.825446020348625e-14,
+    "peakRssMiB": 572.53125
+  }
+}

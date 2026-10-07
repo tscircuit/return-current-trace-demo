@@ -1,0 +1,2854 @@
+{
+  "generator": "tscircuit/circuit-json-to-gmsh",
+  "converter_commit": "9c7f34b7e502b8339a6659cb268b1540867a672d",
+  "board_sha256": "80ef96cf94a1dac4f3d062f694fe71529a9a57f5a1dd6e8b1abdf92302968b13",
+  "bounds_mm": [
+    -3,
+    -10,
+    4,
+    -2
+  ],
+  "signal_nets": {
+    "DDR_ODT": "source_trace_0",
+    "DDR_D13": "source_trace_1",
+    "DDR_D11": "source_trace_2",
+    "DDR_D2": "source_trace_3",
+    "DDR_D6": "source_trace_4",
+    "DDR_CSn0": "source_trace_5",
+    "DDR_BA0": "source_trace_6",
+    "DDR_A3": "source_trace_7",
+    "DDR_A5": "source_trace_8",
+    "DDR_A7": "source_trace_9",
+    "DDR_RESETn_SIGNAL": "source_net_1",
+    "DDR_D15": "source_trace_11",
+    "DDR_D9": "source_trace_12",
+    "DDR_DQM1": "source_trace_13",
+    "DDR_D0": "source_trace_14",
+    "DDR_DQS0": "source_trace_15",
+    "DDR_DQSn0": "source_trace_16",
+    "DDR_D4": "source_trace_17",
+    "DDR_RASn": "source_trace_18",
+    "DDR_CASn": "source_trace_19",
+    "DDR_WEn": "source_trace_20",
+    "DDR_BA2": "source_trace_21",
+    "DDR_A0": "source_trace_22",
+    "DDR_A2": "source_trace_23",
+    "DDR_A9": "source_trace_24",
+    "DDR_D12": "source_trace_25",
+    "DDR_DQSn1": "source_trace_26",
+    "DDR_DQS1": "source_trace_27",
+    "DDR_D8": "source_trace_28",
+    "DDR_DQM0": "source_trace_29",
+    "DDR_D1": "source_trace_30",
+    "DDR_D7": "source_trace_31",
+    "DDR_CK": "source_trace_32",
+    "DDR_CKn": "source_trace_33",
+    "DDR_A10": "source_trace_34",
+    "DDR_A12": "source_trace_35",
+    "DDR_A1": "source_trace_36",
+    "DDR_A11": "source_trace_37",
+    "DDR_D14": "source_trace_38",
+    "DDR_D10": "source_trace_39",
+    "DDR_D3": "source_trace_40",
+    "DDR_D5": "source_trace_41",
+    "DDR_BA1": "source_trace_42",
+    "DDR_A4": "source_trace_43",
+    "DDR_A6": "source_trace_44",
+    "DDR_A8": "source_trace_45",
+    "DDR_CKE": "source_trace_46"
+  },
+  "ground_net": "source_net_0",
+  "kind": "native Gmsh CAD surface triangulation; not the EM tetrahedral mesh",
+  "stackup": {
+    "layers": [
+      {
+        "name": "top",
+        "copperThicknessMm": 0.035
+      },
+      {
+        "material": "FR4",
+        "dielectricThicknessMm": 0.1825,
+        "dielectricConstant": 4.3
+      },
+      {
+        "name": "inner1",
+        "copperThicknessMm": 0.035
+      },
+      {
+        "material": "FR4",
+        "dielectricThicknessMm": 1.165,
+        "dielectricConstant": 4.3
+      },
+      {
+        "name": "inner2",
+        "copperThicknessMm": 0.035
+      },
+      {
+        "material": "FR4",
+        "dielectricThicknessMm": 0.1825,
+        "dielectricConstant": 4.3
+      },
+      {
+        "name": "bottom",
+        "copperThicknessMm": 0.035
+      }
+    ]
+  },
+  "report": {
+    "gmshVersion": "4.13.1",
+    "simplificationToleranceMm": 0,
+    "simplification": [],
+    "wallSeconds": 17.47758885299845,
+    "cadSeconds": 10.469110908990842,
+    "meshSeconds": 6.208676292997552,
+    "volumeCount": 287,
+    "expectedVolumeMm3": 89.75455806757905,
+    "actualVolumeMm3": 89.75455806757894,
+    "tetrahedra": 0,
+    "materials": [
+      {
+        "name": "copper:source_net_0",
+        "attribute": 1,
+        "volumes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          69,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          145,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          221,
+          222,
+          223,
+          224,
+          225,
+          226,
+          227,
+          228,
+          229
+        ]
+      },
+      {
+        "name": "copper:source_net_1",
+        "attribute": 2,
+        "volumes": [
+          13,
+          46,
+          47,
+          70,
+          71,
+          122,
+          123,
+          146,
+          147,
+          198,
+          199,
+          230,
+          231
+        ]
+      },
+      {
+        "name": "copper:source_net_14",
+        "attribute": 3,
+        "volumes": [
+          232
+        ]
+      },
+      {
+        "name": "copper:source_net_15",
+        "attribute": 4,
+        "volumes": [
+          233,
+          234,
+          235,
+          236
+        ]
+      },
+      {
+        "name": "copper:source_net_27",
+        "attribute": 5,
+        "volumes": [
+          14,
+          15,
+          16,
+          17,
+          237,
+          238,
+          239,
+          240,
+          241,
+          242,
+          243
+        ]
+      },
+      {
+        "name": "copper:source_net_32",
+        "attribute": 6,
+        "volumes": [
+          244,
+          245,
+          246,
+          247,
+          248,
+          249
+        ]
+      },
+      {
+        "name": "copper:source_net_38",
+        "attribute": 7,
+        "volumes": [
+          250
+        ]
+      },
+      {
+        "name": "copper:source_net_39",
+        "attribute": 8,
+        "volumes": [
+          251
+        ]
+      },
+      {
+        "name": "copper:source_port_43",
+        "attribute": 9,
+        "volumes": [
+          252
+        ]
+      },
+      {
+        "name": "copper:source_port_61",
+        "attribute": 10,
+        "volumes": [
+          253
+        ]
+      },
+      {
+        "name": "copper:source_trace_0",
+        "attribute": 11,
+        "volumes": [
+          254
+        ]
+      },
+      {
+        "name": "copper:source_trace_1",
+        "attribute": 12,
+        "volumes": [
+          18,
+          48,
+          72,
+          124,
+          148,
+          200,
+          255
+        ]
+      },
+      {
+        "name": "copper:source_trace_11",
+        "attribute": 13,
+        "volumes": [
+          256
+        ]
+      },
+      {
+        "name": "copper:source_trace_12",
+        "attribute": 14,
+        "volumes": [
+          257
+        ]
+      },
+      {
+        "name": "copper:source_trace_13",
+        "attribute": 15,
+        "volumes": [
+          19,
+          49,
+          73,
+          125,
+          149,
+          201,
+          258
+        ]
+      },
+      {
+        "name": "copper:source_trace_14",
+        "attribute": 16,
+        "volumes": [
+          259
+        ]
+      },
+      {
+        "name": "copper:source_trace_15",
+        "attribute": 17,
+        "volumes": [
+          20,
+          50,
+          74,
+          126,
+          150,
+          202,
+          260
+        ]
+      },
+      {
+        "name": "copper:source_trace_16",
+        "attribute": 18,
+        "volumes": [
+          21,
+          51,
+          75,
+          127,
+          151,
+          203,
+          261
+        ]
+      },
+      {
+        "name": "copper:source_trace_17",
+        "attribute": 19,
+        "volumes": [
+          22,
+          52,
+          76,
+          128,
+          152,
+          204,
+          262
+        ]
+      },
+      {
+        "name": "copper:source_trace_18",
+        "attribute": 20,
+        "volumes": [
+          263
+        ]
+      },
+      {
+        "name": "copper:source_trace_19",
+        "attribute": 21,
+        "volumes": [
+          264
+        ]
+      },
+      {
+        "name": "copper:source_trace_2",
+        "attribute": 22,
+        "volumes": [
+          23,
+          53,
+          77,
+          129,
+          153,
+          205,
+          265
+        ]
+      },
+      {
+        "name": "copper:source_trace_22",
+        "attribute": 23,
+        "volumes": [
+          266
+        ]
+      },
+      {
+        "name": "copper:source_trace_25",
+        "attribute": 24,
+        "volumes": [
+          24,
+          54,
+          78,
+          130,
+          154,
+          206,
+          267
+        ]
+      },
+      {
+        "name": "copper:source_trace_26",
+        "attribute": 25,
+        "volumes": [
+          25,
+          55,
+          79,
+          131,
+          155,
+          207,
+          268
+        ]
+      },
+      {
+        "name": "copper:source_trace_27",
+        "attribute": 26,
+        "volumes": [
+          26,
+          56,
+          80,
+          132,
+          156,
+          208,
+          269
+        ]
+      },
+      {
+        "name": "copper:source_trace_28",
+        "attribute": 27,
+        "volumes": [
+          270
+        ]
+      },
+      {
+        "name": "copper:source_trace_29",
+        "attribute": 28,
+        "volumes": [
+          27,
+          57,
+          81,
+          133,
+          157,
+          209,
+          271
+        ]
+      },
+      {
+        "name": "copper:source_trace_3",
+        "attribute": 29,
+        "volumes": [
+          272,
+          273,
+          274,
+          275
+        ]
+      },
+      {
+        "name": "copper:source_trace_30",
+        "attribute": 30,
+        "volumes": [
+          28,
+          58,
+          82,
+          134,
+          158,
+          210,
+          276
+        ]
+      },
+      {
+        "name": "copper:source_trace_31",
+        "attribute": 31,
+        "volumes": [
+          29,
+          59,
+          83,
+          135,
+          159,
+          211,
+          277
+        ]
+      },
+      {
+        "name": "copper:source_trace_34",
+        "attribute": 32,
+        "volumes": [
+          30,
+          60,
+          84,
+          136,
+          160,
+          212,
+          278
+        ]
+      },
+      {
+        "name": "copper:source_trace_36",
+        "attribute": 33,
+        "volumes": [
+          279
+        ]
+      },
+      {
+        "name": "copper:source_trace_37",
+        "attribute": 34,
+        "volumes": [
+          31,
+          61,
+          85,
+          137,
+          161,
+          213,
+          280
+        ]
+      },
+      {
+        "name": "copper:source_trace_38",
+        "attribute": 35,
+        "volumes": [
+          32,
+          62,
+          86,
+          138,
+          162,
+          214,
+          281
+        ]
+      },
+      {
+        "name": "copper:source_trace_39",
+        "attribute": 36,
+        "volumes": [
+          282
+        ]
+      },
+      {
+        "name": "copper:source_trace_4",
+        "attribute": 37,
+        "volumes": [
+          33,
+          63,
+          87,
+          139,
+          163,
+          215,
+          283
+        ]
+      },
+      {
+        "name": "copper:source_trace_40",
+        "attribute": 38,
+        "volumes": [
+          34,
+          64,
+          88,
+          140,
+          164,
+          216,
+          284
+        ]
+      },
+      {
+        "name": "copper:source_trace_41",
+        "attribute": 39,
+        "volumes": [
+          35,
+          65,
+          89,
+          141,
+          165,
+          217,
+          285
+        ]
+      },
+      {
+        "name": "copper:source_trace_46",
+        "attribute": 40,
+        "volumes": [
+          36,
+          66,
+          90,
+          142,
+          166,
+          218,
+          286
+        ]
+      },
+      {
+        "name": "copper:source_trace_5",
+        "attribute": 41,
+        "volumes": [
+          37,
+          67,
+          91,
+          143,
+          167,
+          219,
+          287
+        ]
+      },
+      {
+        "name": "dielectric:101",
+        "attribute": 42,
+        "volumes": [
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          220
+        ]
+      },
+      {
+        "name": "dielectric:103",
+        "attribute": 43,
+        "volumes": [
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          144
+        ]
+      },
+      {
+        "name": "dielectric:105",
+        "attribute": 44,
+        "volumes": [
+          68
+        ]
+      }
+    ],
+    "sharedInterfaceFaces": 0,
+    "minimumTetQuality": null,
+    "repairs": [],
+    "removedVolumeMm3": -7.825446020348625e-14,
+    "peakRssMiB": 572.53125
+  },
+  "source_contacts": {
+    "DDR_D8": {
+      "signal": [
+        -0.4,
+        -6.800000000000001
+      ],
+      "ground": [
+        2,
+        -3.6
+      ]
+    },
+    "DDR_D13": {
+      "signal": [
+        1.2000000000000002,
+        -5.2
+      ],
+      "ground": [
+        2,
+        -3.6
+      ]
+    }
+  },
+  "groups": [
+    {
+      "net": "source_net_0",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 0,
+      "position_count": 204,
+      "index_offset": 816,
+      "index_count": 396
+    },
+    {
+      "net": "source_net_0",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 2400,
+      "position_count": 648,
+      "index_offset": 4992,
+      "index_count": 1296
+    },
+    {
+      "net": "source_net_0",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 10176,
+      "position_count": 648,
+      "index_offset": 12768,
+      "index_count": 1296
+    },
+    {
+      "net": "source_net_0",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 17952,
+      "position_count": 648,
+      "index_offset": 20544,
+      "index_count": 1296
+    },
+    {
+      "net": "source_net_0",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 25728,
+      "position_count": 648,
+      "index_offset": 28320,
+      "index_count": 1296
+    },
+    {
+      "net": "source_net_0",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 33504,
+      "position_count": 648,
+      "index_offset": 36096,
+      "index_count": 1296
+    },
+    {
+      "net": "source_net_0",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 41280,
+      "position_count": 96,
+      "index_offset": 41664,
+      "index_count": 180
+    },
+    {
+      "net": "source_net_0",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 42384,
+      "position_count": 204,
+      "index_offset": 43200,
+      "index_count": 396
+    },
+    {
+      "net": "source_net_0",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 44784,
+      "position_count": 648,
+      "index_offset": 47376,
+      "index_count": 1296
+    },
+    {
+      "net": "source_net_0",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 52560,
+      "position_count": 648,
+      "index_offset": 55152,
+      "index_count": 1296
+    },
+    {
+      "net": "source_net_0",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 60336,
+      "position_count": 648,
+      "index_offset": 62928,
+      "index_count": 1296
+    },
+    {
+      "net": "source_net_0",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 68112,
+      "position_count": 126,
+      "index_offset": 68616,
+      "index_count": 240
+    },
+    {
+      "net": "source_net_1",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 69576,
+      "position_count": 1464,
+      "index_offset": 75432,
+      "index_count": 2940
+    },
+    {
+      "net": "source_net_27",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 87192,
+      "position_count": 204,
+      "index_offset": 88008,
+      "index_count": 396
+    },
+    {
+      "net": "source_net_27",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 89592,
+      "position_count": 147,
+      "index_offset": 90180,
+      "index_count": 282
+    },
+    {
+      "net": "source_net_27",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 91308,
+      "position_count": 204,
+      "index_offset": 92124,
+      "index_count": 396
+    },
+    {
+      "net": "source_net_27",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 93708,
+      "position_count": 144,
+      "index_offset": 94284,
+      "index_count": 276
+    },
+    {
+      "net": "source_trace_1",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 95388,
+      "position_count": 1368,
+      "index_offset": 100860,
+      "index_count": 2736
+    },
+    {
+      "net": "source_trace_13",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 111804,
+      "position_count": 1215,
+      "index_offset": 116664,
+      "index_count": 2430
+    },
+    {
+      "net": "source_trace_15",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 126384,
+      "position_count": 630,
+      "index_offset": 128904,
+      "index_count": 1248
+    },
+    {
+      "net": "source_trace_16",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 133896,
+      "position_count": 372,
+      "index_offset": 135384,
+      "index_count": 732
+    },
+    {
+      "net": "source_trace_17",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 138312,
+      "position_count": 1872,
+      "index_offset": 145800,
+      "index_count": 3744
+    },
+    {
+      "net": "source_trace_2",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 160776,
+      "position_count": 1152,
+      "index_offset": 165384,
+      "index_count": 2304
+    },
+    {
+      "net": "source_trace_25",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 174600,
+      "position_count": 1482,
+      "index_offset": 180528,
+      "index_count": 2964
+    },
+    {
+      "net": "source_trace_26",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 192384,
+      "position_count": 1158,
+      "index_offset": 197016,
+      "index_count": 2316
+    },
+    {
+      "net": "source_trace_27",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 206280,
+      "position_count": 1041,
+      "index_offset": 210444,
+      "index_count": 2082
+    },
+    {
+      "net": "source_trace_29",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 218772,
+      "position_count": 1182,
+      "index_offset": 223500,
+      "index_count": 2364
+    },
+    {
+      "net": "source_trace_30",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 232956,
+      "position_count": 1476,
+      "index_offset": 238860,
+      "index_count": 2952
+    },
+    {
+      "net": "source_trace_31",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 250668,
+      "position_count": 372,
+      "index_offset": 252156,
+      "index_count": 732
+    },
+    {
+      "net": "source_trace_34",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 255084,
+      "position_count": 678,
+      "index_offset": 257796,
+      "index_count": 1356
+    },
+    {
+      "net": "source_trace_37",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 263220,
+      "position_count": 1890,
+      "index_offset": 270780,
+      "index_count": 3780
+    },
+    {
+      "net": "source_trace_38",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 285900,
+      "position_count": 1374,
+      "index_offset": 291396,
+      "index_count": 2748
+    },
+    {
+      "net": "source_trace_4",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 302388,
+      "position_count": 1956,
+      "index_offset": 310212,
+      "index_count": 3900
+    },
+    {
+      "net": "source_trace_40",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 325812,
+      "position_count": 1062,
+      "index_offset": 330060,
+      "index_count": 2124
+    },
+    {
+      "net": "source_trace_41",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 338556,
+      "position_count": 906,
+      "index_offset": 342180,
+      "index_count": 1812
+    },
+    {
+      "net": "source_trace_46",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 349428,
+      "position_count": 1806,
+      "index_offset": 356652,
+      "index_count": 3612
+    },
+    {
+      "net": "source_trace_5",
+      "layer": "bottom",
+      "role": "copper",
+      "position_offset": 371100,
+      "position_count": 1176,
+      "index_offset": 375804,
+      "index_count": 2352
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 385212,
+      "position_count": 768,
+      "index_offset": 388284,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 394428,
+      "position_count": 768,
+      "index_offset": 397500,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 403644,
+      "position_count": 768,
+      "index_offset": 406716,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 412860,
+      "position_count": 768,
+      "index_offset": 415932,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 422076,
+      "position_count": 768,
+      "index_offset": 425148,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 431292,
+      "position_count": 768,
+      "index_offset": 434364,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 440508,
+      "position_count": 768,
+      "index_offset": 443580,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 449724,
+      "position_count": 768,
+      "index_offset": 452796,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_1",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 458940,
+      "position_count": 768,
+      "index_offset": 462012,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_1",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 468156,
+      "position_count": 768,
+      "index_offset": 471228,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_1",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 477372,
+      "position_count": 768,
+      "index_offset": 480444,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_13",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 486588,
+      "position_count": 768,
+      "index_offset": 489660,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_15",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 495804,
+      "position_count": 402,
+      "index_offset": 497412,
+      "index_count": 792
+    },
+    {
+      "net": "source_trace_16",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 500580,
+      "position_count": 402,
+      "index_offset": 502188,
+      "index_count": 792
+    },
+    {
+      "net": "source_trace_17",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 505356,
+      "position_count": 768,
+      "index_offset": 508428,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_2",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 514572,
+      "position_count": 768,
+      "index_offset": 517644,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_25",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 523788,
+      "position_count": 768,
+      "index_offset": 526860,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_26",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 533004,
+      "position_count": 768,
+      "index_offset": 536076,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_27",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 542220,
+      "position_count": 768,
+      "index_offset": 545292,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_29",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 551436,
+      "position_count": 768,
+      "index_offset": 554508,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_30",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 560652,
+      "position_count": 768,
+      "index_offset": 563724,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_31",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 569868,
+      "position_count": 402,
+      "index_offset": 571476,
+      "index_count": 792
+    },
+    {
+      "net": "source_trace_34",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 574644,
+      "position_count": 768,
+      "index_offset": 577716,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_37",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 583860,
+      "position_count": 768,
+      "index_offset": 586932,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_38",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 593076,
+      "position_count": 768,
+      "index_offset": 596148,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_4",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 602292,
+      "position_count": 402,
+      "index_offset": 603900,
+      "index_count": 792
+    },
+    {
+      "net": "source_trace_40",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 607068,
+      "position_count": 768,
+      "index_offset": 610140,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_41",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 616284,
+      "position_count": 768,
+      "index_offset": 619356,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_46",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 625500,
+      "position_count": 768,
+      "index_offset": 628572,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_5",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 634716,
+      "position_count": 768,
+      "index_offset": 637788,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 643932,
+      "position_count": 26964,
+      "index_offset": 751788,
+      "index_count": 54192
+    },
+    {
+      "net": "source_net_1",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 968556,
+      "position_count": 648,
+      "index_offset": 971148,
+      "index_count": 1296
+    },
+    {
+      "net": "source_net_1",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 976332,
+      "position_count": 648,
+      "index_offset": 978924,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_1",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 984108,
+      "position_count": 648,
+      "index_offset": 986700,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_13",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 991884,
+      "position_count": 648,
+      "index_offset": 994476,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_15",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 999660,
+      "position_count": 372,
+      "index_offset": 1001148,
+      "index_count": 732
+    },
+    {
+      "net": "source_trace_16",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1004076,
+      "position_count": 372,
+      "index_offset": 1005564,
+      "index_count": 732
+    },
+    {
+      "net": "source_trace_17",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1008492,
+      "position_count": 648,
+      "index_offset": 1011084,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_2",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1016268,
+      "position_count": 648,
+      "index_offset": 1018860,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_25",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1024044,
+      "position_count": 648,
+      "index_offset": 1026636,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_26",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1031820,
+      "position_count": 648,
+      "index_offset": 1034412,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_27",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1039596,
+      "position_count": 648,
+      "index_offset": 1042188,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_29",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1047372,
+      "position_count": 648,
+      "index_offset": 1049964,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_30",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1055148,
+      "position_count": 648,
+      "index_offset": 1057740,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_31",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1062924,
+      "position_count": 372,
+      "index_offset": 1064412,
+      "index_count": 732
+    },
+    {
+      "net": "source_trace_34",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1067340,
+      "position_count": 648,
+      "index_offset": 1069932,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_37",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1075116,
+      "position_count": 648,
+      "index_offset": 1077708,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_38",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1082892,
+      "position_count": 648,
+      "index_offset": 1085484,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_4",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1090668,
+      "position_count": 372,
+      "index_offset": 1092156,
+      "index_count": 732
+    },
+    {
+      "net": "source_trace_40",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1095084,
+      "position_count": 648,
+      "index_offset": 1097676,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_41",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1102860,
+      "position_count": 648,
+      "index_offset": 1105452,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_46",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1110636,
+      "position_count": 648,
+      "index_offset": 1113228,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_5",
+      "layer": "inner2",
+      "role": "copper",
+      "position_offset": 1118412,
+      "position_count": 648,
+      "index_offset": 1121004,
+      "index_count": 1296
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1126188,
+      "position_count": 1920,
+      "index_offset": 1133868,
+      "index_count": 3840
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1149228,
+      "position_count": 1920,
+      "index_offset": 1156908,
+      "index_count": 3840
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1172268,
+      "position_count": 1920,
+      "index_offset": 1179948,
+      "index_count": 3840
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1195308,
+      "position_count": 1920,
+      "index_offset": 1202988,
+      "index_count": 3840
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1218348,
+      "position_count": 1920,
+      "index_offset": 1226028,
+      "index_count": 3840
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1241388,
+      "position_count": 1920,
+      "index_offset": 1249068,
+      "index_count": 3840
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1264428,
+      "position_count": 1920,
+      "index_offset": 1272108,
+      "index_count": 3840
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1287468,
+      "position_count": 1920,
+      "index_offset": 1295148,
+      "index_count": 3840
+    },
+    {
+      "net": "source_net_1",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1310508,
+      "position_count": 1920,
+      "index_offset": 1318188,
+      "index_count": 3840
+    },
+    {
+      "net": "source_net_1",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1333548,
+      "position_count": 1920,
+      "index_offset": 1341228,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_1",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1356588,
+      "position_count": 1920,
+      "index_offset": 1364268,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_13",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1379628,
+      "position_count": 1920,
+      "index_offset": 1387308,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_15",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1402668,
+      "position_count": 1014,
+      "index_offset": 1406724,
+      "index_count": 2016
+    },
+    {
+      "net": "source_trace_16",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1414788,
+      "position_count": 1014,
+      "index_offset": 1418844,
+      "index_count": 2016
+    },
+    {
+      "net": "source_trace_17",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1426908,
+      "position_count": 1920,
+      "index_offset": 1434588,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_2",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1449948,
+      "position_count": 1920,
+      "index_offset": 1457628,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_25",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1472988,
+      "position_count": 1920,
+      "index_offset": 1480668,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_26",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1496028,
+      "position_count": 1920,
+      "index_offset": 1503708,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_27",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1519068,
+      "position_count": 1920,
+      "index_offset": 1526748,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_29",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1542108,
+      "position_count": 1920,
+      "index_offset": 1549788,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_30",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1565148,
+      "position_count": 1920,
+      "index_offset": 1572828,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_31",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1588188,
+      "position_count": 1014,
+      "index_offset": 1592244,
+      "index_count": 2016
+    },
+    {
+      "net": "source_trace_34",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1600308,
+      "position_count": 1920,
+      "index_offset": 1607988,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_37",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1623348,
+      "position_count": 1920,
+      "index_offset": 1631028,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_38",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1646388,
+      "position_count": 1920,
+      "index_offset": 1654068,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_4",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1669428,
+      "position_count": 1014,
+      "index_offset": 1673484,
+      "index_count": 2016
+    },
+    {
+      "net": "source_trace_40",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1681548,
+      "position_count": 1920,
+      "index_offset": 1689228,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_41",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1704588,
+      "position_count": 1920,
+      "index_offset": 1712268,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_46",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1727628,
+      "position_count": 1920,
+      "index_offset": 1735308,
+      "index_count": 3840
+    },
+    {
+      "net": "source_trace_5",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 1750668,
+      "position_count": 1920,
+      "index_offset": 1758348,
+      "index_count": 3840
+    },
+    {
+      "net": "source_net_0",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 1773708,
+      "position_count": 26973,
+      "index_offset": 1881600,
+      "index_count": 54210
+    },
+    {
+      "net": "source_net_1",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2098440,
+      "position_count": 648,
+      "index_offset": 2101032,
+      "index_count": 1296
+    },
+    {
+      "net": "source_net_1",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2106216,
+      "position_count": 648,
+      "index_offset": 2108808,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_1",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2113992,
+      "position_count": 648,
+      "index_offset": 2116584,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_13",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2121768,
+      "position_count": 648,
+      "index_offset": 2124360,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_15",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2129544,
+      "position_count": 372,
+      "index_offset": 2131032,
+      "index_count": 732
+    },
+    {
+      "net": "source_trace_16",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2133960,
+      "position_count": 372,
+      "index_offset": 2135448,
+      "index_count": 732
+    },
+    {
+      "net": "source_trace_17",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2138376,
+      "position_count": 648,
+      "index_offset": 2140968,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_2",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2146152,
+      "position_count": 648,
+      "index_offset": 2148744,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_25",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2153928,
+      "position_count": 648,
+      "index_offset": 2156520,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_26",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2161704,
+      "position_count": 648,
+      "index_offset": 2164296,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_27",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2169480,
+      "position_count": 648,
+      "index_offset": 2172072,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_29",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2177256,
+      "position_count": 648,
+      "index_offset": 2179848,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_30",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2185032,
+      "position_count": 648,
+      "index_offset": 2187624,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_31",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2192808,
+      "position_count": 372,
+      "index_offset": 2194296,
+      "index_count": 732
+    },
+    {
+      "net": "source_trace_34",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2197224,
+      "position_count": 648,
+      "index_offset": 2199816,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_37",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2205000,
+      "position_count": 648,
+      "index_offset": 2207592,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_38",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2212776,
+      "position_count": 648,
+      "index_offset": 2215368,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_4",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2220552,
+      "position_count": 372,
+      "index_offset": 2222040,
+      "index_count": 732
+    },
+    {
+      "net": "source_trace_40",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2224968,
+      "position_count": 648,
+      "index_offset": 2227560,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_41",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2232744,
+      "position_count": 648,
+      "index_offset": 2235336,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_46",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2240520,
+      "position_count": 648,
+      "index_offset": 2243112,
+      "index_count": 1296
+    },
+    {
+      "net": "source_trace_5",
+      "layer": "inner1",
+      "role": "copper",
+      "position_offset": 2248296,
+      "position_count": 648,
+      "index_offset": 2250888,
+      "index_count": 1296
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2256072,
+      "position_count": 768,
+      "index_offset": 2259144,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2265288,
+      "position_count": 768,
+      "index_offset": 2268360,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2274504,
+      "position_count": 768,
+      "index_offset": 2277576,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2283720,
+      "position_count": 768,
+      "index_offset": 2286792,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2292936,
+      "position_count": 768,
+      "index_offset": 2296008,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2302152,
+      "position_count": 768,
+      "index_offset": 2305224,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2311368,
+      "position_count": 768,
+      "index_offset": 2314440,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2320584,
+      "position_count": 768,
+      "index_offset": 2323656,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_1",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2329800,
+      "position_count": 768,
+      "index_offset": 2332872,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_1",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2339016,
+      "position_count": 768,
+      "index_offset": 2342088,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_1",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2348232,
+      "position_count": 768,
+      "index_offset": 2351304,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_13",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2357448,
+      "position_count": 768,
+      "index_offset": 2360520,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_15",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2366664,
+      "position_count": 402,
+      "index_offset": 2368272,
+      "index_count": 792
+    },
+    {
+      "net": "source_trace_16",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2371440,
+      "position_count": 402,
+      "index_offset": 2373048,
+      "index_count": 792
+    },
+    {
+      "net": "source_trace_17",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2376216,
+      "position_count": 768,
+      "index_offset": 2379288,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_2",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2385432,
+      "position_count": 768,
+      "index_offset": 2388504,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_25",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2394648,
+      "position_count": 768,
+      "index_offset": 2397720,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_26",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2403864,
+      "position_count": 768,
+      "index_offset": 2406936,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_27",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2413080,
+      "position_count": 768,
+      "index_offset": 2416152,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_29",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2422296,
+      "position_count": 768,
+      "index_offset": 2425368,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_30",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2431512,
+      "position_count": 768,
+      "index_offset": 2434584,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_31",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2440728,
+      "position_count": 402,
+      "index_offset": 2442336,
+      "index_count": 792
+    },
+    {
+      "net": "source_trace_34",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2445504,
+      "position_count": 768,
+      "index_offset": 2448576,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_37",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2454720,
+      "position_count": 768,
+      "index_offset": 2457792,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_38",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2463936,
+      "position_count": 768,
+      "index_offset": 2467008,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_4",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2473152,
+      "position_count": 402,
+      "index_offset": 2474760,
+      "index_count": 792
+    },
+    {
+      "net": "source_trace_40",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2477928,
+      "position_count": 768,
+      "index_offset": 2481000,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_41",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2487144,
+      "position_count": 768,
+      "index_offset": 2490216,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_46",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2496360,
+      "position_count": 768,
+      "index_offset": 2499432,
+      "index_count": 1536
+    },
+    {
+      "net": "source_trace_5",
+      "layer": "barrel",
+      "role": "copper",
+      "position_offset": 2505576,
+      "position_count": 768,
+      "index_offset": 2508648,
+      "index_count": 1536
+    },
+    {
+      "net": "source_net_0",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2514792,
+      "position_count": 1026,
+      "index_offset": 2518896,
+      "index_count": 2052
+    },
+    {
+      "net": "source_net_0",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2527104,
+      "position_count": 1014,
+      "index_offset": 2531160,
+      "index_count": 2028
+    },
+    {
+      "net": "source_net_0",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2539272,
+      "position_count": 840,
+      "index_offset": 2542632,
+      "index_count": 1680
+    },
+    {
+      "net": "source_net_0",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2549352,
+      "position_count": 840,
+      "index_offset": 2552712,
+      "index_count": 1680
+    },
+    {
+      "net": "source_net_0",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2559432,
+      "position_count": 840,
+      "index_offset": 2562792,
+      "index_count": 1680
+    },
+    {
+      "net": "source_net_0",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2569512,
+      "position_count": 1008,
+      "index_offset": 2573544,
+      "index_count": 2016
+    },
+    {
+      "net": "source_net_0",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2581608,
+      "position_count": 1008,
+      "index_offset": 2585640,
+      "index_count": 2016
+    },
+    {
+      "net": "source_net_0",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2593704,
+      "position_count": 840,
+      "index_offset": 2597064,
+      "index_count": 1680
+    },
+    {
+      "net": "source_net_0",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2603784,
+      "position_count": 192,
+      "index_offset": 2604552,
+      "index_count": 372
+    },
+    {
+      "net": "source_net_1",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2606040,
+      "position_count": 846,
+      "index_offset": 2609424,
+      "index_count": 1692
+    },
+    {
+      "net": "source_net_1",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2616192,
+      "position_count": 1062,
+      "index_offset": 2620440,
+      "index_count": 2124
+    },
+    {
+      "net": "source_net_14",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2628936,
+      "position_count": 342,
+      "index_offset": 2630304,
+      "index_count": 672
+    },
+    {
+      "net": "source_net_15",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2632992,
+      "position_count": 342,
+      "index_offset": 2634360,
+      "index_count": 672
+    },
+    {
+      "net": "source_net_15",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2637048,
+      "position_count": 342,
+      "index_offset": 2638416,
+      "index_count": 672
+    },
+    {
+      "net": "source_net_15",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2641104,
+      "position_count": 342,
+      "index_offset": 2642472,
+      "index_count": 672
+    },
+    {
+      "net": "source_net_15",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2645160,
+      "position_count": 192,
+      "index_offset": 2645928,
+      "index_count": 372
+    },
+    {
+      "net": "source_net_27",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2647416,
+      "position_count": 390,
+      "index_offset": 2648976,
+      "index_count": 768
+    },
+    {
+      "net": "source_net_27",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2652048,
+      "position_count": 342,
+      "index_offset": 2653416,
+      "index_count": 672
+    },
+    {
+      "net": "source_net_27",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2656104,
+      "position_count": 342,
+      "index_offset": 2657472,
+      "index_count": 672
+    },
+    {
+      "net": "source_net_27",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2660160,
+      "position_count": 342,
+      "index_offset": 2661528,
+      "index_count": 672
+    },
+    {
+      "net": "source_net_27",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2664216,
+      "position_count": 192,
+      "index_offset": 2664984,
+      "index_count": 372
+    },
+    {
+      "net": "source_net_27",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2666472,
+      "position_count": 189,
+      "index_offset": 2667228,
+      "index_count": 366
+    },
+    {
+      "net": "source_net_27",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2668692,
+      "position_count": 192,
+      "index_offset": 2669460,
+      "index_count": 372
+    },
+    {
+      "net": "source_net_32",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2670948,
+      "position_count": 342,
+      "index_offset": 2672316,
+      "index_count": 672
+    },
+    {
+      "net": "source_net_32",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2675004,
+      "position_count": 342,
+      "index_offset": 2676372,
+      "index_count": 672
+    },
+    {
+      "net": "source_net_32",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2679060,
+      "position_count": 342,
+      "index_offset": 2680428,
+      "index_count": 672
+    },
+    {
+      "net": "source_net_32",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2683116,
+      "position_count": 342,
+      "index_offset": 2684484,
+      "index_count": 672
+    },
+    {
+      "net": "source_net_32",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2687172,
+      "position_count": 342,
+      "index_offset": 2688540,
+      "index_count": 672
+    },
+    {
+      "net": "source_net_32",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2691228,
+      "position_count": 342,
+      "index_offset": 2692596,
+      "index_count": 672
+    },
+    {
+      "net": "source_net_38",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2695284,
+      "position_count": 342,
+      "index_offset": 2696652,
+      "index_count": 672
+    },
+    {
+      "net": "source_net_39",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2699340,
+      "position_count": 342,
+      "index_offset": 2700708,
+      "index_count": 672
+    },
+    {
+      "net": "source_port_43",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2703396,
+      "position_count": 342,
+      "index_offset": 2704764,
+      "index_count": 672
+    },
+    {
+      "net": "source_port_61",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2707452,
+      "position_count": 342,
+      "index_offset": 2708820,
+      "index_count": 672
+    },
+    {
+      "net": "source_trace_0",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2711508,
+      "position_count": 738,
+      "index_offset": 2714460,
+      "index_count": 1464
+    },
+    {
+      "net": "source_trace_1",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2720316,
+      "position_count": 1002,
+      "index_offset": 2724324,
+      "index_count": 2004
+    },
+    {
+      "net": "source_trace_11",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2732340,
+      "position_count": 4920,
+      "index_offset": 2752020,
+      "index_count": 9828
+    },
+    {
+      "net": "source_trace_12",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2791332,
+      "position_count": 5328,
+      "index_offset": 2812644,
+      "index_count": 10644
+    },
+    {
+      "net": "source_trace_13",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2855220,
+      "position_count": 1002,
+      "index_offset": 2859228,
+      "index_count": 2004
+    },
+    {
+      "net": "source_trace_14",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2867244,
+      "position_count": 6750,
+      "index_offset": 2894244,
+      "index_count": 13488
+    },
+    {
+      "net": "source_trace_15",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2948196,
+      "position_count": 726,
+      "index_offset": 2951100,
+      "index_count": 1440
+    },
+    {
+      "net": "source_trace_16",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2956860,
+      "position_count": 726,
+      "index_offset": 2959764,
+      "index_count": 1440
+    },
+    {
+      "net": "source_trace_17",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2965524,
+      "position_count": 1002,
+      "index_offset": 2969532,
+      "index_count": 2004
+    },
+    {
+      "net": "source_trace_18",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2977548,
+      "position_count": 786,
+      "index_offset": 2980692,
+      "index_count": 1560
+    },
+    {
+      "net": "source_trace_19",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2986932,
+      "position_count": 426,
+      "index_offset": 2988636,
+      "index_count": 840
+    },
+    {
+      "net": "source_trace_2",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 2991996,
+      "position_count": 1002,
+      "index_offset": 2996004,
+      "index_count": 2004
+    },
+    {
+      "net": "source_trace_22",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3004020,
+      "position_count": 369,
+      "index_offset": 3005496,
+      "index_count": 726
+    },
+    {
+      "net": "source_trace_25",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3008400,
+      "position_count": 1050,
+      "index_offset": 3012600,
+      "index_count": 2100
+    },
+    {
+      "net": "source_trace_26",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3021000,
+      "position_count": 1002,
+      "index_offset": 3025008,
+      "index_count": 2004
+    },
+    {
+      "net": "source_trace_27",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3033024,
+      "position_count": 1002,
+      "index_offset": 3037032,
+      "index_count": 2004
+    },
+    {
+      "net": "source_trace_28",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3045048,
+      "position_count": 3810,
+      "index_offset": 3060288,
+      "index_count": 7608
+    },
+    {
+      "net": "source_trace_29",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3090720,
+      "position_count": 1008,
+      "index_offset": 3094752,
+      "index_count": 2016
+    },
+    {
+      "net": "source_trace_3",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3102816,
+      "position_count": 795,
+      "index_offset": 3105996,
+      "index_count": 1578
+    },
+    {
+      "net": "source_trace_3",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3112308,
+      "position_count": 1086,
+      "index_offset": 3116652,
+      "index_count": 2160
+    },
+    {
+      "net": "source_trace_3",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3125292,
+      "position_count": 1086,
+      "index_offset": 3129636,
+      "index_count": 2160
+    },
+    {
+      "net": "source_trace_3",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3138276,
+      "position_count": 1302,
+      "index_offset": 3143484,
+      "index_count": 2592
+    },
+    {
+      "net": "source_trace_30",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3153852,
+      "position_count": 1002,
+      "index_offset": 3157860,
+      "index_count": 2004
+    },
+    {
+      "net": "source_trace_31",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3165876,
+      "position_count": 750,
+      "index_offset": 3168876,
+      "index_count": 1488
+    },
+    {
+      "net": "source_trace_34",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3174828,
+      "position_count": 1008,
+      "index_offset": 3178860,
+      "index_count": 2016
+    },
+    {
+      "net": "source_trace_36",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3186924,
+      "position_count": 810,
+      "index_offset": 3190164,
+      "index_count": 1608
+    },
+    {
+      "net": "source_trace_37",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3196596,
+      "position_count": 1002,
+      "index_offset": 3200604,
+      "index_count": 2004
+    },
+    {
+      "net": "source_trace_38",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3208620,
+      "position_count": 1002,
+      "index_offset": 3212628,
+      "index_count": 2004
+    },
+    {
+      "net": "source_trace_39",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3220644,
+      "position_count": 972,
+      "index_offset": 3224532,
+      "index_count": 1932
+    },
+    {
+      "net": "source_trace_4",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3232260,
+      "position_count": 750,
+      "index_offset": 3235260,
+      "index_count": 1488
+    },
+    {
+      "net": "source_trace_40",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3241212,
+      "position_count": 1020,
+      "index_offset": 3245292,
+      "index_count": 2040
+    },
+    {
+      "net": "source_trace_41",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3253452,
+      "position_count": 1002,
+      "index_offset": 3257460,
+      "index_count": 2004
+    },
+    {
+      "net": "source_trace_46",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3265476,
+      "position_count": 1050,
+      "index_offset": 3269676,
+      "index_count": 2100
+    },
+    {
+      "net": "source_trace_5",
+      "layer": "top",
+      "role": "copper",
+      "position_offset": 3278076,
+      "position_count": 864,
+      "index_offset": 3281532,
+      "index_count": 1728
+    }
+  ],
+  "triangles": 182654,
+  "binary": "pcb-processor.bin.gz",
+  "bytes": 3288444
+}
