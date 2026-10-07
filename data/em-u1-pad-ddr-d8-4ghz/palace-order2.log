@@ -1,0 +1,144 @@
+>> /usr/bin/mpirun -n 4 /opt/palace/bin/palace-x86_64.bin palace-order2.json
+
+_____________     _______
+_____   __   \____ __   /____ ____________
+____   /_/  /  __ ` /  /  __ ` /  ___/  _ \
+___   _____/  /_/  /  /  /_/  /  /__/  ___/
+  /__/     \___,__/__/\___,__/\_____\_____/
+
+Git changeset ID: v0.14.0
+Running with 4 MPI processes, 1 OpenMP thread
+Device configuration: omp,cpu
+Memory configuration: host-std
+libCEED backend: /cpu/self/xsmm/blocked
+
+Added 9935 boundary elements for material interfaces to the mesh
+Finished partitioning mesh into 4 subdomains
+
+Characteristic length and time scales:
+ L₀ = 1.000e-03 m, t₀ = 3.336e-03 ns
+
+Mesh curvature order: 1
+Mesh bounding box:
+ (Xmin, Ymin, Zmin) = (-8.000e-03, -1.500e-02, -5.000e-03) m
+ (Xmax, Ymax, Zmax) = (+9.000e-03, +3.000e-03, +6.600e-03) m
+
+Parallel Mesh Stats:
+
+                minimum     average     maximum       total
+ vertices          8044        8286        8657       33144
+ edges            40780       41115       41647      164461
+ faces            58419       58537       58674      234149
+ elements         25433       25717       25941      102869
+ neighbors            3           3           3
+
+            minimum     maximum
+ h        0.0110505      3.6593
+ kappa      1.03439      647.58
+
+Configuring Robin absorbing BC (order 1) at attributes:
+ 13
+
+Configuring Robin finite conductivity BC at attributes:
+ 11: σ = 5.800e+07 S/m, n = (+0.0,-0.0,+1.0)
+
+Configuring Robin impedance BC for lumped ports at attributes:
+ 21: Rs = 1.378e+00 Ω/sq, n = (+0.0,+0.0,+1.0)
+ 22: Rs = 2.740e+01 Ω/sq, n = (+0.4,-0.9,-0.0)
+
+Configuring lumped port circuit properties:
+ Index = 1: R = 5.000e+01 Ω
+ Index = 2: R = 5.000e+01 Ω
+
+Configuring lumped port excitation source term at attributes:
+ 21: Index = 1
+
+Computing frequency response for:
+Excitation with index 1 has contributions from:
+ Lumped port  1
+
+Assembling system matrices, number of global unknowns:
+ H1 (p = 2): 197605, ND (p = 2): 797220, RT (p = 2): 1011054
+ Operator assembly level: Partial
+ Mesh geometries:
+  Tetrahedron: P = 20, Q = 11 (quadrature order = 4)
+
+Assembling multigrid hierarchy:
+ Level 0 (p = 1): 164461 unknowns
+ Level 1 (p = 2): 797220 unknowns
+ Level 0 (auxiliary) (p = 1): 33144 unknowns
+ Level 1 (auxiliary) (p = 2): 197605 unknowns
+
+It 1/1: ω/2π = 4.000e+00 GHz (total elapsed time = 8.73e+00 s)
+
+  Residual norms for GMRES solve
+  0 (restart 0) KSP residual norm 2.916080e+01
+  1 (restart 0) KSP residual norm 3.081572e+00
+  2 (restart 0) KSP residual norm 7.201884e-01
+  3 (restart 0) KSP residual norm 2.049300e-01
+  4 (restart 0) KSP residual norm 1.054284e-01
+  5 (restart 0) KSP residual norm 5.939045e-02
+  6 (restart 0) KSP residual norm 3.079079e-02
+  7 (restart 0) KSP residual norm 1.299821e-02
+  8 (restart 0) KSP residual norm 3.658679e-03
+  9 (restart 0) KSP residual norm 1.528266e-03
+ 10 (restart 0) KSP residual norm 7.570339e-04
+ 11 (restart 0) KSP residual norm 5.411050e-04
+ 12 (restart 0) KSP residual norm 4.228612e-04
+ 13 (restart 0) KSP residual norm 3.170187e-04
+ 14 (restart 0) KSP residual norm 1.553422e-04
+ 15 (restart 0) KSP residual norm 8.976668e-05
+ 16 (restart 0) KSP residual norm 5.508812e-05
+ 17 (restart 0) KSP residual norm 3.819546e-05
+ 18 (restart 0) KSP residual norm 2.574667e-05
+ 19 (restart 0) KSP residual norm 1.888013e-05
+ 20 (restart 0) KSP residual norm 1.460458e-05
+ 21 (restart 0) KSP residual norm 1.074633e-05
+ 22 (restart 0) KSP residual norm 7.976061e-06
+ 23 (restart 0) KSP residual norm 5.296360e-06
+ 24 (restart 0) KSP residual norm 3.785482e-06
+ 25 (restart 0) KSP residual norm 2.700221e-06
+ 26 (restart 0) KSP residual norm 2.047575e-06
+ 27 (restart 0) KSP residual norm 1.615819e-06
+ 28 (restart 0) KSP residual norm 1.348759e-06
+ 29 (restart 0) KSP residual norm 1.151691e-06
+ 30 (restart 0) KSP residual norm 9.582722e-07
+ 31 (restart 0) KSP residual norm 7.571100e-07
+ 32 (restart 0) KSP residual norm 6.458470e-07
+ 33 (restart 0) KSP residual norm 5.663722e-07
+ 34 (restart 0) KSP residual norm 5.056960e-07
+ 35 (restart 0) KSP residual norm 4.437488e-07
+ 36 (restart 0) KSP residual norm 3.878117e-07
+ 37 (restart 0) KSP residual norm 3.436754e-07
+ 38 (restart 0) KSP residual norm 3.079082e-07
+ 39 (restart 0) KSP residual norm 2.702595e-07
+GMRES solver converged in 39 iterations (avg. reduction factor: 6.223e-01)
+ Sol. ||E|| = 3.055349e+01 (||RHS|| = 1.181716e+00)
+ Field energy E (1.177e-02 J) + H (2.252e-02 J) = 3.430e-02 J
+ S[1][1] = +2.546e-01+2.755e-01i, |S[1][1]| = -8.516e+00, arg(S[1][1]) = +4.726e+01
+ S[2][1] = +4.262e-01-7.227e-01i, |S[2][1]| = -1.524e+00, arg(S[2][1]) = -5.947e+01
+
+ Wrote fields to disk at step 1
+ Updating solution error estimates
+
+Completed 0 iterations of adaptive mesh refinement (AMR):
+ Indicator norm = 3.481e-01, global unknowns = 797220
+ Max. iterations = 0, tol. = 1.000e-02
+
+Elapsed Time Report (s)           Min.        Max.        Avg.
+==============================================================
+Initialization                   0.073       0.080       0.077
+  Mesh Preprocessing             1.056       1.056       1.056
+Operator Construction            0.382       0.396       0.391
+Linear Solve                     7.313       7.444       7.407
+  Setup                          8.722       8.736       8.726
+  Preconditioner               149.928     150.036     149.995
+  Coarse Solve                  11.589      11.767      11.667
+Estimation                       0.114       0.121       0.118
+  Construction                   4.229       4.233       4.232
+  Solve                         67.602      67.605      67.604
+Postprocessing                   0.129       0.137       0.133
+Disk IO                         14.038      14.039      14.038
+--------------------------------------------------------------
+Total                          265.472     265.477     265.473
+

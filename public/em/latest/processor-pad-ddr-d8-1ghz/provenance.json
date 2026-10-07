@@ -1,0 +1,9 @@
+{
+  "board_snapshot_sha256": "80ef96cf94a1dac4f3d062f694fe71529a9a57f5a1dd6e8b1abdf92302968b13",
+  "board_url": "https://tscircuit.com/astra/am3352-sbc#pcb",
+  "return_pad_selection": "Nearest U1 GND pad that admits an unobstructed straight port aperture; selected pad is an assumed driver return contact, not a package model",
+  "scope": "Isolated DDR_D8 U1 processor pad / escape, other signal/power copper omitted",
+  "fixture": "1 GHz, 1 V normalized; 50 ohm test ports. Input across actual U1 signal and selected actual U1 GND pads; trace-cut load to adjacent GND plane (inner1 for top, inner2 for bottom). These are assumed normalized test fixtures, not a package or DDR driver model.",
+  "via_spans": "GND top-to-inner1; signal top-to-bottom, as exported. No unexported stubs or GND connections to inner2 inferred. Fabrication spans unknown.",
+  "accuracy": "Provisional; local-density, crop and port-fixture convergence not established"
+}

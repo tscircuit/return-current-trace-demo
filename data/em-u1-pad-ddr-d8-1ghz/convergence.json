@@ -1,0 +1,3 @@
+{
+  "summary": "Independent second-order Maxwell solve using the actual selected U1 GND pad as source return. Frequency-specific mesh/order and crop convergence have not been established. The selected return pad and 50 \u03a9 source/load fixtures remain assumptions, not a package/driver model."
+}

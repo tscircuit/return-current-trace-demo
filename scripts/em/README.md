@@ -88,3 +88,18 @@ bun run build:pcb
 Generate the base meshes with `run-processor.py` first if they are absent (mesh files are not checked in). `python scripts/em/run-frequency-sweep.py` runs independent second-order Palace solves at 1 GHz and 4 GHz for DDR_D13 and DDR_D8, reusing their 400 MHz meshes and exact geometry/fixtures. It exports separate SI port phasors and four-layer fields for each case; heatmaps are not rescaled from another frequency. The existing second-order 400 MHz runs complete the three-frequency comparison. All use 1 V peak normalized signal-to-GND excitation and 50 Ω fixtures. FR4 permittivity/loss tangent are held constant; frequency-specific mesh/crop convergence has not been established.
 
 The viewer’s frequency selector applies to the U1 processor cases and keeps the camera fixed while switching. A common 0.01–100 A/m colour scale and a current/impedance comparison table support inspection. Downstream and memory cases remain 400 MHz only. The GND checkbox highlights actual exported net pads/vias/traces in magenta. A separately labelled ring marks the assumed source return terminal on inner1 directly below the signal pad; it must not be confused with an actual processor GND pad. Nearest real U1 GND pads are labelled for context. No extra void outlines are drawn.
+
+
+## Corrected U1 source contacts
+
+The primary U1 viewer now uses `data/em-u1-pad-ddr-d8` / `data/em-u1-pad-ddr-d13` and their 1 GHz / 4 GHz variants. These are newly meshed and solved experiments, not relabelled fields. Their source port spans the actual signal pad and a separate actual U1 GND pad at (2.0, -3.6) mm. The exported top-layer GND dogbone leads to (2.4, -4.0) mm, then a top→inner1 GND via. The aperture is checked to touch only the chosen signal and GND pads; it does not excite GND directly beneath the signal pad. The selected GND contact and coplanar 50 Ω fixture remain assumptions, rather than a package or multi-pin driver model.
+
+```sh
+.venv-em/bin/python scripts/em/prepare-processor-pads.py DDR_D8
+.venv-em/bin/python scripts/em/prepare-processor-pads.py DDR_D13
+.venv-em/bin/python scripts/em/run-processor-pads.py
+bun run build:pcb
+.venv-em/bin/python scripts/em/build-latest-page.py
+```
+
+The domain is x [-3,4], y [-10,-2] mm, with eight exported GND vias. The runner does first/second-order checks at 400 MHz and independent second-order solves at 1 and 4 GHz on each corrected mesh. All six cases normalize the physical voltage between the two actual pads to 1 V peak. Frequency comparisons share the same geometry and fixtures. Old `data/em-u1-ddr-*` cases use an idealized inner1 source terminal directly underneath the signal pad and are retained as historical fixture experiments. They bypass the GND pad/dogbone return connection and cannot answer that PCB-loop question.

@@ -27,7 +27,7 @@ for e in c:
 cmap=LinearSegmentedColormap.from_list('sheet',['#0c2a48','#1d76aa','#3dd0b6','#ffc734','#ff4d23']);norm=LogNorm(.01,100,clip=True)
 selected=[[(x,-y) for x,y in s['xy']] for s in case['trace_segments']]
 marks=[[*case['source_xy'],'Input fixture'],[*case['load_xy'],'50 Ω load'],*[ [v['x'],v['y'],'Signal via: top ↔ bottom'] for v in case['signal_vias']]]
-if case.get('package_ground_xy'):marks.append([*case['package_ground_xy'],'Assumed package GND'])
+if case.get('package_ground_xy'):marks.append([*case['package_ground_xy'],'Selected GND return pad' if case.get('return_pcb_port_id') else 'Assumed package GND'])
 for layer,items in data.items():
  root=ET.Element('{'+ns+'}svg',{'viewBox':' '.join(map(str,view)),'role':'img','aria-label':f"{case.get('trace_name','DDR_D8')} {case.get('region_title',folder.name.split('-')[-1])} {layer}, {frequency_label}, latest PCB"})
  node(root,'rect',{'x':view[0],'y':view[1],'width':view[2],'height':view[3],'fill':'#08211d'})
@@ -62,5 +62,5 @@ for layer,items in data.items():
 for name in ['normalized-report.json','mesh-summary.json','via-currents.json','convergence.json','provenance.json']:
  if (folder/name).exists():(out/('report.json' if name=='normalized-report.json' else name)).write_bytes((folder/name).read_bytes())
 (out/'palace.json').write_bytes((folder/report['config_file']).read_bytes())
-(out/'view-data.json').write_text(json.dumps({'viewBox':view,'marks':[[x,-y,label] for x,y,label in marks],'case':folder.name.split('-')[-1],'bounds_mm':case['bounds_mm'],'source_xy':case['source_xy'],'source_return_xy':case.get('package_ground_xy',case['source_xy']),'source_return_layer':'inner1' if case.get('source_points') else 'top','source_return_z_mm':1.4175 if case.get('source_points') else 1.6,'source_return_kind':'assumed plane terminal directly beneath signal pad' if case.get('source_points') else 'package GND pad'}))
+(out/'view-data.json').write_text(json.dumps({'viewBox':view,'marks':[[x,-y,label] for x,y,label in marks],'case':folder.name.split('-')[-1],'bounds_mm':case['bounds_mm'],'source_xy':case['source_xy'],'source_return_xy':case.get('package_ground_xy',case['source_xy']),'source_return_layer':'inner1' if case.get('source_points') else 'top','source_return_z_mm':1.4175 if case.get('source_points') else 1.6,'source_return_kind':'assumed plane terminal directly beneath signal pad' if case.get('source_points') else 'actual PCB GND pad selected as driver return','source_pcb_port_id':case.get('source_pcb_port_id'),'return_pcb_port_id':case.get('return_pcb_port_id'),'return_path':case.get('return_path',[])}))
 print('Rendered four layers from latest board',report['board_snapshot_sha256'])
