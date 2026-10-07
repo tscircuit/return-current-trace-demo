@@ -1,0 +1,23 @@
+{
+  "board_url": "https://tscircuit.com/astra/am3352-sbc#pcb",
+  "download_endpoint": "https://api.tscircuit.com/package_releases/get_preview_circuit_json?package_name=astra%2Fam3352-sbc&is_latest=true",
+  "fetched_at_utc": "2026-10-07T03:15:37.427537+00:00",
+  "sha256": "80ef96cf94a1dac4f3d062f694fe71529a9a57f5a1dd6e8b1abdf92302968b13",
+  "elements": 8248,
+  "num_layers": 4,
+  "board_thickness_mm": 1.6,
+  "ground_source_net_id": "source_net_0",
+  "ddr_trace_count": 47,
+  "ddr_signal_layers": [
+    "bottom",
+    "top"
+  ],
+  "ground_pour_layers": [
+    "inner1",
+    "inner2"
+  ],
+  "internal_dielectric_thicknesses": "Not specified by the export; existing layer-depth assumptions are not fabrication data",
+  "results_status": "pending_rerun",
+  "published_results_board_sha256": "c868860d9c327475ba597cea196d0eeace169459db16d5ccf266ae9055f26d34",
+  "results_note": "Existing graph and Palace case geometry, contacts, numerical results and images use the previous board. Regenerate geometry and fixtures before rerunning; do not relabel these cached cases as the latest PCB."
+}

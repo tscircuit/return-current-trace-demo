@@ -1,5 +1,7 @@
 # Frequency-domain EM pilot
 
+**Historical PCB cases:** these cached geometries and results precede the current board snapshot in `data/board.circuit.json`. The latest board routes DDR on top/bottom and has GND on inner1/inner2. The commands here reproduce the previous board; they do not import or simulate the latest snapshot. New crop geometry, port/load fixtures and meshes are required before rerunning it at 400 MHz / 1 V.
+
 This directory adds a real Palace v0.14.0 Maxwell workflow. The original 94 graph experiments remain frequency independent and are not EM results.
 
 The processor case isolates DDR_D8's processor escape in x [-5, 5], y [-10, 0] mm. Its pad, top dogbone, signal via, inner-2 outgoing route, exported ground copper and twelve GND vias, including three on the crop boundary are preserved. The 50 Ω load fixture terminates the cut inner-2 trace against the bottom ground pour at (3.5, -10) mm. The input fixture joins the signal pad to the selected package GND pad. These fixtures are assumptions, not package models.

@@ -2,6 +2,12 @@
 
 [Live public viewer](https://am3352-ddr-heatmaps.seveibar.chatgpt.site) for individual DDR traces on [astra/am3352-sbc](https://tscircuit.com/astra/am3352-sbc).
 
+## Latest PCB snapshot
+
+[data/board.circuit.json](data/board.circuit.json) now contains the latest upstream export: 47 DDR traces routed on **top and bottom**, with **inner1 and inner2 GND pours**. GND is now `source_net_0`. The export specifies a 1.6 mm board but does not specify internal dielectric thicknesses. [Snapshot provenance](data/board-snapshot.json) records the download endpoint, timestamp and content hash.
+
+Refresh with `python scripts/update-board.py`. This validates the layer assignment before replacing the input. **Existing heatmaps and cached Palace cases belong to the previous PCB and have not been rerun.** Their old trace geometry, package contacts and load fixtures need regeneration; the historical graph runner now rejects a mismatched input instead of using obsolete contacts or reusing stale results. The EM reproduction commands below reproduce the historical cases only.
+
 The earlier approximation viewer highlights the selected trace on the PCB, overlays modeled GND return density and direction, and zooms into processor and memory dogbones. Labels and arrows remain a fixed screen size. It contains 47 traces × two package-ground contact assumptions, including hypothetical reset and isolated differential-leg cases.
 
 ## 400 MHz electromagnetic pilot

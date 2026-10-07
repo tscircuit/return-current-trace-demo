@@ -1,6 +1,5 @@
 node_modules/
 results/
-data/board.circuit.json
 __pycache__/
 *.pyc
 .env*

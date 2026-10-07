@@ -1,5 +1,9 @@
 import {readFileSync,writeFileSync,mkdirSync,existsSync} from 'node:fs';
 import {simulateReturnCurrent} from '../simulation/lib/index';
+import {createHash} from 'node:crypto';
+const snapshot=JSON.parse(readFileSync('data/board-snapshot.json','utf8'));
+const inputHash=createHash('sha256').update(readFileSync('data/board.circuit.json')).digest('hex');
+if(inputHash!==snapshot.published_results_board_sha256)throw new Error('The board has changed. This historical experiment manifest references old net IDs, contacts and geometry. Regenerate the manifest and simulation region for the latest top/bottom signal and inner1/inner2 GND board before running. Existing results must not be reused.');
 const c=JSON.parse(readFileSync('data/board.circuit.json','utf8')),catalog=JSON.parse(readFileSync('data/experiment-manifest.json','utf8'));
 const st=new Map(c.filter((e:any)=>e.type==='source_trace').map((e:any)=>[e.source_trace_id,e]));
 const traces=new Map(c.filter((e:any)=>e.type==='pcb_trace').map((e:any)=>[(st.get(e.source_trace_id) as any)?.name,e]));
