@@ -1,0 +1,41 @@
+{
+  "frequency_hz": 400000000,
+  "normalization": "1 V signal-to-GND phasor, 50 ohm fixtures",
+  "first_order": {
+    "input_current_mA": 19.66466762344557,
+    "input_impedance_real_ohm": 50.14602452731186,
+    "input_reactance_ohm": 8.447831491394645
+  },
+  "second_order": {
+    "input_current_mA": 18.42269071440423,
+    "input_impedance_real_ohm": 51.48981982633267,
+    "input_reactance_ohm": 17.18176910480961
+  },
+  "second_order_configuration": "palace-order2.json",
+  "input_current_change_percent": 6.741560873462806,
+  "reactance_change_percent": 50.832586331113696,
+  "area_average_ground_density_A_per_m": {
+    "top": {
+      "first_order": 1.8822702453295157,
+      "second_order": 2.185466411804688
+    },
+    "inner1": {
+      "first_order": null,
+      "second_order": null
+    },
+    "inner2": {
+      "first_order": null,
+      "second_order": null
+    },
+    "bottom": {
+      "first_order": 1.0723255935504101,
+      "second_order": 1.213967270401684
+    }
+  },
+  "summary": "Order check: input-current magnitude changed 6.7%; input reactance changed 50.8% between first- and second-order solves. Local densities and loop reactance are not numerically certified. A separate 0.05 mm first-order mesh gives 18.92 mA and 12.95 \u03a9 reactance; further refinement is required.",
+  "finer_first_order_0_05_mm": {
+    "input_current_mA": 18.924632703938286,
+    "input_impedance_real_ohm": 51.230850440530915,
+    "input_reactance_ohm": 12.945682528660898
+  }
+}

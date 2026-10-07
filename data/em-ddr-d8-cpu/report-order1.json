@@ -1,0 +1,48 @@
+{
+  "finite_element_order": 1,
+  "solver": "Palace v0.14.0",
+  "frequency_hz": 400000000,
+  "input_voltage_V": {
+    "real": 1.0,
+    "imag": 0.0,
+    "magnitude": 1.0,
+    "phase_deg": 0.0
+  },
+  "input_current_A": {
+    "real": 0.019391425198020267,
+    "imag": -0.0032667692802175715,
+    "magnitude": 0.019664667623445573,
+    "phase_deg": -9.5625244190813
+  },
+  "load_voltage_V": {
+    "real": 0.9027070385549554,
+    "imag": -0.37330734562613277,
+    "magnitude": 0.9768512536487255,
+    "phase_deg": -22.46715331608764
+  },
+  "load_current_A": {
+    "real": 0.018054140771101894,
+    "imag": -0.007466146912522885,
+    "magnitude": 0.019537025072977172,
+    "phase_deg": -22.46715331608514
+  },
+  "input_impedance_ohm": {
+    "real": 50.14602452731185,
+    "imag": 8.447831491394643,
+    "magnitude": 50.852626606703026,
+    "phase_deg": 9.5625244190813
+  },
+  "source_reference_ohm": 50,
+  "load_ohm": 50,
+  "normalization_factor": {
+    "real": 0.1392697193906428,
+    "imag": -0.0115497735530721,
+    "magnitude": 0.13974781575493633,
+    "phase_deg": -4.740746458278749
+  },
+  "surface_current_units": "A/m",
+  "surface_current_SI_scale": 51.5210513090037,
+  "phasor_convention": "exp(+j omega t), terminal phasor magnitude 1 V; Palace documentation describes peak phasors",
+  "s11_db": -21.50726605558,
+  "s21_db": -0.1000318520811
+}

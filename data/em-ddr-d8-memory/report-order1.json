@@ -1,0 +1,56 @@
+{
+  "finite_element_order": 1,
+  "solver": "Palace v0.14.0",
+  "frequency_hz": 400000000,
+  "input_voltage_V": {
+    "real": 1.0,
+    "imag": 0.0,
+    "magnitude": 1.0,
+    "phase_deg": 0.0
+  },
+  "input_current_A": {
+    "real": 0.018826874714015406,
+    "imag": -0.0009250625028582014,
+    "magnitude": 0.01884958758518146,
+    "phase_deg": -2.8129780350445026
+  },
+  "load_voltage_V": {
+    "real": 0.9405590796641344,
+    "imag": -0.15180615055362728,
+    "magnitude": 0.9527310689195321,
+    "phase_deg": -9.168466620588012
+  },
+  "load_current_A": {
+    "real": 0.018811181593285434,
+    "imag": -0.0030361230110726115,
+    "magnitude": 0.019054621378393363,
+    "phase_deg": -9.168466620586893
+  },
+  "input_impedance_ohm": {
+    "real": 52.98763393476017,
+    "imag": 2.603558690053505,
+    "magnitude": 53.05155858084379,
+    "phase_deg": 2.8129780350445026
+  },
+  "source_reference_ohm": 50,
+  "load_ohm": 50,
+  "port_csv_normalization_factor": {
+    "real": 0.13727373201281315,
+    "imag": -0.0032705898439623904,
+    "magnitude": 0.1373126879012026,
+    "phase_deg": -1.364831761155564
+  },
+  "field_normalization_factor": {
+    "real": -0.13727373201281315,
+    "imag": 0.0032705898439623904,
+    "magnitude": 0.1373126879012026,
+    "phase_deg": 178.63516823884444
+  },
+  "native_port_voltage_axis": "GND minus signal",
+  "displayed_input_voltage_axis": "signal minus GND",
+  "surface_current_units": "A/m",
+  "surface_current_SI_scale": 51.5210513090037,
+  "phasor_convention": "exp(+j omega t), terminal phasor magnitude 1 V; Palace documentation describes peak phasors",
+  "s11_db": -28.29824222169,
+  "s21_db": -0.164506855483
+}

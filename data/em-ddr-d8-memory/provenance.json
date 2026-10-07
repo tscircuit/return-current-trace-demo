@@ -1,0 +1,9 @@
+{
+  "board_url": "https://tscircuit.com/astra/am3352-sbc",
+  "board_snapshot_sha256": "c868860d9c327475ba597cea196d0eeace169459db16d5ccf266ae9055f26d34",
+  "palace_image": "benvial/palace@sha256:f0f3a3cbbdf1ee2d8f856ddbe1f5bf4628a92ee8ab87d1e27dc33402ad9c8dda",
+  "frequency_hz": 400000000,
+  "normalization": "1 V signal-to-GND phasor at the modeled input fixture",
+  "scope": "Isolated DDR_D8 memory dogbone; exported ground copper and vias; other signal/power copper omitted",
+  "accuracy": "Provisional: order/mesh checks have not established convergence of local density and reactance"
+}

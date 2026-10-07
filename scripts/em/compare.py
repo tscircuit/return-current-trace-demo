@@ -1,0 +1,2 @@
+import json,sys
+a=json.load(open(sys.argv[1]));b=json.load(open(sys.argv[2]));ia=a['input_current_A']['magnitude'];ib=b['input_current_A']['magnitude'];xa=a['input_impedance_ohm']['imag'];xb=b['input_impedance_ohm']['imag'];print(json.dumps({'input_current_change_percent':100*abs(ib-ia)/ib,'reactance_change_percent':100*abs(xb-xa)/abs(xb),'note':'A small port-current change does not establish local density or fabrication accuracy.'},indent=2))

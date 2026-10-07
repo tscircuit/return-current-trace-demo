@@ -1,0 +1,36 @@
+{
+  "frequency_hz": 400000000,
+  "normalization": "1 V signal-to-GND phasor, 50 ohm fixtures",
+  "first_order": {
+    "input_current_mA": 18.84958758518146,
+    "input_impedance_real_ohm": 52.98763393476017,
+    "input_reactance_ohm": 2.6035586900535046
+  },
+  "second_order": {
+    "input_current_mA": 18.334076861725915,
+    "input_impedance_real_ohm": 54.17924151248174,
+    "input_reactance_ohm": 6.290873537403635
+  },
+  "second_order_configuration": "palace-order2-direct.json",
+  "input_current_change_percent": 2.8117626392835824,
+  "reactance_change_percent": 58.613717561265055,
+  "area_average_ground_density_A_per_m": {
+    "top": {
+      "first_order": 4.342999914563208,
+      "second_order": 5.83649327639758
+    },
+    "inner1": {
+      "first_order": null,
+      "second_order": null
+    },
+    "inner2": {
+      "first_order": null,
+      "second_order": null
+    },
+    "bottom": {
+      "first_order": 1.034990961777592,
+      "second_order": 1.2971149223932283
+    }
+  },
+  "summary": "Order check: input-current magnitude changed 2.8%; input reactance changed 58.6% between first- and second-order solves. Local densities and loop reactance are not numerically certified."
+}

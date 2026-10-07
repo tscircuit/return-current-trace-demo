@@ -4,6 +4,14 @@
 
 The viewer highlights the selected trace on the PCB, overlays modeled GND return density and direction, and zooms into processor and memory dogbones. Labels and arrows remain a fixed screen size. It contains 47 traces × two package-ground contact assumptions, including hypothetical reset and isolated differential-leg cases.
 
+## 400 MHz electromagnetic pilot
+
+The default page now shows real Palace v0.14.0 frequency-domain Maxwell results for the processor and memory dogbones of DDR_D8. Both use a 1 V normalized input phasor and 50 Ω source-reference/load fixtures. Four layer images combine PCB context, the cyan target trace, surface-current density in A/m and GND via transfer in mA. Labels in the interactive viewer remain a fixed screen size.
+
+**These are provisional EM results.** Order/mesh checks changed reactance substantially, so local densities and a “bad loop” verdict are not yet validated. The stackup, material properties and package fixtures are assumptions; other signal/power copper and decoupling are omitted. The earlier 94 graph cases remain separately accessible at `/approximation.html` and have not been relabeled as EM runs.
+
+See [EM reproduction instructions](scripts/em/README.md). Cached PCB-derived case geometry, exact solver configurations, raw SI port CSV files, converged solver logs and convergence comparisons are in `data/em-ddr-d8-cpu/` and `data/em-ddr-d8-memory/`. Raw board input is not required to reproduce these two EM cases.
+
 ## Run the viewer
 
 ```sh
@@ -15,9 +23,9 @@ Install skips dependency lifecycle scripts because this static viewer and solver
 
 Open http://localhost:3000. `public/` is also a complete static site that can be hosted directly. The checked-in visual assets require no simulation to view.
 
-## Frequency and model
+## Earlier frequency-independent model
 
-**No simulation frequency was specified.** This is a frequency-independent image-current approximation with conservative projection onto a connected multilayer ground sheet/trace/plated-via graph. It is neither a 0 Hz DC solve nor a frequency-domain electromagnetic simulation. Do not interpret these pictures as a result at the DDR clock frequency.
+**No frequency was specified for the earlier graph experiments.** This is a frequency-independent image-current approximation with conservative projection onto a connected multilayer ground sheet/trace/plated-via graph. It is neither a 0 Hz DC solve nor a frequency-domain electromagnetic simulation. Do not interpret these pictures as a result at the DDR clock frequency.
 
 Each trace is driven separately at 10 mA, with return injected at an assumed memory GND contact and withdrawn at an assumed processor GND contact. The two cases use the nearest and second-nearest package GND pins to the signal pads. Actual package return-current distribution is unknown.
 

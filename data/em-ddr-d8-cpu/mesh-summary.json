@@ -1,0 +1,18 @@
+{
+  "nodes": 36242,
+  "elements": 115809,
+  "ground_vias": 12,
+  "signal_vias": 1,
+  "port_directions": [
+    [
+      -0.0,
+      -1.0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ]
+}
