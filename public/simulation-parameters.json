@@ -1,0 +1,67 @@
+{
+  "frequency_hz": null,
+  "frequency_description": "Frequency-independent image-current approximation; no excitation frequency was specified or swept. Not a 0 Hz DC or frequency-domain EM solve.",
+  "model": "Conservative multilayer image-current field projected onto connected ground sheet, trace and plated-via graph",
+  "traces": 47,
+  "contact_cases_per_trace": 2,
+  "total_experiments": 94,
+  "current_A": 0.01,
+  "ground_net": "GND (source_net_56)",
+  "cell_size_mm": 0.25,
+  "contact_radius_mm": 0.6,
+  "via_plating_radial_thickness_mm": 0.025,
+  "board_thickness_mm": 1.6,
+  "stackup": [
+    {
+      "layer": "top",
+      "z_mm": 0,
+      "copper_thickness_mm": 0.035
+    },
+    {
+      "layer": "inner1",
+      "z_mm": 0.2,
+      "copper_thickness_mm": 0.035
+    },
+    {
+      "layer": "inner2",
+      "z_mm": 1.4,
+      "copper_thickness_mm": 0.035
+    },
+    {
+      "layer": "bottom",
+      "z_mm": 1.6,
+      "copper_thickness_mm": 0.035
+    }
+  ],
+  "bounds_mm": {
+    "minX": -23,
+    "maxX": 11,
+    "minY": -39.5,
+    "maxY": 3.5
+  },
+  "relative_residual_tolerance": 1e-08,
+  "maximum_iterations": 15000,
+  "maximum_current_balance_error_A": 8.180391317739317e-11,
+  "ground_vias_in_region": 67,
+  "ground_nodes": 21430,
+  "ground_plane_cells": 21005,
+  "contacts": "Return source at memory package GND pin; return sink at processor package GND pin. Compare nearest and second-nearest GND pins to each signal pad.",
+  "display": {
+    "density_scale_A_per_mm2": [
+      0,
+      0.15
+    ],
+    "interpolation": "Bilinear between computed density samples, display only",
+    "earlier_aggregate_mesh_mm": 0.5
+  },
+  "omitted_effects": [
+    "Frequency-dependent impedance, skin and proximity effects",
+    "Wave propagation and switching waveform",
+    "Package impedance and actual distribution among GND contacts",
+    "Power-plane displacement current and return through decoupling capacitors",
+    "Magnetic coupling of signal via barrels"
+  ],
+  "source_board": "https://tscircuit.com/astra/am3352-sbc",
+  "upstream_simulator": "https://github.com/tscircuit/return-current-simulation",
+  "upstream_commit": "3f093725e16514652197eccfb22906c4f61a45ba"
+}

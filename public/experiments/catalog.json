@@ -1,0 +1,2775 @@
+[
+  {
+    "name": "DDR_DQS0",
+    "static": false,
+    "differential": true,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_DQS0-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQS0-0-cpu.png",
+            "escapeLength": 1.4949747468305858,
+            "nearestGroundViaGap": 4.41021541423999,
+            "dominantReturnViaGap": 4.657252408878008,
+            "returnRadius90": 4.657252408878008
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQS0-0-memory.png",
+            "escapeLength": 0.5657398872953919,
+            "nearestGroundViaGap": 1.1313814578103234,
+            "dominantReturnViaGap": 1.1313814578103234,
+            "returnRadius90": 1.1313814578103234
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.8519646490599928e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQS0-1-cpu.png",
+            "escapeLength": 1.4949747468305858,
+            "nearestGroundViaGap": 4.41021541423999,
+            "dominantReturnViaGap": 4.41021541423999,
+            "returnRadius90": 4.41021541423999
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQS0-1-memory.png",
+            "escapeLength": 0.5657398872953919,
+            "nearestGroundViaGap": 1.1313814578103234,
+            "dominantReturnViaGap": 2.5297098672822167,
+            "returnRadius90": 2.5297098672822167
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.728208396613261e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_DQSn0",
+    "static": false,
+    "differential": true,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_DQSn0-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQSn0-0-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 3.2,
+            "dominantReturnViaGap": 3.5777087639996643,
+            "returnRadius90": 3.5777087639996643
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQSn0-0-memory.png",
+            "escapeLength": 0.5658106187382865,
+            "nearestGroundViaGap": 1.7888472274280494,
+            "dominantReturnViaGap": 2.5297927316333664,
+            "returnRadius90": 2.5297927316333664
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.320097604653111e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQSn0-1-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 3.2,
+            "dominantReturnViaGap": 3.2,
+            "returnRadius90": 3.2
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQSn0-1-memory.png",
+            "escapeLength": 0.5658106187382865,
+            "nearestGroundViaGap": 1.7888472274280494,
+            "dominantReturnViaGap": 1.7890332678418839,
+            "returnRadius90": 1.7890332678418839
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.935251053953964e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_DQS1",
+    "static": false,
+    "differential": true,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_DQS1-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQS1-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 4.079215610874228,
+            "dominantReturnViaGap": 4.079215610874228,
+            "returnRadius90": 4.079215610874228
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQS1-0-memory.png",
+            "escapeLength": 0.5657837132164537,
+            "nearestGroundViaGap": 1.7089901217798207,
+            "dominantReturnViaGap": 1.7089901217798207,
+            "returnRadius90": 1.7089901217798207
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.8252745857819286e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQS1-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 4.079215610874228,
+            "dominantReturnViaGap": 4.866210024238575,
+            "returnRadius90": 4.866210024238575
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQS1-1-memory.png",
+            "escapeLength": 0.5657837132164537,
+            "nearestGroundViaGap": 1.7089901217798207,
+            "dominantReturnViaGap": 2.8282864191564823,
+            "returnRadius90": 2.8282864191564823
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 3.4396161483277177e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_DQSn1",
+    "static": false,
+    "differential": true,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_DQSn1-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQSn1-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 3.2984845004941286,
+            "dominantReturnViaGap": 3.2984845004941286,
+            "returnRadius90": 3.2984845004941286
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQSn1-0-memory.png",
+            "escapeLength": 0.5658926223560431,
+            "nearestGroundViaGap": 2.474054008371888,
+            "dominantReturnViaGap": 2.828354021119881,
+            "returnRadius90": 2.828354021119881
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 4.120868973340368e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQSn1-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 3.2984845004941286,
+            "dominantReturnViaGap": 4.079215610874228,
+            "returnRadius90": 4.079215610874228
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQSn1-1-memory.png",
+            "escapeLength": 0.5658926223560431,
+            "nearestGroundViaGap": 2.474054008371888,
+            "dominantReturnViaGap": 2.8283005552778504,
+            "returnRadius90": 2.8283005552778504
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 3.778681749823983e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_CK",
+    "static": false,
+    "differential": true,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_CK-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CK-0-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 2.5298221281347044,
+            "dominantReturnViaGap": 3.394112549695429,
+            "returnRadius90": 3.394112549695429
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CK-0-memory.png",
+            "escapeLength": 0.5658487732998961,
+            "nearestGroundViaGap": 0.8000460195795007,
+            "dominantReturnViaGap": 0.8000460195795007,
+            "returnRadius90": 0.8000460195795007
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.6285293155237496e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CK-1-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 2.5298221281347044,
+            "dominantReturnViaGap": 2.5298221281347044,
+            "returnRadius90": 2.5298221281347044
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CK-1-memory.png",
+            "escapeLength": 0.5658487732998961,
+            "nearestGroundViaGap": 0.8000460195795007,
+            "dominantReturnViaGap": 1.5997690006613474,
+            "returnRadius90": 1.5997690006613474
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 8.372203917552529e-12
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A5",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A5-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A5-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 0.8000000000000007,
+            "dominantReturnViaGap": 0.8000000000000007,
+            "returnRadius90": 0.8000000000000007
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A5-0-memory.png",
+            "escapeLength": 0.5658374595915318,
+            "nearestGroundViaGap": 1.1314140003663558,
+            "dominantReturnViaGap": 1.1314140003663558,
+            "returnRadius90": 1.1314140003663558
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 3.0943359657508736e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A5-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 0.8000000000000007,
+            "dominantReturnViaGap": 3.298484500494129,
+            "returnRadius90": 3.298484500494129
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A5-1-memory.png",
+            "escapeLength": 0.5658374595915318,
+            "nearestGroundViaGap": 1.1314140003663558,
+            "dominantReturnViaGap": 2.4080900442867628,
+            "returnRadius90": 2.4080900442867628
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.8731078352384036e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_CASn",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_CASn-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CASn-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.000000000000001,
+            "dominantReturnViaGap": 4.000000000000001,
+            "returnRadius90": 4.000000000000001
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CASn-0-memory.png",
+            "escapeLength": 0.5656635072593997,
+            "nearestGroundViaGap": 1.1312782298997033,
+            "dominantReturnViaGap": 1.1312782298997033,
+            "returnRadius90": 1.1312782298997033
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.1895365965299779e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CASn-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.000000000000001,
+            "dominantReturnViaGap": 5.12249938994628,
+            "returnRadius90": 5.12249938994628
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CASn-1-memory.png",
+            "escapeLength": 0.5656635072593997,
+            "nearestGroundViaGap": 1.1312782298997033,
+            "dominantReturnViaGap": 3.0528924090758642,
+            "returnRadius90": 3.0528924090758642
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.0222983348523104e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D2",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D2-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D2-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.079215610874228,
+            "dominantReturnViaGap": 4.079215610874228,
+            "returnRadius90": 4.079215610874228
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D2-0-memory.png",
+            "escapeLength": 0.5658105860418305,
+            "nearestGroundViaGap": 0.7999690013225539,
+            "dominantReturnViaGap": 0.7999690013225539,
+            "returnRadius90": 0.7999690013225539
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.1217347255058907e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D2-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.079215610874228,
+            "dominantReturnViaGap": 4.079215610874228,
+            "returnRadius90": 4.079215610874228
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D2-1-memory.png",
+            "escapeLength": 0.5658105860418305,
+            "nearestGroundViaGap": 0.7999690013225539,
+            "dominantReturnViaGap": 1.788743920360037,
+            "returnRadius90": 1.788743920360037
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.0919206605915367e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_BA2",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_BA2-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_BA2-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 1.7888543819998317,
+            "dominantReturnViaGap": 1.7888543819998317,
+            "returnRadius90": 1.7888543819998317
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_BA2-0-memory.png",
+            "escapeLength": 0.5658049598978447,
+            "nearestGroundViaGap": 2.529668759629412,
+            "dominantReturnViaGap": 2.599892009563674,
+            "returnRadius90": 2.599892009563674
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 8.335673243233671e-12
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_BA2-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 1.7888543819998317,
+            "dominantReturnViaGap": 3.6830693721405803,
+            "returnRadius90": 3.6830693721405803
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_BA2-1-memory.png",
+            "escapeLength": 0.5658049598978447,
+            "nearestGroundViaGap": 2.529668759629412,
+            "dominantReturnViaGap": 2.8845217350931867,
+            "returnRadius90": 2.8845217350931867
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 5.0760098351862036e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_RASn",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_RASn-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_RASn-0-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.5298221281347018,
+            "dominantReturnViaGap": 2.5298221281347018,
+            "returnRadius90": 2.5298221281347018
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_RASn-0-memory.png",
+            "escapeLength": 0.5657724226621533,
+            "nearestGroundViaGap": 0.8000460195795043,
+            "dominantReturnViaGap": 0.8000460195795043,
+            "returnRadius90": 0.8000460195795043
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.943448663953194e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_RASn-1-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.5298221281347018,
+            "dominantReturnViaGap": 2.5298221281347018,
+            "returnRadius90": 2.5298221281347018
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_RASn-1-memory.png",
+            "escapeLength": 0.5657724226621533,
+            "nearestGroundViaGap": 0.8000460195795043,
+            "dominantReturnViaGap": 2.5296466284888495,
+            "returnRadius90": 2.5296466284888495
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 4.668248317558315e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D4",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D4-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D4-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.5298221281347035,
+            "dominantReturnViaGap": 2.5298221281347035,
+            "returnRadius90": 2.5298221281347035
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D4-0-memory.png",
+            "escapeLength": 0.5657016959891515,
+            "nearestGroundViaGap": 1.131528538502238,
+            "dominantReturnViaGap": 1.131528538502238,
+            "returnRadius90": 1.131528538502238
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 3.132529287002891e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D4-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.5298221281347035,
+            "dominantReturnViaGap": 3.298484500494128,
+            "returnRadius90": 3.298484500494128
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D4-1-memory.png",
+            "escapeLength": 0.5657016959891515,
+            "nearestGroundViaGap": 1.131528538502238,
+            "dominantReturnViaGap": 2.3998920111173767,
+            "returnRadius90": 2.3998920111173767
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 7.795713727332121e-12
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_BA1",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_BA1-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_BA1-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 3.2000000000000006,
+            "dominantReturnViaGap": 3.2000000000000006,
+            "returnRadius90": 3.2000000000000006
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_BA1-0-memory.png",
+            "escapeLength": 0.5657016942497188,
+            "nearestGroundViaGap": 1.1311368004768418,
+            "dominantReturnViaGap": 1.1311368004768418,
+            "returnRadius90": 1.1311368004768418
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.5378713839225063e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_BA1-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 3.2000000000000006,
+            "dominantReturnViaGap": 4.525483399593905,
+            "returnRadius90": 4.525483399593905
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_BA1-1-memory.png",
+            "escapeLength": 0.5657016942497188,
+            "nearestGroundViaGap": 1.1311368004768418,
+            "dominantReturnViaGap": 1.7889572494123507,
+            "returnRadius90": 1.7889572494123507
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.35594088142624e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A12",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A12-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A12-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 3.577708763999664,
+            "dominantReturnViaGap": 3.577708763999664,
+            "returnRadius90": 3.577708763999664
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A12-0-memory.png",
+            "escapeLength": 0.565772399182745,
+            "nearestGroundViaGap": 1.7886580616185388,
+            "dominantReturnViaGap": 1.7886580616185388,
+            "returnRadius90": 1.7886580616185388
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.896537622316844e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A12-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 3.577708763999664,
+            "dominantReturnViaGap": 3.999999999999999,
+            "returnRadius90": 3.999999999999999
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A12-1-memory.png",
+            "escapeLength": 0.565772399182745,
+            "nearestGroundViaGap": 1.7886580616185388,
+            "dominantReturnViaGap": 2.262784841787881,
+            "returnRadius90": 2.262784841787881
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.972226577540083e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A10",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A10-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A10-0-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.88444102037119,
+            "dominantReturnViaGap": 2.88444102037119,
+            "returnRadius90": 2.88444102037119
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A10-0-memory.png",
+            "escapeLength": 0.5658105849531245,
+            "nearestGroundViaGap": 1.788716644257832,
+            "dominantReturnViaGap": 1.7888575296520939,
+            "returnRadius90": 1.7888575296520939
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 5.922548139000933e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A10-1-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.88444102037119,
+            "dominantReturnViaGap": 2.88444102037119,
+            "returnRadius90": 2.88444102037119
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A10-1-memory.png",
+            "escapeLength": 0.5658105849531245,
+            "nearestGroundViaGap": 1.788716644257832,
+            "dominantReturnViaGap": 1.788716644257832,
+            "returnRadius90": 1.788716644257832
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.8144515414214883e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A8",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A8-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A8-0-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.529822128134704,
+            "dominantReturnViaGap": 2.529822128134704,
+            "returnRadius90": 2.529822128134704
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A8-0-memory.png",
+            "escapeLength": 0.5657342267717252,
+            "nearestGroundViaGap": 1.1311749821424542,
+            "dominantReturnViaGap": 1.4142185209114597,
+            "returnRadius90": 1.4142185209114597
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.933805047517334e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A8-1-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.529822128134704,
+            "dominantReturnViaGap": 4.6524187257812475,
+            "returnRadius90": 4.6524187257812475
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A8-1-memory.png",
+            "escapeLength": 0.5657342267717252,
+            "nearestGroundViaGap": 1.1311749821424542,
+            "dominantReturnViaGap": 1.1311749821424542,
+            "returnRadius90": 1.1311749821424542
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 4.6840115289312634e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D15",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D15-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D15-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 4,
+            "dominantReturnViaGap": 4,
+            "returnRadius90": 4
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D15-0-memory.png",
+            "escapeLength": 0.5657455454857805,
+            "nearestGroundViaGap": 1.131501683620931,
+            "dominantReturnViaGap": 1.131501683620931,
+            "returnRadius90": 1.131501683620931
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.1403175304880294e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D15-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 4,
+            "dominantReturnViaGap": 4.8,
+            "returnRadius90": 4.8
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D15-1-memory.png",
+            "escapeLength": 0.5657455454857805,
+            "nearestGroundViaGap": 1.131501683620931,
+            "dominantReturnViaGap": 2.8844837438933513,
+            "returnRadius90": 2.8844837438933513
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 3.400718981143887e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D11",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D11-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D11-0-cpu.png",
+            "escapeLength": 0.5656854249492378,
+            "nearestGroundViaGap": 2.8844410203711908,
+            "dominantReturnViaGap": 2.8844410203711908,
+            "returnRadius90": 2.8844410203711908
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D11-0-memory.png",
+            "escapeLength": 0.5657780566096571,
+            "nearestGroundViaGap": 0.7997610018230448,
+            "dominantReturnViaGap": 1.5998920178515144,
+            "returnRadius90": 1.5998920178515144
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 3.0194702686935876e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D11-1-cpu.png",
+            "escapeLength": 0.5656854249492378,
+            "nearestGroundViaGap": 2.8844410203711908,
+            "dominantReturnViaGap": 3.577708763999663,
+            "returnRadius90": 3.577708763999663
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D11-1-memory.png",
+            "escapeLength": 0.5657780566096571,
+            "nearestGroundViaGap": 0.7997610018230448,
+            "dominantReturnViaGap": 1.1314253160898418,
+            "returnRadius90": 1.1314253160898418
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.1956779840177044e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A9",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A9-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A9-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 1.6000000000000014,
+            "dominantReturnViaGap": 1.6000000000000014,
+            "returnRadius90": 1.6000000000000014
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A9-0-memory.png",
+            "escapeLength": 0.5656578498889613,
+            "nearestGroundViaGap": 1.5998920089259225,
+            "dominantReturnViaGap": 1.5998920089259225,
+            "returnRadius90": 1.5998920089259225
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.734616171541312e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A9-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 1.6000000000000014,
+            "dominantReturnViaGap": 3.5777087639996643,
+            "returnRadius90": 3.5777087639996643
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A9-1-memory.png",
+            "escapeLength": 0.5656578498889613,
+            "nearestGroundViaGap": 1.5998920089259225,
+            "dominantReturnViaGap": 2.262746655038743,
+            "returnRadius90": 2.262746655038743
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.703658775718547e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A7",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A7-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A7-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 3.298484500494129,
+            "dominantReturnViaGap": 4.000000000000001,
+            "returnRadius90": 4.000000000000001
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A7-0-memory.png",
+            "escapeLength": 0.5657285588875637,
+            "nearestGroundViaGap": 0.7998920178530383,
+            "dominantReturnViaGap": 0.7998920178530383,
+            "returnRadius90": 0.7998920178530383
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 9.62910746147086e-12
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A7-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 3.298484500494129,
+            "dominantReturnViaGap": 3.298484500494129,
+            "returnRadius90": 3.298484500494129
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A7-1-memory.png",
+            "escapeLength": 0.5657285588875637,
+            "nearestGroundViaGap": 0.7998920178530383,
+            "dominantReturnViaGap": 1.7889089481829425,
+            "returnRadius90": 1.7889089481829425
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.700259480957567e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D6",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D6-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D6-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.8844410203711917,
+            "dominantReturnViaGap": 2.8844410203711917,
+            "returnRadius90": 2.8844410203711917
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D6-0-memory.png",
+            "escapeLength": 0.5658813086478467,
+            "nearestGroundViaGap": 1.5999690006612661,
+            "dominantReturnViaGap": 1.7888611083661563,
+            "returnRadius90": 1.7888611083661563
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.451447220221929e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D6-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.8844410203711917,
+            "dominantReturnViaGap": 3.5777087639996634,
+            "returnRadius90": 3.5777087639996634
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D6-1-memory.png",
+            "escapeLength": 0.5658813086478467,
+            "nearestGroundViaGap": 1.5999690006612661,
+            "dominantReturnViaGap": 1.6001770006611773,
+            "returnRadius90": 1.6001770006611773
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.9526810512801408e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A2",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A2-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A2-0-cpu.png",
+            "escapeLength": 0.5656854249492372,
+            "nearestGroundViaGap": 3.199999999999999,
+            "dominantReturnViaGap": 3.298484500494129,
+            "returnRadius90": 3.298484500494129
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A2-0-memory.png",
+            "escapeLength": 0.5657667642032371,
+            "nearestGroundViaGap": 1.7888333740807216,
+            "dominantReturnViaGap": 1.7888333740807216,
+            "returnRadius90": 1.7888333740807216
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.8289278498302033e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A2-1-cpu.png",
+            "escapeLength": 0.5656854249492372,
+            "nearestGroundViaGap": 3.199999999999999,
+            "dominantReturnViaGap": 3.3941125496954268,
+            "returnRadius90": 3.3941125496954268
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A2-1-memory.png",
+            "escapeLength": 0.5657667642032371,
+            "nearestGroundViaGap": 1.7888333740807216,
+            "dominantReturnViaGap": 3.052658654581781,
+            "returnRadius90": 3.052658654581781
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 7.935650305824528e-12
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D12",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D12-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D12-0-cpu.png",
+            "escapeLength": 0.5656854249492372,
+            "nearestGroundViaGap": 2.2627416997969507,
+            "dominantReturnViaGap": 2.2627416997969507,
+            "returnRadius90": 2.2627416997969507
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D12-0-memory.png",
+            "escapeLength": 0.5658218997502645,
+            "nearestGroundViaGap": 2.828339871901006,
+            "dominantReturnViaGap": 2.828339871901006,
+            "returnRadius90": 2.828339871901006
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 9.905987336157216e-12
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D12-1-cpu.png",
+            "escapeLength": 0.5656854249492372,
+            "nearestGroundViaGap": 2.2627416997969507,
+            "dominantReturnViaGap": 2.8844410203711908,
+            "returnRadius90": 2.8844410203711908
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D12-1-memory.png",
+            "escapeLength": 0.5658218997502645,
+            "nearestGroundViaGap": 2.828339871901006,
+            "dominantReturnViaGap": 3.046304132680288,
+            "returnRadius90": 3.046304132680288
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.2527621563172321e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A11",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A11-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A11-0-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 4.079215610874229,
+            "dominantReturnViaGap": 4.664761515876242,
+            "returnRadius90": 4.664761515876242
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A11-0-memory.png",
+            "escapeLength": 0.5657342159892732,
+            "nearestGroundViaGap": 1.5998920089259119,
+            "dominantReturnViaGap": 1.5998920089259119,
+            "returnRadius90": 1.5998920089259119
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 9.388272531753823e-12
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A11-1-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 4.079215610874229,
+            "dominantReturnViaGap": 4.308131845707603,
+            "returnRadius90": 4.308131845707603
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A11-1-memory.png",
+            "escapeLength": 0.5657342159892732,
+            "nearestGroundViaGap": 1.5998920089259119,
+            "dominantReturnViaGap": 2.54558936690288,
+            "returnRadius90": 2.54558936690288
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.357428159543225e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D1",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D1-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D1-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 1.5999999999999988,
+            "dominantReturnViaGap": 1.5999999999999988,
+            "returnRadius90": 1.5999999999999988
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D1-0-memory.png",
+            "escapeLength": 0.5658162423234223,
+            "nearestGroundViaGap": 0.8002310013221166,
+            "dominantReturnViaGap": 0.9998796109237393,
+            "returnRadius90": 0.9998796109237393
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 3.0873205615631266e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D1-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 1.5999999999999988,
+            "dominantReturnViaGap": 2.3999999999999986,
+            "returnRadius90": 2.3999999999999986
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D1-1-memory.png",
+            "escapeLength": 0.5658162423234223,
+            "nearestGroundViaGap": 0.8002310013221166,
+            "dominantReturnViaGap": 0.8002310013221166,
+            "returnRadius90": 0.8002310013221166
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 6.85909044092589e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D5",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D5-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D5-0-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 1.7888543819998313,
+            "dominantReturnViaGap": 1.7888543819998313,
+            "returnRadius90": 1.7888543819998313
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D5-0-memory.png",
+            "escapeLength": 0.5657073519453326,
+            "nearestGroundViaGap": 0.7998690072911914,
+            "dominantReturnViaGap": 1.1311749888841256,
+            "returnRadius90": 1.1311749888841256
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.0410735153728451e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D5-1-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 1.7888543819998313,
+            "dominantReturnViaGap": 2.5298221281347026,
+            "returnRadius90": 2.5298221281347026
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D5-1-memory.png",
+            "escapeLength": 0.5657073519453326,
+            "nearestGroundViaGap": 0.7998690072911914,
+            "dominantReturnViaGap": 0.8001770013222089,
+            "returnRadius90": 0.8001770013222089
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 7.627801418349665e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_CKn",
+    "static": false,
+    "differential": true,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_CKn-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CKn-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.400000000000001,
+            "dominantReturnViaGap": 2.400000000000001,
+            "returnRadius90": 2.400000000000001
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CKn-0-memory.png",
+            "escapeLength": 0.5657398725960545,
+            "nearestGroundViaGap": 1.1312782298997006,
+            "dominantReturnViaGap": 1.1312782298997006,
+            "returnRadius90": 1.1312782298997006
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.9919454916772624e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CKn-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.400000000000001,
+            "dominantReturnViaGap": 4.000000000000001,
+            "returnRadius90": 4.000000000000001
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CKn-1-memory.png",
+            "escapeLength": 0.5657398725960545,
+            "nearestGroundViaGap": 1.1312782298997006,
+            "dominantReturnViaGap": 2.2628230291812472,
+            "returnRadius90": 2.2628230291812472
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 4.1026195068678654e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D9",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D9-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D9-0-cpu.png",
+            "escapeLength": 0.5656854249492378,
+            "nearestGroundViaGap": 4.308131845707603,
+            "dominantReturnViaGap": 4.308131845707603,
+            "returnRadius90": 4.308131845707603
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D9-0-memory.png",
+            "escapeLength": 0.5657073537978832,
+            "nearestGroundViaGap": 1.131163675175703,
+            "dominantReturnViaGap": 1.131163675175703,
+            "returnRadius90": 1.131163675175703
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.4171703715661695e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D9-1-cpu.png",
+            "escapeLength": 0.5656854249492378,
+            "nearestGroundViaGap": 4.308131845707603,
+            "dominantReturnViaGap": 5.059644256269407,
+            "returnRadius90": 5.059644256269407
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D9-1-memory.png",
+            "escapeLength": 0.5657073537978832,
+            "nearestGroundViaGap": 1.131163675175703,
+            "dominantReturnViaGap": 2.399892011900745,
+            "returnRadius90": 2.399892011900745
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 7.529536022454764e-12
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_DQM1",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_DQM1-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQM1-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 4,
+            "dominantReturnViaGap": 4.079215610874228,
+            "returnRadius90": 4.079215610874228
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQM1-0-memory.png",
+            "escapeLength": 0.5657780811775973,
+            "nearestGroundViaGap": 1.1314252971703458,
+            "dominantReturnViaGap": 1.1314252971703458,
+            "returnRadius90": 1.1314252971703458
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 9.384677570189196e-12
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQM1-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 4,
+            "dominantReturnViaGap": 4.079215610874228,
+            "returnRadius90": 4.079215610874228
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQM1-1-memory.png",
+            "escapeLength": 0.5657780811775973,
+            "nearestGroundViaGap": 1.1314252971703458,
+            "dominantReturnViaGap": 1.5998920106960386,
+            "returnRadius90": 1.5998920106960386
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 8.28652065314097e-12
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A3",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A3-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A3-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 2.262741699796953,
+            "dominantReturnViaGap": 2.262741699796953,
+            "returnRadius90": 2.262741699796953
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A3-0-memory.png",
+            "escapeLength": 0.5657667424628292,
+            "nearestGroundViaGap": 1.788957249412349,
+            "dominantReturnViaGap": 1.9695823063261448,
+            "returnRadius90": 1.9695823063261448
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 7.517002211659962e-12
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A3-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 2.262741699796953,
+            "dominantReturnViaGap": 4.313351365237942,
+            "returnRadius90": 4.313351365237942
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A3-1-memory.png",
+            "escapeLength": 0.5657667424628292,
+            "nearestGroundViaGap": 1.788957249412349,
+            "dominantReturnViaGap": 1.788957249412349,
+            "returnRadius90": 1.788957249412349
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 3.464448088738395e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_BA0",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_BA0-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_BA0-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 1.7888543819998326,
+            "dominantReturnViaGap": 1.7888543819998326,
+            "returnRadius90": 1.7888543819998326
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_BA0-0-memory.png",
+            "escapeLength": 0.5658756505143145,
+            "nearestGroundViaGap": 1.7998920138144432,
+            "dominantReturnViaGap": 1.7998920138144432,
+            "returnRadius90": 1.7998920138144432
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 3.068153264249726e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_BA0-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 1.7888543819998326,
+            "dominantReturnViaGap": 3.9147158262126784,
+            "returnRadius90": 3.9147158262126784
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_BA0-1-memory.png",
+            "escapeLength": 0.5658756505143145,
+            "nearestGroundViaGap": 1.7998920138144432,
+            "dominantReturnViaGap": 2.52994830781678,
+            "returnRadius90": 2.52994830781678
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 5.386974829279089e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A0",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A0-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A0-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 3.5777087639996625,
+            "dominantReturnViaGap": 3.5777087639996625,
+            "returnRadius90": 3.5777087639996625
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A0-0-memory.png",
+            "escapeLength": 0.5656960382369708,
+            "nearestGroundViaGap": 2.2627848417878833,
+            "dominantReturnViaGap": 2.720125302516971,
+            "returnRadius90": 2.720125302516971
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.0685051511414832e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A0-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 3.5777087639996625,
+            "dominantReturnViaGap": 4.308131845707604,
+            "returnRadius90": 4.308131845707604
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A0-1-memory.png",
+            "escapeLength": 0.5656960382369708,
+            "nearestGroundViaGap": 2.2627848417878833,
+            "dominantReturnViaGap": 2.2627848417878833,
+            "returnRadius90": 2.2627848417878833
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.803387163235353e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D10",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D10-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D10-0-cpu.png",
+            "escapeLength": 0.5656854249492385,
+            "nearestGroundViaGap": 3.5777087639996634,
+            "dominantReturnViaGap": 3.5777087639996634,
+            "returnRadius90": 3.5777087639996634
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D10-0-memory.png",
+            "escapeLength": 0.5657130096974979,
+            "nearestGroundViaGap": 1.6126294169278317,
+            "dominantReturnViaGap": 1.6126294169278317,
+            "returnRadius90": 1.6126294169278317
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.747751678981207e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D10-1-cpu.png",
+            "escapeLength": 0.5656854249492385,
+            "nearestGroundViaGap": 3.5777087639996634,
+            "dominantReturnViaGap": 4.308131845707603,
+            "returnRadius90": 4.308131845707603
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D10-1-memory.png",
+            "escapeLength": 0.5657130096974979,
+            "nearestGroundViaGap": 1.6126294169278317,
+            "dominantReturnViaGap": 2.039455042109284,
+            "returnRadius90": 2.039455042109284
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 3.0722681314610044e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A4",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A4-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A4-0-cpu.png",
+            "escapeLength": 0.5656854249492391,
+            "nearestGroundViaGap": 1.7888543819998333,
+            "dominantReturnViaGap": 2.8844410203711925,
+            "returnRadius90": 2.8844410203711925
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A4-0-memory.png",
+            "escapeLength": 0.5657724195089395,
+            "nearestGroundViaGap": 1.1314140003663533,
+            "dominantReturnViaGap": 1.1314140003663533,
+            "returnRadius90": 1.1314140003663533
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.9693517104476524e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A4-1-cpu.png",
+            "escapeLength": 0.5656854249492391,
+            "nearestGroundViaGap": 1.7888543819998333,
+            "dominantReturnViaGap": 1.7888543819998333,
+            "returnRadius90": 1.7888543819998333
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A4-1-memory.png",
+            "escapeLength": 0.5657724195089395,
+            "nearestGroundViaGap": 1.1314140003663533,
+            "dominantReturnViaGap": 1.7886066256706608,
+            "returnRadius90": 1.7886066256706608
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 8.267654268178434e-12
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D3",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D3-full.svg",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D3-0-cpu.svg",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 3.298484500494129,
+            "dominantReturnViaGap": 3.298484500494129,
+            "returnRadius90": 3.298484500494129
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D3-0-memory.svg",
+            "escapeLength": 0.5657455428697612,
+            "nearestGroundViaGap": 0.8001310072888086,
+            "dominantReturnViaGap": 0.8001310072888086,
+            "returnRadius90": 0.8001310072888086
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 4.284022537045108e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D3-1-cpu.svg",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 3.298484500494129,
+            "dominantReturnViaGap": 4.079215610874228,
+            "returnRadius90": 4.079215610874228
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D3-1-memory.svg",
+            "escapeLength": 0.5657455428697612,
+            "nearestGroundViaGap": 0.8001310072888086,
+            "dominantReturnViaGap": 0.8244304921222894,
+            "returnRadius90": 0.8244304921222894
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.0873890420041223e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_CKE",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_CKE-full.svg",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CKE-0-cpu.svg",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 3.2984845004941277,
+            "dominantReturnViaGap": 3.2984845004941277,
+            "returnRadius90": 3.2984845004941277
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CKE-0-memory.svg",
+            "escapeLength": 0.5657780591300837,
+            "nearestGroundViaGap": 1.1312131688788796,
+            "dominantReturnViaGap": 1.1312131688788796,
+            "returnRadius90": 1.1312131688788796
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.3500343694749068e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CKE-1-cpu.svg",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 3.2984845004941277,
+            "dominantReturnViaGap": 3.2984845004941277,
+            "returnRadius90": 3.2984845004941277
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CKE-1-memory.svg",
+            "escapeLength": 0.5657780591300837,
+            "nearestGroundViaGap": 1.1312131688788796,
+            "dominantReturnViaGap": 1.6002230036444935,
+            "returnRadius90": 1.6002230036444935
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 9.048607420666282e-12
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A6",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A6-full.svg",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A6-0-cpu.svg",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.400000000000001,
+            "dominantReturnViaGap": 2.400000000000001,
+            "returnRadius90": 2.400000000000001
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A6-0-memory.svg",
+            "escapeLength": 0.5656635062835508,
+            "nearestGroundViaGap": 0.7998920178530277,
+            "dominantReturnViaGap": 0.7998920178530277,
+            "returnRadius90": 0.7998920178530277
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.6415537363418855e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A6-1-cpu.svg",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.400000000000001,
+            "dominantReturnViaGap": 4.432268042436063,
+            "returnRadius90": 4.432268042436063
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A6-1-memory.svg",
+            "escapeLength": 0.5656635062835508,
+            "nearestGroundViaGap": 0.7998920178530277,
+            "dominantReturnViaGap": 2.059174112329746,
+            "returnRadius90": 2.059174112329746
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 3.438811989816561e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_ODT",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_ODT-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_ODT-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.800000000000001,
+            "dominantReturnViaGap": 4.866210024238575,
+            "returnRadius90": 4.866210024238575
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_ODT-0-memory.png",
+            "escapeLength": 0.5655927971544541,
+            "nearestGroundViaGap": 1.2806798434398068,
+            "dominantReturnViaGap": 1.7886754969655592,
+            "returnRadius90": 1.7886754969655592
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.126782538083933e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_ODT-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.800000000000001,
+            "dominantReturnViaGap": 4.866210024238575,
+            "returnRadius90": 4.866210024238575
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_ODT-1-memory.png",
+            "escapeLength": 0.5655927971544541,
+            "nearestGroundViaGap": 1.2806798434398068,
+            "dominantReturnViaGap": 1.2806798434398068,
+            "returnRadius90": 1.2806798434398068
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.4009245599506232e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D13",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D13-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D13-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 2.5298221281347026,
+            "dominantReturnViaGap": 2.5298221281347026,
+            "returnRadius90": 2.5298221281347026
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D13-0-memory.png",
+            "escapeLength": 0.5658162435252282,
+            "nearestGroundViaGap": 0.8002390018219547,
+            "dominantReturnViaGap": 2.2628343440881813,
+            "returnRadius90": 2.2628343440881813
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.4986839518710254e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D13-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 2.5298221281347026,
+            "dominantReturnViaGap": 3.2984845004941277,
+            "returnRadius90": 3.2984845004941277
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D13-1-memory.png",
+            "escapeLength": 0.5658162435252282,
+            "nearestGroundViaGap": 0.8002390018219547,
+            "dominantReturnViaGap": 0.8002390018219547,
+            "returnRadius90": 0.8002390018219547
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.6647208444849872e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_WEn",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_WEn-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_WEn-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 1.1313708498984771,
+            "dominantReturnViaGap": 1.1313708498984771,
+            "returnRadius90": 1.1313708498984771
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_WEn-0-memory.png",
+            "escapeLength": 0.56573422916154,
+            "nearestGroundViaGap": 1.7887166442578335,
+            "dominantReturnViaGap": 1.7887166442578335,
+            "returnRadius90": 1.7887166442578335
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 8.87706596598703e-12
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_WEn-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 1.1313708498984771,
+            "dominantReturnViaGap": 2.529822128134704,
+            "returnRadius90": 2.529822128134704
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_WEn-1-memory.png",
+            "escapeLength": 0.56573422916154,
+            "nearestGroundViaGap": 1.7887166442578335,
+            "dominantReturnViaGap": 2.7202564697824054,
+            "returnRadius90": 2.7202564697824054
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 8.121900043787586e-12
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_CSn0",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_CSn0-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CSn0-0-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 4,
+            "dominantReturnViaGap": 4,
+            "returnRadius90": 4
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CSn0-0-memory.png",
+            "escapeLength": 0.5658049286149767,
+            "nearestGroundViaGap": 1.599823000661322,
+            "dominantReturnViaGap": 1.9697634531570047,
+            "returnRadius90": 1.9697634531570047
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 4.258628296417022e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CSn0-1-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 4,
+            "dominantReturnViaGap": 4,
+            "returnRadius90": 4
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CSn0-1-memory.png",
+            "escapeLength": 0.5658049286149767,
+            "nearestGroundViaGap": 1.599823000661322,
+            "dominantReturnViaGap": 1.599823000661322,
+            "returnRadius90": 1.599823000661322
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 4.5177843105551524e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D0",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D0-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D0-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 2.3999999999999995,
+            "dominantReturnViaGap": 2.3999999999999995,
+            "returnRadius90": 2.3999999999999995
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D0-0-memory.png",
+            "escapeLength": 0.5656691646863942,
+            "nearestGroundViaGap": 0.8000460006005958,
+            "dominantReturnViaGap": 0.8000460006005958,
+            "returnRadius90": 0.8000460006005958
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.2531676009829406e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D0-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 2.3999999999999995,
+            "dominantReturnViaGap": 3.1999999999999993,
+            "returnRadius90": 3.1999999999999993
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D0-1-memory.png",
+            "escapeLength": 0.5656691646863942,
+            "nearestGroundViaGap": 0.8000460006005958,
+            "dominantReturnViaGap": 2.3998920002002184,
+            "returnRadius90": 2.3998920002002184
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 9.74318514645236e-12
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D8",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D8-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D8-0-cpu.png",
+            "escapeLength": 0.565685424949238,
+            "nearestGroundViaGap": 4.66476151587624,
+            "dominantReturnViaGap": 4.866210024238575,
+            "returnRadius90": 4.866210024238575
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D8-0-memory.png",
+            "escapeLength": 0.5658544310518376,
+            "nearestGroundViaGap": 1.0001756027523403,
+            "dominantReturnViaGap": 1.0001756027523403,
+            "returnRadius90": 1.0001756027523403
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 2.3974924704954384e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D8-1-cpu.png",
+            "escapeLength": 0.565685424949238,
+            "nearestGroundViaGap": 4.66476151587624,
+            "dominantReturnViaGap": 4.66476151587624,
+            "returnRadius90": 4.66476151587624
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D8-1-memory.png",
+            "escapeLength": 0.5658544310518376,
+            "nearestGroundViaGap": 1.0001756027523403,
+            "dominantReturnViaGap": 1.0001756027523403,
+            "returnRadius90": 1.0001756027523403
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.0850333184828e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_DQM0",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_DQM0-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQM0-0-cpu.png",
+            "escapeLength": 0.5656854249492391,
+            "nearestGroundViaGap": 3.2,
+            "dominantReturnViaGap": 3.2,
+            "returnRadius90": 3.2
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQM0-0-memory.png",
+            "escapeLength": 0.5657455292593995,
+            "nearestGroundViaGap": 0.6000460285186523,
+            "dominantReturnViaGap": 0.6000460285186523,
+            "returnRadius90": 0.6000460285186523
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 7.791507668341983e-12
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQM0-1-cpu.png",
+            "escapeLength": 0.5656854249492391,
+            "nearestGroundViaGap": 3.2,
+            "dominantReturnViaGap": 4,
+            "returnRadius90": 4
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQM0-1-memory.png",
+            "escapeLength": 0.5657455292593995,
+            "nearestGroundViaGap": 0.6000460285186523,
+            "dominantReturnViaGap": 0.6000460285186523,
+            "returnRadius90": 0.6000460285186523
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 7.799981851814436e-12
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A1",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A1-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A1-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.8,
+            "dominantReturnViaGap": 4.8,
+            "returnRadius90": 4.8
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A1-0-memory.png",
+            "escapeLength": 0.5658431156044901,
+            "nearestGroundViaGap": 1.7888333740807154,
+            "dominantReturnViaGap": 1.7888333740807154,
+            "returnRadius90": 1.7888333740807154
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 7.986739542730468e-12
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A1-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.8,
+            "dominantReturnViaGap": 4.8,
+            "returnRadius90": 4.8
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A1-1-memory.png",
+            "escapeLength": 0.5658431156044901,
+            "nearestGroundViaGap": 1.7888333740807154,
+            "dominantReturnViaGap": 2.2625076489136977,
+            "returnRadius90": 2.2625076489136977
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 6.672948609624005e-12
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D14",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D14-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D14-0-cpu.png",
+            "escapeLength": 0.5656854249492372,
+            "nearestGroundViaGap": 1.7888543819998304,
+            "dominantReturnViaGap": 1.7888543819998304,
+            "returnRadius90": 1.7888543819998304
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D14-0-memory.png",
+            "escapeLength": 0.5658219324460676,
+            "nearestGroundViaGap": 2.0394746458303867,
+            "dominantReturnViaGap": 2.039548790488961,
+            "returnRadius90": 2.039548790488961
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 8.526395775944155e-12
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D14-1-cpu.png",
+            "escapeLength": 0.5656854249492372,
+            "nearestGroundViaGap": 1.7888543819998304,
+            "dominantReturnViaGap": 2.5298221281347018,
+            "returnRadius90": 2.5298221281347018
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D14-1-memory.png",
+            "escapeLength": 0.5658219324460676,
+            "nearestGroundViaGap": 2.0394746458303867,
+            "dominantReturnViaGap": 2.0394746458303867,
+            "returnRadius90": 2.0394746458303867
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 1.7110015552816715e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D7",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D7-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D7-0-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.262741699796952,
+            "dominantReturnViaGap": 2.262741699796952,
+            "returnRadius90": 2.262741699796952
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D7-0-memory.png",
+            "escapeLength": 0.5657780561713202,
+            "nearestGroundViaGap": 0.7997690013228833,
+            "dominantReturnViaGap": 0.7997690013228833,
+            "returnRadius90": 0.7997690013228833
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 5.3961061986267296e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D7-1-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.262741699796952,
+            "dominantReturnViaGap": 2.8844410203711908,
+            "returnRadius90": 2.8844410203711908
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D7-1-memory.png",
+            "escapeLength": 0.5657780561713202,
+            "nearestGroundViaGap": 0.7997690013228833,
+            "dominantReturnViaGap": 1.1315285385022356,
+            "returnRadius90": 1.1315285385022356
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 5.664700785811168e-11
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_RESETn_SIGNAL",
+    "static": true,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_RESETn_SIGNAL-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_RESETn_SIGNAL-0-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 4.079215610874227,
+            "dominantReturnViaGap": 4.079215610874227,
+            "returnRadius90": 4.079215610874227
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_RESETn_SIGNAL-0-memory.png",
+            "escapeLength": 0.565799271244671,
+            "nearestGroundViaGap": 1.1311749821424668,
+            "dominantReturnViaGap": 1.1313758106345588,
+            "returnRadius90": 1.1313758106345588
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 3.324252381543369e-11
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_RESETn_SIGNAL-1-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 4.079215610874227,
+            "dominantReturnViaGap": 4.079215610874227,
+            "returnRadius90": 4.079215610874227
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_RESETn_SIGNAL-1-memory.png",
+            "escapeLength": 0.565799271244671,
+            "nearestGroundViaGap": 1.1311749821424668,
+            "dominantReturnViaGap": 1.1311749821424668,
+            "returnRadius90": 1.1311749821424668
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "maxConservationError": 5.351994588069682e-11
+        }
+      }
+    ]
+  }
+]

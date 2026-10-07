@@ -1,0 +1,26 @@
+{
+  "name": "@tscircuit/return-current-trace-demo",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "bun scripts/serve.ts",
+    "simulate": "bun scripts/simulate.ts",
+    "render": "python scripts/render.py",
+    "verify": "python scripts/verify.py",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tscircuit/solver-utils": "0.0.21",
+    "circuit-json": "0.0.515",
+    "graphics-debug": "0.0.76",
+    "transformation-matrix": "2.16.1",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/bun": "1.3.14",
+    "typescript": "5.9.3"
+  }
+}

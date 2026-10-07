@@ -1,0 +1,4561 @@
+[
+  {
+    "name": "DDR_DQS0",
+    "static": false,
+    "differential": true,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_DQS0-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQS0-0-cpu.png",
+            "escapeLength": 1.4949747468305858,
+            "nearestGroundViaGap": 4.41021541423999,
+            "dominantReturnViaGap": 4.657252408878008,
+            "returnRadius90": 4.657252408878008,
+            "transferMilliamps": 9.999999998670225,
+            "dominantShare": 1,
+            "projectedArea": 0.620000000000001,
+            "contact": "pcb_port_17",
+            "contactGap": 3.2000000000000006
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQS0-0-memory.png",
+            "escapeLength": 0.5657398872953919,
+            "nearestGroundViaGap": 1.1313814578103234,
+            "dominantReturnViaGap": 1.1313814578103234,
+            "returnRadius90": 1.1313814578103234,
+            "transferMilliamps": 10.000000001287233,
+            "dominantShare": 1,
+            "projectedArea": 0.6400738038500151,
+            "contact": "pcb_port_344",
+            "contactGap": 1.131512271254714
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 596,
+          "relativeResidual": 9.624893316677884e-09,
+          "maxConservationError": 2.8519646490599928e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQS0-1-cpu.png",
+            "escapeLength": 1.4949747468305858,
+            "nearestGroundViaGap": 4.41021541423999,
+            "dominantReturnViaGap": 4.41021541423999,
+            "returnRadius90": 4.41021541423999,
+            "transferMilliamps": 9.999999999948324,
+            "dominantShare": 1,
+            "projectedArea": 1.1399999999999997,
+            "contact": "pcb_port_83",
+            "contactGap": 3.5777087639996643
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQS0-1-memory.png",
+            "escapeLength": 0.5657398872953919,
+            "nearestGroundViaGap": 1.1313814578103234,
+            "dominantReturnViaGap": 2.5297098672822167,
+            "returnRadius90": 2.5297098672822167,
+            "transferMilliamps": 9.999999999623268,
+            "dominantShare": 1,
+            "projectedArea": 0.8000769937630139,
+            "contact": "pcb_port_328",
+            "contactGap": 1.7888508078976284
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 606,
+          "relativeResidual": 9.39310444621599e-09,
+          "maxConservationError": 2.728208396613261e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_DQSn0",
+    "static": false,
+    "differential": true,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_DQSn0-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQSn0-0-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 3.2,
+            "dominantReturnViaGap": 3.5777087639996643,
+            "returnRadius90": 3.5777087639996643,
+            "transferMilliamps": 10.000000001586118,
+            "dominantShare": 1,
+            "projectedArea": 1.12,
+            "contact": "pcb_port_83",
+            "contactGap": 2.884441020371191
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQSn0-0-memory.png",
+            "escapeLength": 0.5658106187382865,
+            "nearestGroundViaGap": 1.7888472274280494,
+            "dominantReturnViaGap": 2.5297927316333664,
+            "returnRadius90": 2.5297927316333664,
+            "transferMilliamps": 9.999999998509345,
+            "dominantShare": 1,
+            "projectedArea": 0.00024179376300992317,
+            "contact": "pcb_port_330",
+            "contactGap": 1.5999459999999992
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 609,
+          "relativeResidual": 9.616021147734854e-09,
+          "maxConservationError": 2.320097604653111e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQSn0-1-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 3.2,
+            "dominantReturnViaGap": 3.2,
+            "returnRadius90": 3.2,
+            "transferMilliamps": 9.99999999889396,
+            "dominantShare": 1,
+            "projectedArea": 0.15999999999999837,
+            "contact": "pcb_port_17",
+            "contactGap": 3.298484500494129
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQSn0-1-memory.png",
+            "escapeLength": 0.5658106187382865,
+            "nearestGroundViaGap": 1.7888472274280494,
+            "dominantReturnViaGap": 1.7890332678418839,
+            "returnRadius90": 1.7890332678418839,
+            "transferMilliamps": 10.000000000580476,
+            "dominantShare": 1,
+            "projectedArea": 0.31985978990802266,
+            "contact": "pcb_port_348",
+            "contactGap": 1.7888508078976284
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 596,
+          "relativeResidual": 9.950528271867478e-09,
+          "maxConservationError": 2.935251053953964e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_DQS1",
+    "static": false,
+    "differential": true,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_DQS1-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQS1-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 4.079215610874228,
+            "dominantReturnViaGap": 4.079215610874228,
+            "returnRadius90": 4.079215610874228,
+            "transferMilliamps": 9.999999999738598,
+            "dominantShare": 1,
+            "projectedArea": 1.4400000000000004,
+            "contact": "pcb_port_83",
+            "contactGap": 3.298484500494129
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQS1-0-memory.png",
+            "escapeLength": 0.5657837132164537,
+            "nearestGroundViaGap": 1.7089901217798207,
+            "dominantReturnViaGap": 1.7089901217798207,
+            "returnRadius90": 1.7089901217798207,
+            "transferMilliamps": 10.000000001470665,
+            "dominantShare": 1,
+            "projectedArea": 0.3601049069499993,
+            "contact": "pcb_port_391",
+            "contactGap": 1.131512271254714
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 594,
+          "relativeResidual": 9.773047767174098e-09,
+          "maxConservationError": 2.8252745857819286e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQS1-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 4.079215610874228,
+            "dominantReturnViaGap": 4.866210024238575,
+            "returnRadius90": 4.866210024238575,
+            "transferMilliamps": 10.000000000315833,
+            "dominantShare": 1,
+            "projectedArea": 1.7600000000000007,
+            "contact": "pcb_port_101",
+            "contactGap": 4.079215610874228
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQS1-1-memory.png",
+            "escapeLength": 0.5657837132164537,
+            "nearestGroundViaGap": 1.7089901217798207,
+            "dominantReturnViaGap": 2.8282864191564823,
+            "returnRadius90": 2.8282864191564823,
+            "transferMilliamps": 10.00000000092624,
+            "dominantShare": 1,
+            "projectedArea": 0.15974239813699853,
+            "contact": "pcb_port_405",
+            "contactGap": 1.7887372156445966
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 604,
+          "relativeResidual": 9.714836230048587e-09,
+          "maxConservationError": 3.4396161483277177e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_DQSn1",
+    "static": false,
+    "differential": true,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_DQSn1-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQSn1-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 3.2984845004941286,
+            "dominantReturnViaGap": 3.2984845004941286,
+            "returnRadius90": 3.2984845004941286,
+            "transferMilliamps": 9.999999999703258,
+            "dominantShare": 1,
+            "projectedArea": 1.1200000000000006,
+            "contact": "pcb_port_83",
+            "contactGap": 2.5298221281347035
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQSn1-0-memory.png",
+            "escapeLength": 0.5658926223560431,
+            "nearestGroundViaGap": 2.474054008371888,
+            "dominantReturnViaGap": 2.828354021119881,
+            "returnRadius90": 2.828354021119881,
+            "transferMilliamps": 9.999999998940119,
+            "dominantShare": 1,
+            "projectedArea": 0.6403715935470018,
+            "contact": "pcb_port_405",
+            "contactGap": 1.5999459999999956
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 602,
+          "relativeResidual": 9.93046691624593e-09,
+          "maxConservationError": 4.120868973340368e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQSn1-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 3.2984845004941286,
+            "dominantReturnViaGap": 4.079215610874228,
+            "returnRadius90": 4.079215610874228,
+            "transferMilliamps": 10.000000000907837,
+            "dominantShare": 1,
+            "projectedArea": 1.4400000000000004,
+            "contact": "pcb_port_101",
+            "contactGap": 3.298484500494128
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQSn1-1-memory.png",
+            "escapeLength": 0.5658926223560431,
+            "nearestGroundViaGap": 2.474054008371888,
+            "dominantReturnViaGap": 2.8283005552778504,
+            "returnRadius90": 2.8283005552778504,
+            "transferMilliamps": 9.99999999928741,
+            "dominantShare": 1,
+            "projectedArea": 0.15975000915300086,
+            "contact": "pcb_port_404",
+            "contactGap": 1.7888508078976253
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 605,
+          "relativeResidual": 9.205240455692472e-09,
+          "maxConservationError": 3.778681749823983e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_CK",
+    "static": false,
+    "differential": true,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_CK-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CK-0-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 2.5298221281347044,
+            "dominantReturnViaGap": 3.394112549695429,
+            "returnRadius90": 3.394112549695429,
+            "transferMilliamps": 10.000000002044649,
+            "dominantShare": 1,
+            "projectedArea": 0,
+            "contact": "pcb_port_55",
+            "contactGap": 2.2627416997969516
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CK-0-memory.png",
+            "escapeLength": 0.5658487732998961,
+            "nearestGroundViaGap": 0.8000460195795007,
+            "dominantReturnViaGap": 0.8000460195795007,
+            "returnRadius90": 0.8000460195795007,
+            "transferMilliamps": 9.999999998065327,
+            "dominantShare": 1,
+            "projectedArea": 0.3201354088500068,
+            "contact": "pcb_port_396",
+            "contactGap": 0.8001000000000005
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 599,
+          "relativeResidual": 9.98991101280041e-09,
+          "maxConservationError": 1.6285293155237496e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CK-1-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 2.5298221281347044,
+            "dominantReturnViaGap": 2.5298221281347044,
+            "returnRadius90": 2.5298221281347044,
+            "transferMilliamps": 9.999999998648528,
+            "dominantShare": 1,
+            "projectedArea": 1.280000000000003,
+            "contact": "pcb_port_0",
+            "contactGap": 2.529822128134704
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CK-1-memory.png",
+            "escapeLength": 0.5658487732998961,
+            "nearestGroundViaGap": 0.8000460195795007,
+            "dominantReturnViaGap": 1.5997690006613474,
+            "returnRadius90": 1.5997690006613474,
+            "transferMilliamps": 10.000000001763434,
+            "dominantShare": 1,
+            "projectedArea": 0.16002141030801909,
+            "contact": "pcb_port_394",
+            "contactGap": 1.7888508078976284
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 607,
+          "relativeResidual": 9.98992628505678e-09,
+          "maxConservationError": 8.372203917552529e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A5",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A5-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A5-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 0.8000000000000007,
+            "dominantReturnViaGap": 0.8000000000000007,
+            "returnRadius90": 0.8000000000000007,
+            "transferMilliamps": 10.000000000959734,
+            "dominantShare": 1,
+            "projectedArea": 0.3200000000000003,
+            "contact": "pcb_port_0",
+            "contactGap": 0.8000000000000007
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A5-0-memory.png",
+            "escapeLength": 0.5658374595915318,
+            "nearestGroundViaGap": 1.1314140003663558,
+            "dominantReturnViaGap": 1.1314140003663558,
+            "returnRadius90": 1.1314140003663558,
+            "transferMilliamps": 9.999999999231498,
+            "dominantShare": 1,
+            "projectedArea": 0.1599754130130293,
+            "contact": "pcb_port_337",
+            "contactGap": 0.7998460000000023
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 580,
+          "relativeResidual": 9.765144658463956e-09,
+          "maxConservationError": 3.0943359657508736e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A5-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 0.8000000000000007,
+            "dominantReturnViaGap": 3.298484500494129,
+            "returnRadius90": 3.298484500494129,
+            "transferMilliamps": 9.999999998286542,
+            "dominantShare": 1,
+            "projectedArea": 1.7763568394002505e-15,
+            "contact": "pcb_port_55",
+            "contactGap": 2.4000000000000004
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A5-1-memory.png",
+            "escapeLength": 0.5658374595915318,
+            "nearestGroundViaGap": 1.1314140003663558,
+            "dominantReturnViaGap": 2.4080900442867628,
+            "returnRadius90": 2.4080900442867628,
+            "transferMilliamps": 10.00000000148498,
+            "dominantShare": 1,
+            "projectedArea": 0.3601080857449688,
+            "contact": "pcb_port_335",
+            "contactGap": 1.7887372156446013
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 595,
+          "relativeResidual": 9.796520077249869e-09,
+          "maxConservationError": 2.8731078352384036e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_CASn",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_CASn-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CASn-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.000000000000001,
+            "dominantReturnViaGap": 4.000000000000001,
+            "returnRadius90": 4.000000000000001,
+            "transferMilliamps": 9.999999998807743,
+            "dominantShare": 1,
+            "projectedArea": 1.5999999999999996,
+            "contact": "pcb_port_0",
+            "contactGap": 4
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CASn-0-memory.png",
+            "escapeLength": 0.5656635072593997,
+            "nearestGroundViaGap": 1.1312782298997033,
+            "dominantReturnViaGap": 1.1312782298997033,
+            "returnRadius90": 1.1312782298997033,
+            "transferMilliamps": 10.000000001321201,
+            "dominantShare": 1,
+            "projectedArea": 0.6399506053079733,
+            "contact": "pcb_port_348",
+            "contactGap": 1.1313326803889316
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 596,
+          "relativeResidual": 9.96203226100761e-09,
+          "maxConservationError": 1.1895365965299779e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CASn-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.000000000000001,
+            "dominantReturnViaGap": 5.12249938994628,
+            "returnRadius90": 5.12249938994628,
+            "transferMilliamps": 9.99999999853872,
+            "dominantShare": 1,
+            "projectedArea": 3.552713678800501e-15,
+            "contact": "pcb_port_55",
+            "contactGap": 4
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CASn-1-memory.png",
+            "escapeLength": 0.5656635072593997,
+            "nearestGroundViaGap": 1.1312782298997033,
+            "dominantReturnViaGap": 3.0528924090758642,
+            "returnRadius90": 3.0528924090758642,
+            "transferMilliamps": 10.000000002693616,
+            "dominantShare": 1,
+            "projectedArea": 1.0000561047789915,
+            "contact": "pcb_port_335",
+            "contactGap": 2.2628449445147587
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 595,
+          "relativeResidual": 9.779617030879638e-09,
+          "maxConservationError": 1.0222983348523104e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D2",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D2-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D2-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.079215610874228,
+            "dominantReturnViaGap": 4.079215610874228,
+            "returnRadius90": 4.079215610874228,
+            "transferMilliamps": 9.999999999489994,
+            "dominantShare": 1,
+            "projectedArea": 1.4400000000000013,
+            "contact": "pcb_port_83",
+            "contactGap": 3.298484500494129
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D2-0-memory.png",
+            "escapeLength": 0.5658105860418305,
+            "nearestGroundViaGap": 0.7999690013225539,
+            "dominantReturnViaGap": 0.7999690013225539,
+            "returnRadius90": 0.7999690013225539,
+            "transferMilliamps": 10.00000000019464,
+            "dominantShare": 1,
+            "projectedArea": 0.32004140229999223,
+            "contact": "pcb_port_344",
+            "contactGap": 0.8001000000000005
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 593,
+          "relativeResidual": 9.666845766757074e-09,
+          "maxConservationError": 1.1217347255058907e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D2-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.079215610874228,
+            "dominantReturnViaGap": 4.079215610874228,
+            "returnRadius90": 4.079215610874228,
+            "transferMilliamps": 10.000000000817014,
+            "dominantShare": 1,
+            "projectedArea": 0.15999999999999837,
+            "contact": "pcb_port_17",
+            "contactGap": 4
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D2-1-memory.png",
+            "escapeLength": 0.5658105860418305,
+            "nearestGroundViaGap": 0.7999690013225539,
+            "dominantReturnViaGap": 1.788743920360037,
+            "returnRadius90": 1.788743920360037,
+            "transferMilliamps": 9.99999999837894,
+            "dominantShare": 1,
+            "projectedArea": 0.480044592212991,
+            "contact": "pcb_port_328",
+            "contactGap": 1.131332680388929
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 607,
+          "relativeResidual": 9.576508737594294e-09,
+          "maxConservationError": 2.0919206605915367e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_BA2",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_BA2-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_BA2-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 1.7888543819998317,
+            "dominantReturnViaGap": 1.7888543819998317,
+            "returnRadius90": 1.7888543819998317,
+            "transferMilliamps": 9.999999999326594,
+            "dominantShare": 1,
+            "projectedArea": 1.7763568394002505e-15,
+            "contact": "pcb_port_55",
+            "contactGap": 0.7999999999999998
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_BA2-0-memory.png",
+            "escapeLength": 0.5658049598978447,
+            "nearestGroundViaGap": 2.529668759629412,
+            "dominantReturnViaGap": 2.599892009563674,
+            "returnRadius90": 2.599892009563674,
+            "transferMilliamps": 9.999999999392195,
+            "dominantShare": 1,
+            "projectedArea": 0.8402128939790146,
+            "contact": "pcb_port_335",
+            "contactGap": 1.5999460000000028
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 597,
+          "relativeResidual": 9.923558893855064e-09,
+          "maxConservationError": 8.335673243233671e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_BA2-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 1.7888543819998317,
+            "dominantReturnViaGap": 3.6830693721405803,
+            "returnRadius90": 3.6830693721405803,
+            "transferMilliamps": 9.99999999915224,
+            "dominantShare": 1,
+            "projectedArea": 1.120000000000001,
+            "contact": "pcb_port_72",
+            "contactGap": 1.7888543819998322
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_BA2-1-memory.png",
+            "escapeLength": 0.5658049598978447,
+            "nearestGroundViaGap": 2.529668759629412,
+            "dominantReturnViaGap": 2.8845217350931867,
+            "returnRadius90": 2.8845217350931867,
+            "transferMilliamps": 10.000000001120934,
+            "dominantShare": 1,
+            "projectedArea": 0.7997906074789967,
+            "contact": "pcb_port_337",
+            "contactGap": 2.2626653322645853
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 597,
+          "relativeResidual": 9.420147783836709e-09,
+          "maxConservationError": 5.0760098351862036e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_RASn",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_RASn-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_RASn-0-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.5298221281347018,
+            "dominantReturnViaGap": 2.5298221281347018,
+            "returnRadius90": 2.5298221281347018,
+            "transferMilliamps": 10.00000000195265,
+            "dominantShare": 1,
+            "projectedArea": 0.7999999999999998,
+            "contact": "pcb_port_97",
+            "contactGap": 1.7888543819998317
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_RASn-0-memory.png",
+            "escapeLength": 0.5657724226621533,
+            "nearestGroundViaGap": 0.8000460195795043,
+            "dominantReturnViaGap": 0.8000460195795043,
+            "returnRadius90": 0.8000460195795043,
+            "transferMilliamps": 9.99999999811585,
+            "dominantShare": 1,
+            "projectedArea": 0.32006460884997523,
+            "contact": "pcb_port_348",
+            "contactGap": 0.8001000000000005
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 600,
+          "relativeResidual": 9.781628942058553e-09,
+          "maxConservationError": 2.943448663953194e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_RASn-1-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.5298221281347018,
+            "dominantReturnViaGap": 2.5298221281347018,
+            "returnRadius90": 2.5298221281347018,
+            "transferMilliamps": 10.000000001399037,
+            "dominantShare": 1,
+            "projectedArea": 2.220446049250313e-16,
+            "contact": "pcb_port_98",
+            "contactGap": 2.262741699796952
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_RASn-1-memory.png",
+            "escapeLength": 0.5657724226621533,
+            "nearestGroundViaGap": 0.8000460195795043,
+            "dominantReturnViaGap": 2.5296466284888495,
+            "returnRadius90": 2.5296466284888495,
+            "transferMilliamps": 9.999999999496662,
+            "dominantShare": 1,
+            "projectedArea": 0.0001445966789930253,
+            "contact": "pcb_port_330",
+            "contactGap": 2.2626653322645827
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 600,
+          "relativeResidual": 9.88714984319928e-09,
+          "maxConservationError": 4.668248317558315e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D4",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D4-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D4-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.5298221281347035,
+            "dominantReturnViaGap": 2.5298221281347035,
+            "returnRadius90": 2.5298221281347035,
+            "transferMilliamps": 10.000000000500776,
+            "dominantShare": 1,
+            "projectedArea": 0.8000000000000025,
+            "contact": "pcb_port_83",
+            "contactGap": 1.788854381999832
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D4-0-memory.png",
+            "escapeLength": 0.5657016959891515,
+            "nearestGroundViaGap": 1.131528538502238,
+            "dominantReturnViaGap": 1.131528538502238,
+            "returnRadius90": 1.131528538502238,
+            "transferMilliamps": 9.999999999411788,
+            "dominantShare": 1,
+            "projectedArea": 2.6206549989638006e-05,
+            "contact": "pcb_port_348",
+            "contactGap": 1.131512271254714
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 609,
+          "relativeResidual": 9.388426615657003e-09,
+          "maxConservationError": 3.132529287002891e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D4-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.5298221281347035,
+            "dominantReturnViaGap": 3.298484500494128,
+            "returnRadius90": 3.298484500494128,
+            "transferMilliamps": 10.000000000687216,
+            "dominantShare": 1,
+            "projectedArea": 1.1200000000000028,
+            "contact": "pcb_port_101",
+            "contactGap": 2.5298221281347035
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D4-1-memory.png",
+            "escapeLength": 0.5657016959891515,
+            "nearestGroundViaGap": 1.131528538502238,
+            "dominantReturnViaGap": 2.3998920111173767,
+            "returnRadius90": 2.3998920111173767,
+            "transferMilliamps": 9.999999999522267,
+            "dominantShare": 1,
+            "projectedArea": 6.620207902585662e-05,
+            "contact": "pcb_port_330",
+            "contactGap": 1.7887372156445998
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 592,
+          "relativeResidual": 9.608304856558339e-09,
+          "maxConservationError": 7.795713727332121e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_BA1",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_BA1-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_BA1-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 3.2000000000000006,
+            "dominantReturnViaGap": 3.2000000000000006,
+            "returnRadius90": 3.2000000000000006,
+            "transferMilliamps": 9.999999999038574,
+            "dominantShare": 1,
+            "projectedArea": 1.2800000000000011,
+            "contact": "pcb_port_0",
+            "contactGap": 3.2000000000000006
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_BA1-0-memory.png",
+            "escapeLength": 0.5657016942497188,
+            "nearestGroundViaGap": 1.1311368004768418,
+            "dominantReturnViaGap": 1.1311368004768418,
+            "returnRadius90": 1.1311368004768418,
+            "transferMilliamps": 10.000000001511271,
+            "dominantShare": 1,
+            "projectedArea": 6.8991145013797e-05,
+            "contact": "pcb_port_415",
+            "contactGap": 1.1311530610098675
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 594,
+          "relativeResidual": 9.214302563243822e-09,
+          "maxConservationError": 1.5378713839225063e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_BA1-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 3.2000000000000006,
+            "dominantReturnViaGap": 4.525483399593905,
+            "returnRadius90": 4.525483399593905,
+            "transferMilliamps": 9.999999999330822,
+            "dominantShare": 1,
+            "projectedArea": 1.7763568394002505e-15,
+            "contact": "pcb_port_55",
+            "contactGap": 3.394112549695428
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_BA1-1-memory.png",
+            "escapeLength": 0.5657016942497188,
+            "nearestGroundViaGap": 1.1311368004768418,
+            "dominantReturnViaGap": 1.7889572494123507,
+            "returnRadius90": 1.7889572494123507,
+            "transferMilliamps": 10.000000000448726,
+            "dominantShare": 1,
+            "projectedArea": 0.48005379238702517,
+            "contact": "pcb_port_417",
+            "contactGap": 1.1313326803889265
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 596,
+          "relativeResidual": 9.608675386287828e-09,
+          "maxConservationError": 1.35594088142624e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A12",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A12-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A12-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 3.577708763999664,
+            "dominantReturnViaGap": 3.577708763999664,
+            "returnRadius90": 3.577708763999664,
+            "transferMilliamps": 10.000000001014515,
+            "dominantShare": 1,
+            "projectedArea": 2.6645352591003757e-15,
+            "contact": "pcb_port_55",
+            "contactGap": 2.5298221281347035
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A12-0-memory.png",
+            "escapeLength": 0.565772399182745,
+            "nearestGroundViaGap": 1.7886580616185388,
+            "dominantReturnViaGap": 1.7886580616185388,
+            "returnRadius90": 1.7886580616185388,
+            "transferMilliamps": 10.000000000058712,
+            "dominantShare": 1,
+            "projectedArea": 0.32007660229501766,
+            "contact": "pcb_port_415",
+            "contactGap": 1.7887372156445973
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 597,
+          "relativeResidual": 9.456595558778635e-09,
+          "maxConservationError": 2.896537622316844e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A12-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 3.577708763999664,
+            "dominantReturnViaGap": 3.999999999999999,
+            "returnRadius90": 3.999999999999999,
+            "transferMilliamps": 10.000000002975032,
+            "dominantShare": 1,
+            "projectedArea": 1.1199999999999997,
+            "contact": "pcb_port_97",
+            "contactGap": 3.394112549695428
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A12-1-memory.png",
+            "escapeLength": 0.565772399182745,
+            "nearestGroundViaGap": 1.7886580616185388,
+            "dominantReturnViaGap": 2.262784841787881,
+            "returnRadius90": 2.262784841787881,
+            "transferMilliamps": 9.99999999845751,
+            "dominantShare": 1,
+            "projectedArea": 0.4801414008370557,
+            "contact": "pcb_port_417",
+            "contactGap": 1.7888508078976253
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 603,
+          "relativeResidual": 9.999207525954457e-09,
+          "maxConservationError": 1.972226577540083e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A10",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A10-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A10-0-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.88444102037119,
+            "dominantReturnViaGap": 2.88444102037119,
+            "returnRadius90": 2.88444102037119,
+            "transferMilliamps": 10.000000001664155,
+            "dominantShare": 1,
+            "projectedArea": 0.7999999999999989,
+            "contact": "pcb_port_97",
+            "contactGap": 2.262741699796952
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A10-0-memory.png",
+            "escapeLength": 0.5658105849531245,
+            "nearestGroundViaGap": 1.788716644257832,
+            "dominantReturnViaGap": 1.7888575296520939,
+            "returnRadius90": 1.7888575296520939,
+            "transferMilliamps": 9.99999999853051,
+            "dominantShare": 1,
+            "projectedArea": 0.9601521993789959,
+            "contact": "pcb_port_415",
+            "contactGap": 1.7888508078976262
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 601,
+          "relativeResidual": 9.994015623317547e-09,
+          "maxConservationError": 5.922548139000933e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A10-1-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.88444102037119,
+            "dominantReturnViaGap": 2.88444102037119,
+            "returnRadius90": 2.88444102037119,
+            "transferMilliamps": 9.999999998729036,
+            "dominantShare": 1,
+            "projectedArea": 1.3322676295501878e-15,
+            "contact": "pcb_port_98",
+            "contactGap": 2.8844410203711917
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A10-1-memory.png",
+            "escapeLength": 0.5658105849531245,
+            "nearestGroundViaGap": 1.788716644257832,
+            "dominantReturnViaGap": 1.788716644257832,
+            "returnRadius90": 1.788716644257832,
+            "transferMilliamps": 10.000000001629335,
+            "dominantShare": 1,
+            "projectedArea": 0.3199185923919856,
+            "contact": "pcb_port_396",
+            "contactGap": 1.7888508078976268
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 607,
+          "relativeResidual": 9.556335261853604e-09,
+          "maxConservationError": 1.8144515414214883e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A8",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A8-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A8-0-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.529822128134704,
+            "dominantReturnViaGap": 2.529822128134704,
+            "returnRadius90": 2.529822128134704,
+            "transferMilliamps": 10.00000000010983,
+            "dominantShare": 1,
+            "projectedArea": 2.6645352591003757e-15,
+            "contact": "pcb_port_55",
+            "contactGap": 1.5999999999999996
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A8-0-memory.png",
+            "escapeLength": 0.5657342267717252,
+            "nearestGroundViaGap": 1.1311749821424542,
+            "dominantReturnViaGap": 1.4142185209114597,
+            "returnRadius90": 1.4142185209114597,
+            "transferMilliamps": 10.000000000603366,
+            "dominantShare": 1,
+            "projectedArea": 0.1600820911450569,
+            "contact": "pcb_port_419",
+            "contactGap": 0.7998459999999952
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 587,
+          "relativeResidual": 9.790161785099813e-09,
+          "maxConservationError": 1.933805047517334e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A8-1-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.529822128134704,
+            "dominantReturnViaGap": 4.6524187257812475,
+            "returnRadius90": 4.6524187257812475,
+            "transferMilliamps": 10.000000002810474,
+            "dominantShare": 1,
+            "projectedArea": 0.6199999999999966,
+            "contact": "pcb_port_72",
+            "contactGap": 2.529822128134704
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A8-1-memory.png",
+            "escapeLength": 0.5657342267717252,
+            "nearestGroundViaGap": 1.1311749821424542,
+            "dominantReturnViaGap": 1.1311749821424542,
+            "returnRadius90": 1.1311749821424542,
+            "transferMilliamps": 9.99999999981282,
+            "dominantShare": 1,
+            "projectedArea": 0.47988181009699815,
+            "contact": "pcb_port_417",
+            "contactGap": 1.7887372156445982
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 591,
+          "relativeResidual": 9.775221044799684e-09,
+          "maxConservationError": 4.6840115289312634e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D15",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D15-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D15-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 4,
+            "dominantReturnViaGap": 4,
+            "returnRadius90": 4,
+            "transferMilliamps": 10.000000000896057,
+            "dominantShare": 1,
+            "projectedArea": 1.4400000000000035,
+            "contact": "pcb_port_83",
+            "contactGap": 3.2000000000000006
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D15-0-memory.png",
+            "escapeLength": 0.5657455454857805,
+            "nearestGroundViaGap": 1.131501683620931,
+            "dominantReturnViaGap": 1.131501683620931,
+            "returnRadius90": 1.131501683620931,
+            "transferMilliamps": 9.999999999831926,
+            "dominantShare": 1,
+            "projectedArea": 0.16003860269999137,
+            "contact": "pcb_port_357",
+            "contactGap": 0.8000999999999996
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 596,
+          "relativeResidual": 9.407441080142283e-09,
+          "maxConservationError": 2.1403175304880294e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D15-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 4,
+            "dominantReturnViaGap": 4.8,
+            "returnRadius90": 4.8,
+            "transferMilliamps": 9.99999999914809,
+            "dominantShare": 1,
+            "projectedArea": 1.7600000000000033,
+            "contact": "pcb_port_101",
+            "contactGap": 4
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D15-1-memory.png",
+            "escapeLength": 0.5657455454857805,
+            "nearestGroundViaGap": 1.131501683620931,
+            "dominantReturnViaGap": 2.8844837438933513,
+            "returnRadius90": 2.8844837438933513,
+            "transferMilliamps": 9.999999999819824,
+            "dominantShare": 1,
+            "projectedArea": 0.0001713989470033539,
+            "contact": "pcb_port_325",
+            "contactGap": 1.7888508078976277
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 595,
+          "relativeResidual": 9.245682737423418e-09,
+          "maxConservationError": 3.400718981143887e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D11",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D11-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D11-0-cpu.png",
+            "escapeLength": 0.5656854249492378,
+            "nearestGroundViaGap": 2.8844410203711908,
+            "dominantReturnViaGap": 2.8844410203711908,
+            "returnRadius90": 2.8844410203711908,
+            "transferMilliamps": 10.000000004660802,
+            "dominantShare": 1,
+            "projectedArea": 0.7999999999999998,
+            "contact": "pcb_port_83",
+            "contactGap": 2.262741699796952
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D11-0-memory.png",
+            "escapeLength": 0.5657780566096571,
+            "nearestGroundViaGap": 0.7997610018230448,
+            "dominantReturnViaGap": 1.5998920178515144,
+            "returnRadius90": 1.5998920178515144,
+            "transferMilliamps": 9.99999999773519,
+            "dominantShare": 1,
+            "projectedArea": 6.018991298617493e-05,
+            "contact": "pcb_port_325",
+            "contactGap": 1.1311530610098701
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 576,
+          "relativeResidual": 9.89824338213214e-09,
+          "maxConservationError": 3.0194702686935876e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D11-1-cpu.png",
+            "escapeLength": 0.5656854249492378,
+            "nearestGroundViaGap": 2.8844410203711908,
+            "dominantReturnViaGap": 3.577708763999663,
+            "returnRadius90": 3.577708763999663,
+            "transferMilliamps": 9.999999998214701,
+            "dominantShare": 1,
+            "projectedArea": 8.881784197001252e-16,
+            "contact": "pcb_port_98",
+            "contactGap": 2.5298221281347035
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D11-1-memory.png",
+            "escapeLength": 0.5657780566096571,
+            "nearestGroundViaGap": 0.7997610018230448,
+            "dominantReturnViaGap": 1.1314253160898418,
+            "returnRadius90": 1.1314253160898418,
+            "transferMilliamps": 9.999999999794753,
+            "dominantShare": 1,
+            "projectedArea": 9.380884500842512e-05,
+            "contact": "pcb_port_327",
+            "contactGap": 1.1313326803889285
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 597,
+          "relativeResidual": 9.564163741347205e-09,
+          "maxConservationError": 2.1956779840177044e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A9",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A9-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A9-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 1.6000000000000014,
+            "dominantReturnViaGap": 1.6000000000000014,
+            "returnRadius90": 1.6000000000000014,
+            "transferMilliamps": 10.000000002868505,
+            "dominantShare": 1,
+            "projectedArea": 0.6400000000000006,
+            "contact": "pcb_port_0",
+            "contactGap": 1.6000000000000005
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A9-0-memory.png",
+            "escapeLength": 0.5656578498889613,
+            "nearestGroundViaGap": 1.5998920089259225,
+            "dominantReturnViaGap": 1.5998920089259225,
+            "returnRadius90": 1.5998920089259225,
+            "transferMilliamps": 9.99999999582564,
+            "dominantShare": 1,
+            "projectedArea": 0.1599366037529819,
+            "contact": "pcb_port_337",
+            "contactGap": 1.7887372156446046
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 586,
+          "relativeResidual": 9.42086134178931e-09,
+          "maxConservationError": 2.734616171541312e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A9-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 1.6000000000000014,
+            "dominantReturnViaGap": 3.5777087639996643,
+            "returnRadius90": 3.5777087639996643,
+            "transferMilliamps": 9.999999999938344,
+            "dominantShare": 1,
+            "projectedArea": 3.552713678800501e-15,
+            "contact": "pcb_port_55",
+            "contactGap": 2.5298221281347035
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A9-1-memory.png",
+            "escapeLength": 0.5656578498889613,
+            "nearestGroundViaGap": 1.5998920089259225,
+            "dominantReturnViaGap": 2.262746655038743,
+            "returnRadius90": 2.262746655038743,
+            "transferMilliamps": 9.999999998205912,
+            "dominantShare": 1,
+            "projectedArea": 0.47999859770504827,
+            "contact": "pcb_port_339",
+            "contactGap": 1.7888508078976317
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 588,
+          "relativeResidual": 9.890172620618064e-09,
+          "maxConservationError": 1.703658775718547e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A7",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A7-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A7-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 3.298484500494129,
+            "dominantReturnViaGap": 4.000000000000001,
+            "returnRadius90": 4.000000000000001,
+            "transferMilliamps": 10.000000002772905,
+            "dominantShare": 1,
+            "projectedArea": 3.552713678800501e-15,
+            "contact": "pcb_port_55",
+            "contactGap": 2.884441020371191
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A7-0-memory.png",
+            "escapeLength": 0.5657285588875637,
+            "nearestGroundViaGap": 0.7998920178530383,
+            "dominantReturnViaGap": 0.7998920178530383,
+            "returnRadius90": 0.7998920178530383,
+            "transferMilliamps": 9.999999998481146,
+            "dominantShare": 1,
+            "projectedArea": 0.15995059530294498,
+            "contact": "pcb_port_337",
+            "contactGap": 1.131153061009874
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 586,
+          "relativeResidual": 9.752896672895516e-09,
+          "maxConservationError": 9.62910746147086e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A7-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 3.298484500494129,
+            "dominantReturnViaGap": 3.298484500494129,
+            "returnRadius90": 3.298484500494129,
+            "transferMilliamps": 9.999999999371395,
+            "dominantShare": 1,
+            "projectedArea": 1.6000000000000032,
+            "contact": "pcb_port_0",
+            "contactGap": 3.298484500494129
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A7-1-memory.png",
+            "escapeLength": 0.5657285588875637,
+            "nearestGroundViaGap": 0.7998920178530383,
+            "dominantReturnViaGap": 1.7889089481829425,
+            "returnRadius90": 1.7889089481829425,
+            "transferMilliamps": 10.00000000263548,
+            "dominantShare": 1,
+            "projectedArea": 0.4800646034550482,
+            "contact": "pcb_port_339",
+            "contactGap": 1.1313326803889316
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 588,
+          "relativeResidual": 9.629040173501785e-09,
+          "maxConservationError": 2.700259480957567e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D6",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D6-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D6-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.8844410203711917,
+            "dominantReturnViaGap": 2.8844410203711917,
+            "returnRadius90": 2.8844410203711917,
+            "transferMilliamps": 10.000000001519984,
+            "dominantShare": 1,
+            "projectedArea": 0.7999999999999998,
+            "contact": "pcb_port_83",
+            "contactGap": 2.262741699796952
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D6-0-memory.png",
+            "escapeLength": 0.5658813086478467,
+            "nearestGroundViaGap": 1.5999690006612661,
+            "dominantReturnViaGap": 1.7888611083661563,
+            "returnRadius90": 1.7888611083661563,
+            "transferMilliamps": 9.999999998629544,
+            "dominantShare": 1,
+            "projectedArea": 0.00012938221301794783,
+            "contact": "pcb_port_330",
+            "contactGap": 0.7998459999999987
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 609,
+          "relativeResidual": 9.65185840114581e-09,
+          "maxConservationError": 2.451447220221929e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D6-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.8844410203711917,
+            "dominantReturnViaGap": 3.5777087639996634,
+            "returnRadius90": 3.5777087639996634,
+            "transferMilliamps": 9.999999999241906,
+            "dominantShare": 1,
+            "projectedArea": 1.120000000000001,
+            "contact": "pcb_port_101",
+            "contactGap": 2.884441020371191
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D6-1-memory.png",
+            "escapeLength": 0.5658813086478467,
+            "nearestGroundViaGap": 1.5999690006612661,
+            "dominantReturnViaGap": 1.6001770006611773,
+            "returnRadius90": 1.6001770006611773,
+            "transferMilliamps": 10.000000000315756,
+            "dominantShare": 1,
+            "projectedArea": 0.6400521987579992,
+            "contact": "pcb_port_348",
+            "contactGap": 1.5999459999999992
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 592,
+          "relativeResidual": 9.172642886023113e-09,
+          "maxConservationError": 1.9526810512801408e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A2",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A2-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A2-0-cpu.png",
+            "escapeLength": 0.5656854249492372,
+            "nearestGroundViaGap": 3.199999999999999,
+            "dominantReturnViaGap": 3.298484500494129,
+            "returnRadius90": 3.298484500494129,
+            "transferMilliamps": 9.999999999839158,
+            "dominantShare": 1,
+            "projectedArea": 3.552713678800501e-15,
+            "contact": "pcb_port_55",
+            "contactGap": 2.4
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A2-0-memory.png",
+            "escapeLength": 0.5657667642032371,
+            "nearestGroundViaGap": 1.7888333740807216,
+            "dominantReturnViaGap": 1.7888333740807216,
+            "returnRadius90": 1.7888333740807216,
+            "transferMilliamps": 10.000000000122801,
+            "dominantShare": 1,
+            "projectedArea": 0.15988780456297036,
+            "contact": "pcb_port_337",
+            "contactGap": 1.5999460000000028
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 595,
+          "relativeResidual": 9.395918550259566e-09,
+          "maxConservationError": 1.8289278498302033e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A2-1-cpu.png",
+            "escapeLength": 0.5656854249492372,
+            "nearestGroundViaGap": 3.199999999999999,
+            "dominantReturnViaGap": 3.3941125496954268,
+            "returnRadius90": 3.3941125496954268,
+            "transferMilliamps": 10.000000000777675,
+            "dominantShare": 1,
+            "projectedArea": 0.7999999999999989,
+            "contact": "pcb_port_97",
+            "contactGap": 2.884441020371191
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A2-1-memory.png",
+            "escapeLength": 0.5657667642032371,
+            "nearestGroundViaGap": 1.7888333740807216,
+            "dominantReturnViaGap": 3.052658654581781,
+            "returnRadius90": 3.052658654581781,
+            "transferMilliamps": 9.999999998790347,
+            "dominantShare": 1,
+            "projectedArea": 0.6801156968950295,
+            "contact": "pcb_port_335",
+            "contactGap": 2.2626653322645853
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 605,
+          "relativeResidual": 9.468377417660196e-09,
+          "maxConservationError": 7.935650305824528e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D12",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D12-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D12-0-cpu.png",
+            "escapeLength": 0.5656854249492372,
+            "nearestGroundViaGap": 2.2627416997969507,
+            "dominantReturnViaGap": 2.2627416997969507,
+            "returnRadius90": 2.2627416997969507,
+            "transferMilliamps": 10.000000000136106,
+            "dominantShare": 1,
+            "projectedArea": 0.4799999999999991,
+            "contact": "pcb_port_83",
+            "contactGap": 1.788854381999832
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D12-0-memory.png",
+            "escapeLength": 0.5658218997502645,
+            "nearestGroundViaGap": 2.828339871901006,
+            "dominantReturnViaGap": 2.828339871901006,
+            "returnRadius90": 2.828339871901006,
+            "transferMilliamps": 9.999999999558781,
+            "dominantShare": 1,
+            "projectedArea": 0.6402115962469992,
+            "contact": "pcb_port_404",
+            "contactGap": 1.5999459999999956
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 605,
+          "relativeResidual": 9.619709394852463e-09,
+          "maxConservationError": 9.905987336157216e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D12-1-cpu.png",
+            "escapeLength": 0.5656854249492372,
+            "nearestGroundViaGap": 2.2627416997969507,
+            "dominantReturnViaGap": 2.8844410203711908,
+            "returnRadius90": 2.8844410203711908,
+            "transferMilliamps": 9.99999999948987,
+            "dominantShare": 1,
+            "projectedArea": 6.661338147750939e-16,
+            "contact": "pcb_port_98",
+            "contactGap": 1.788854381999832
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D12-1-memory.png",
+            "escapeLength": 0.5658218997502645,
+            "nearestGroundViaGap": 2.828339871901006,
+            "dominantReturnViaGap": 3.046304132680288,
+            "returnRadius90": 3.046304132680288,
+            "transferMilliamps": 9.99999999989272,
+            "dominantShare": 1,
+            "projectedArea": 1.4403331989470018,
+            "contact": "pcb_port_405",
+            "contactGap": 1.7888508078976253
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 601,
+          "relativeResidual": 9.859538090748625e-09,
+          "maxConservationError": 1.2527621563172321e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A11",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A11-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A11-0-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 4.079215610874229,
+            "dominantReturnViaGap": 4.664761515876242,
+            "returnRadius90": 4.664761515876242,
+            "transferMilliamps": 9.999999999475984,
+            "dominantShare": 1,
+            "projectedArea": 0,
+            "contact": "pcb_port_55",
+            "contactGap": 3.577708763999663
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A11-0-memory.png",
+            "escapeLength": 0.5657342159892732,
+            "nearestGroundViaGap": 1.5998920089259119,
+            "dominantReturnViaGap": 1.5998920089259119,
+            "returnRadius90": 1.5998920089259119,
+            "transferMilliamps": 10.000000001082192,
+            "dominantShare": 1,
+            "projectedArea": 0.15993419624695093,
+            "contact": "pcb_port_417",
+            "contactGap": 1.7887372156445966
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 593,
+          "relativeResidual": 9.431128794668712e-09,
+          "maxConservationError": 9.388272531753823e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A11-1-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 4.079215610874229,
+            "dominantReturnViaGap": 4.308131845707603,
+            "returnRadius90": 4.308131845707603,
+            "transferMilliamps": 10.000000001104286,
+            "dominantShare": 1,
+            "projectedArea": 1.4400000000000015,
+            "contact": "pcb_port_97",
+            "contactGap": 3.5777087639996634
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A11-1-memory.png",
+            "escapeLength": 0.5657342159892732,
+            "nearestGroundViaGap": 1.5998920089259119,
+            "dominantReturnViaGap": 2.54558936690288,
+            "returnRadius90": 2.54558936690288,
+            "transferMilliamps": 9.999999999767942,
+            "dominantShare": 1,
+            "projectedArea": 0.4801097022950387,
+            "contact": "pcb_port_419",
+            "contactGap": 1.7888508078976253
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 598,
+          "relativeResidual": 9.646475812351666e-09,
+          "maxConservationError": 2.357428159543225e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D1",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D1-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D1-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 1.5999999999999988,
+            "dominantReturnViaGap": 1.5999999999999988,
+            "returnRadius90": 1.5999999999999988,
+            "transferMilliamps": 9.999999999391354,
+            "dominantShare": 1,
+            "projectedArea": 0.4800000000000004,
+            "contact": "pcb_port_83",
+            "contactGap": 0.8000000000000003
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D1-0-memory.png",
+            "escapeLength": 0.5658162423234223,
+            "nearestGroundViaGap": 0.8002310013221166,
+            "dominantReturnViaGap": 0.9998796109237393,
+            "returnRadius90": 0.9998796109237393,
+            "transferMilliamps": 9.999999998424945,
+            "dominantShare": 1,
+            "projectedArea": 0.04001230030800684,
+            "contact": "pcb_port_392",
+            "contactGap": 1.1315122712547128
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 595,
+          "relativeResidual": 9.674369567658173e-09,
+          "maxConservationError": 3.0873205615631266e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D1-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 1.5999999999999988,
+            "dominantReturnViaGap": 2.3999999999999986,
+            "returnRadius90": 2.3999999999999986,
+            "transferMilliamps": 10.000000001497828,
+            "dominantShare": 1,
+            "projectedArea": 0.8000000000000007,
+            "contact": "pcb_port_101",
+            "contactGap": 1.6
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D1-1-memory.png",
+            "escapeLength": 0.5658162423234223,
+            "nearestGroundViaGap": 0.8002310013221166,
+            "dominantReturnViaGap": 0.8002310013221166,
+            "returnRadius90": 0.8002310013221166,
+            "transferMilliamps": 9.999999998348633,
+            "dominantShare": 1,
+            "projectedArea": 0.1600770092500028,
+            "contact": "pcb_port_394",
+            "contactGap": 1.131512271254714
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 603,
+          "relativeResidual": 9.768458476286342e-09,
+          "maxConservationError": 6.85909044092589e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D5",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D5-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D5-0-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 1.7888543819998313,
+            "dominantReturnViaGap": 1.7888543819998313,
+            "returnRadius90": 1.7888543819998313,
+            "transferMilliamps": 9.999999998882148,
+            "dominantShare": 1,
+            "projectedArea": 0.4800000000000013,
+            "contact": "pcb_port_83",
+            "contactGap": 1.1313708498984765
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D5-0-memory.png",
+            "escapeLength": 0.5657073519453326,
+            "nearestGroundViaGap": 0.7998690072911914,
+            "dominantReturnViaGap": 1.1311749888841256,
+            "returnRadius90": 1.1311749888841256,
+            "transferMilliamps": 10.000000001094673,
+            "dominantShare": 1,
+            "projectedArea": 0.15998780354200903,
+            "contact": "pcb_port_394",
+            "contactGap": 0.7998459999999987
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 592,
+          "relativeResidual": 9.681606907772881e-09,
+          "maxConservationError": 1.0410735153728451e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D5-1-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 1.7888543819998313,
+            "dominantReturnViaGap": 2.5298221281347026,
+            "returnRadius90": 2.5298221281347026,
+            "transferMilliamps": 9.999999998064274,
+            "dominantShare": 1,
+            "projectedArea": 0.8000000000000016,
+            "contact": "pcb_port_101",
+            "contactGap": 1.788854381999832
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D5-1-memory.png",
+            "escapeLength": 0.5657073519453326,
+            "nearestGroundViaGap": 0.7998690072911914,
+            "dominantReturnViaGap": 0.8001770013222089,
+            "returnRadius90": 0.8001770013222089,
+            "transferMilliamps": 10.00000000009283,
+            "dominantShare": 1,
+            "projectedArea": 0.32004619770000886,
+            "contact": "pcb_port_396",
+            "contactGap": 0.8001000000000023
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 597,
+          "relativeResidual": 9.870811096958333e-09,
+          "maxConservationError": 7.627801418349665e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_CKn",
+    "static": false,
+    "differential": true,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_CKn-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CKn-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.400000000000001,
+            "dominantReturnViaGap": 2.400000000000001,
+            "returnRadius90": 2.400000000000001,
+            "transferMilliamps": 10.000000001477716,
+            "dominantShare": 1,
+            "projectedArea": 0.9600000000000009,
+            "contact": "pcb_port_0",
+            "contactGap": 2.4000000000000004
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CKn-0-memory.png",
+            "escapeLength": 0.5657398725960545,
+            "nearestGroundViaGap": 1.1312782298997006,
+            "dominantReturnViaGap": 1.1312782298997006,
+            "returnRadius90": 1.1312782298997006,
+            "transferMilliamps": 9.999999998645414,
+            "dominantShare": 1,
+            "projectedArea": 8.300530802785033e-05,
+            "contact": "pcb_port_396",
+            "contactGap": 1.1313326803889303
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 610,
+          "relativeResidual": 9.410782490446281e-09,
+          "maxConservationError": 1.9919454916772624e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CKn-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.400000000000001,
+            "dominantReturnViaGap": 4.000000000000001,
+            "returnRadius90": 4.000000000000001,
+            "transferMilliamps": 10.00000000076629,
+            "dominantShare": 1,
+            "projectedArea": 1.7763568394002505e-15,
+            "contact": "pcb_port_55",
+            "contactGap": 2.8844410203711917
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CKn-1-memory.png",
+            "escapeLength": 0.5657398725960545,
+            "nearestGroundViaGap": 1.1312782298997006,
+            "dominantReturnViaGap": 2.2628230291812472,
+            "returnRadius90": 2.2628230291812472,
+            "transferMilliamps": 9.999999999124833,
+            "dominantShare": 1,
+            "projectedArea": 1.2801138047790346,
+            "contact": "pcb_port_415",
+            "contactGap": 2.2628449445147547
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 600,
+          "relativeResidual": 9.184874736178968e-09,
+          "maxConservationError": 4.1026195068678654e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D9",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D9-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D9-0-cpu.png",
+            "escapeLength": 0.5656854249492378,
+            "nearestGroundViaGap": 4.308131845707603,
+            "dominantReturnViaGap": 4.308131845707603,
+            "returnRadius90": 4.308131845707603,
+            "transferMilliamps": 9.999999998842139,
+            "dominantShare": 1,
+            "projectedArea": 1.4399999999999995,
+            "contact": "pcb_port_83",
+            "contactGap": 3.5777087639996643
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D9-0-memory.png",
+            "escapeLength": 0.5657073537978832,
+            "nearestGroundViaGap": 1.131163675175703,
+            "dominantReturnViaGap": 1.131163675175703,
+            "returnRadius90": 1.131163675175703,
+            "transferMilliamps": 10.000000001116875,
+            "dominantShare": 1,
+            "projectedArea": 0.1599846041580122,
+            "contact": "pcb_port_357",
+            "contactGap": 0.7998459999999996
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 593,
+          "relativeResidual": 9.775712869030201e-09,
+          "maxConservationError": 1.4171703715661695e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D9-1-cpu.png",
+            "escapeLength": 0.5656854249492378,
+            "nearestGroundViaGap": 4.308131845707603,
+            "dominantReturnViaGap": 5.059644256269407,
+            "returnRadius90": 5.059644256269407,
+            "transferMilliamps": 10.000000000710166,
+            "dominantShare": 1,
+            "projectedArea": 0,
+            "contact": "pcb_port_98",
+            "contactGap": 4.079215610874228
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D9-1-memory.png",
+            "escapeLength": 0.5657073537978832,
+            "nearestGroundViaGap": 1.131163675175703,
+            "dominantReturnViaGap": 2.399892011900745,
+            "returnRadius90": 2.399892011900745,
+            "transferMilliamps": 9.999999999037215,
+            "dominantShare": 1,
+            "projectedArea": 7.420186301487774e-05,
+            "contact": "pcb_port_325",
+            "contactGap": 1.7887372156446006
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 602,
+          "relativeResidual": 9.800522473582883e-09,
+          "maxConservationError": 7.529536022454764e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_DQM1",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_DQM1-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQM1-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 4,
+            "dominantReturnViaGap": 4.079215610874228,
+            "returnRadius90": 4.079215610874228,
+            "transferMilliamps": 9.99999999841933,
+            "dominantShare": 1,
+            "projectedArea": 9.992007221626409e-16,
+            "contact": "pcb_port_98",
+            "contactGap": 3.1999999999999997
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQM1-0-memory.png",
+            "escapeLength": 0.5657780811775973,
+            "nearestGroundViaGap": 1.1314252971703458,
+            "dominantReturnViaGap": 1.1314252971703458,
+            "returnRadius90": 1.1314252971703458,
+            "transferMilliamps": 10.000000000152863,
+            "dominantShare": 1,
+            "projectedArea": 0.0001494050919887968,
+            "contact": "pcb_port_344",
+            "contactGap": 1.131332680388929
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 602,
+          "relativeResidual": 9.940747898081815e-09,
+          "maxConservationError": 9.384677570189196e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQM1-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 4,
+            "dominantReturnViaGap": 4.079215610874228,
+            "returnRadius90": 4.079215610874228,
+            "transferMilliamps": 9.999999999860124,
+            "dominantShare": 1,
+            "projectedArea": 1.440000000000001,
+            "contact": "pcb_port_97",
+            "contactGap": 3.298484500494128
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQM1-1-memory.png",
+            "escapeLength": 0.5657780811775973,
+            "nearestGroundViaGap": 1.1314252971703458,
+            "dominantReturnViaGap": 1.5998920106960386,
+            "returnRadius90": 1.5998920106960386,
+            "transferMilliamps": 10.000000000020348,
+            "dominantShare": 1,
+            "projectedArea": 0.6400785950049936,
+            "contact": "pcb_port_327",
+            "contactGap": 1.5999459999999992
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 600,
+          "relativeResidual": 9.973088994291413e-09,
+          "maxConservationError": 8.28652065314097e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A3",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A3-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A3-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 2.262741699796953,
+            "dominantReturnViaGap": 2.262741699796953,
+            "returnRadius90": 2.262741699796953,
+            "transferMilliamps": 9.999999999280725,
+            "dominantShare": 1,
+            "projectedArea": 3.552713678800501e-15,
+            "contact": "pcb_port_55",
+            "contactGap": 1.1313708498984758
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A3-0-memory.png",
+            "escapeLength": 0.5657667424628292,
+            "nearestGroundViaGap": 1.788957249412349,
+            "dominantReturnViaGap": 1.9695823063261448,
+            "returnRadius90": 1.9695823063261448,
+            "transferMilliamps": 10.000000000678838,
+            "dominantShare": 1,
+            "projectedArea": 0.4400296911449857,
+            "contact": "pcb_port_335",
+            "contactGap": 1.131153061009874
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 595,
+          "relativeResidual": 9.67359885885742e-09,
+          "maxConservationError": 7.517002211659962e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A3-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 2.262741699796953,
+            "dominantReturnViaGap": 4.313351365237942,
+            "returnRadius90": 4.313351365237942,
+            "transferMilliamps": 9.99999999898573,
+            "dominantShare": 1,
+            "projectedArea": 1.0999999999999979,
+            "contact": "pcb_port_72",
+            "contactGap": 2.2627416997969525
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A3-1-memory.png",
+            "escapeLength": 0.5657667424628292,
+            "nearestGroundViaGap": 1.788957249412349,
+            "dominantReturnViaGap": 1.788957249412349,
+            "returnRadius90": 1.788957249412349,
+            "transferMilliamps": 10.00000000031777,
+            "dominantShare": 1,
+            "projectedArea": 0.4800538076130181,
+            "contact": "pcb_port_337",
+            "contactGap": 1.131332680388929
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 595,
+          "relativeResidual": 9.209089029875865e-09,
+          "maxConservationError": 3.464448088738395e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_BA0",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_BA0-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_BA0-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 1.7888543819998326,
+            "dominantReturnViaGap": 1.7888543819998326,
+            "returnRadius90": 1.7888543819998326,
+            "transferMilliamps": 10.000000000170425,
+            "dominantShare": 1,
+            "projectedArea": 0,
+            "contact": "pcb_port_55",
+            "contactGap": 0.7999999999999998
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_BA0-0-memory.png",
+            "escapeLength": 0.5658756505143145,
+            "nearestGroundViaGap": 1.7998920138144432,
+            "dominantReturnViaGap": 1.7998920138144432,
+            "returnRadius90": 1.7998920138144432,
+            "transferMilliamps": 9.999999999777708,
+            "dominantShare": 1,
+            "projectedArea": 0.5201036828289887,
+            "contact": "pcb_port_335",
+            "contactGap": 0.7998460000000023
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 591,
+          "relativeResidual": 9.529660181867338e-09,
+          "maxConservationError": 3.068153264249726e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_BA0-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 1.7888543819998326,
+            "dominantReturnViaGap": 3.9147158262126784,
+            "returnRadius90": 3.9147158262126784,
+            "transferMilliamps": 9.999999998431477,
+            "dominantShare": 1,
+            "projectedArea": 0.6399999999999988,
+            "contact": "pcb_port_72",
+            "contactGap": 1.7888543819998324
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_BA0-1-memory.png",
+            "escapeLength": 0.5658756505143145,
+            "nearestGroundViaGap": 1.7998920138144432,
+            "dominantReturnViaGap": 2.52994830781678,
+            "returnRadius90": 2.52994830781678,
+            "transferMilliamps": 10.000000000730461,
+            "dominantShare": 1,
+            "projectedArea": 0.7999798159290208,
+            "contact": "pcb_port_337",
+            "contactGap": 1.7887372156446013
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 598,
+          "relativeResidual": 9.842968147228405e-09,
+          "maxConservationError": 5.386974829279089e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A0",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A0-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A0-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 3.5777087639996625,
+            "dominantReturnViaGap": 3.5777087639996625,
+            "returnRadius90": 3.5777087639996625,
+            "transferMilliamps": 10.00000000151388,
+            "dominantShare": 1,
+            "projectedArea": 1.1200000000000008,
+            "contact": "pcb_port_97",
+            "contactGap": 2.884441020371191
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A0-0-memory.png",
+            "escapeLength": 0.5656960382369708,
+            "nearestGroundViaGap": 2.2627848417878833,
+            "dominantReturnViaGap": 2.720125302516971,
+            "returnRadius90": 2.720125302516971,
+            "transferMilliamps": 9.999999999045576,
+            "dominantShare": 1,
+            "projectedArea": 0.7600373022949896,
+            "contact": "pcb_port_335",
+            "contactGap": 1.7887372156446046
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 604,
+          "relativeResidual": 9.25703823317799e-09,
+          "maxConservationError": 2.0685051511414832e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A0-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 3.5777087639996625,
+            "dominantReturnViaGap": 4.308131845707604,
+            "returnRadius90": 4.308131845707604,
+            "transferMilliamps": 9.999999999834046,
+            "dominantShare": 1,
+            "projectedArea": 5.329070518200751e-15,
+            "contact": "pcb_port_55",
+            "contactGap": 3.298484500494128
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A0-1-memory.png",
+            "escapeLength": 0.5656960382369708,
+            "nearestGroundViaGap": 2.2627848417878833,
+            "dominantReturnViaGap": 2.2627848417878833,
+            "returnRadius90": 2.2627848417878833,
+            "transferMilliamps": 9.99999999957456,
+            "dominantShare": 1,
+            "projectedArea": 0.47996619916301597,
+            "contact": "pcb_port_337",
+            "contactGap": 1.7888508078976302
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 581,
+          "relativeResidual": 9.743361047746069e-09,
+          "maxConservationError": 1.803387163235353e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D10",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D10-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D10-0-cpu.png",
+            "escapeLength": 0.5656854249492385,
+            "nearestGroundViaGap": 3.5777087639996634,
+            "dominantReturnViaGap": 3.5777087639996634,
+            "returnRadius90": 3.5777087639996634,
+            "transferMilliamps": 10.000000001222915,
+            "dominantShare": 1,
+            "projectedArea": 1.1199999999999992,
+            "contact": "pcb_port_83",
+            "contactGap": 2.884441020371191
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D10-0-memory.png",
+            "escapeLength": 0.5657130096974979,
+            "nearestGroundViaGap": 1.6126294169278317,
+            "dominantReturnViaGap": 1.6126294169278317,
+            "returnRadius90": 1.6126294169278317,
+            "transferMilliamps": 9.999999997709157,
+            "dominantShare": 1,
+            "projectedArea": 0.3600108977000076,
+            "contact": "pcb_port_391",
+            "contactGap": 0.8001000000000005
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 599,
+          "relativeResidual": 9.67042734557903e-09,
+          "maxConservationError": 1.747751678981207e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D10-1-cpu.png",
+            "escapeLength": 0.5656854249492385,
+            "nearestGroundViaGap": 3.5777087639996634,
+            "dominantReturnViaGap": 4.308131845707603,
+            "returnRadius90": 4.308131845707603,
+            "transferMilliamps": 10.000000000418956,
+            "dominantShare": 1,
+            "projectedArea": 0,
+            "contact": "pcb_port_98",
+            "contactGap": 3.298484500494128
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D10-1-memory.png",
+            "escapeLength": 0.5657130096974979,
+            "nearestGroundViaGap": 1.6126294169278317,
+            "dominantReturnViaGap": 2.039455042109284,
+            "returnRadius90": 2.039455042109284,
+            "transferMilliamps": 9.999999999477556,
+            "dominantShare": 1,
+            "projectedArea": 0.3197564100869954,
+            "contact": "pcb_port_405",
+            "contactGap": 1.1311530610098663
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 601,
+          "relativeResidual": 9.954374878369804e-09,
+          "maxConservationError": 3.0722681314610044e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A4",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A4-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A4-0-cpu.png",
+            "escapeLength": 0.5656854249492391,
+            "nearestGroundViaGap": 1.7888543819998333,
+            "dominantReturnViaGap": 2.8844410203711925,
+            "returnRadius90": 2.8844410203711925,
+            "transferMilliamps": 10.000000000497176,
+            "dominantShare": 1,
+            "projectedArea": 1.7763568394002505e-15,
+            "contact": "pcb_port_55",
+            "contactGap": 1.7888543819998313
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A4-0-memory.png",
+            "escapeLength": 0.5657724195089395,
+            "nearestGroundViaGap": 1.1314140003663533,
+            "dominantReturnViaGap": 1.1314140003663533,
+            "returnRadius90": 1.1314140003663533,
+            "transferMilliamps": 9.999999999277078,
+            "dominantShare": 1,
+            "projectedArea": 0.1600921869870433,
+            "contact": "pcb_port_417",
+            "contactGap": 0.7998459999999952
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 588,
+          "relativeResidual": 9.572670679411974e-09,
+          "maxConservationError": 1.9693517104476524e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A4-1-cpu.png",
+            "escapeLength": 0.5656854249492391,
+            "nearestGroundViaGap": 1.7888543819998333,
+            "dominantReturnViaGap": 1.7888543819998333,
+            "returnRadius90": 1.7888543819998333,
+            "transferMilliamps": 9.999999997865292,
+            "dominantShare": 1,
+            "projectedArea": 0.9600000000000062,
+            "contact": "pcb_port_0",
+            "contactGap": 1.7888543819998326
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A4-1-memory.png",
+            "escapeLength": 0.5657724195089395,
+            "nearestGroundViaGap": 1.1314140003663533,
+            "dominantReturnViaGap": 1.7886066256706608,
+            "returnRadius90": 1.7886066256706608,
+            "transferMilliamps": 10.000000001934614,
+            "dominantShare": 1,
+            "projectedArea": 0.31989261425496807,
+            "contact": "pcb_port_415",
+            "contactGap": 1.7887372156445966
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 590,
+          "relativeResidual": 9.937646230521435e-09,
+          "maxConservationError": 8.267654268178434e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D3",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D3-full.svg",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D3-0-cpu.svg",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 3.298484500494129,
+            "dominantReturnViaGap": 3.298484500494129,
+            "returnRadius90": 3.298484500494129,
+            "transferMilliamps": 9.999999999736005,
+            "dominantShare": 1,
+            "projectedArea": 1.120000000000001,
+            "contact": "pcb_port_83",
+            "contactGap": 2.5298221281347035
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D3-0-memory.svg",
+            "escapeLength": 0.5657455428697612,
+            "nearestGroundViaGap": 0.8001310072888086,
+            "dominantReturnViaGap": 0.8001310072888086,
+            "returnRadius90": 0.8001310072888086,
+            "transferMilliamps": 9.999999997612717,
+            "dominantShare": 1,
+            "projectedArea": 1.6989913007137147e-05,
+            "contact": "pcb_port_409",
+            "contactGap": 0.7998459999999952
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 607,
+          "relativeResidual": 9.561164090359412e-09,
+          "maxConservationError": 4.284022537045108e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D3-1-cpu.svg",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 3.298484500494129,
+            "dominantReturnViaGap": 4.079215610874228,
+            "returnRadius90": 4.079215610874228,
+            "transferMilliamps": 10.000000003258673,
+            "dominantShare": 1,
+            "projectedArea": 1.4400000000000013,
+            "contact": "pcb_port_101",
+            "contactGap": 3.298484500494128
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D3-1-memory.svg",
+            "escapeLength": 0.5657455428697612,
+            "nearestGroundViaGap": 0.8001310072888086,
+            "dominantReturnViaGap": 0.8244304921222894,
+            "returnRadius90": 0.8244304921222894,
+            "transferMilliamps": 9.999999995595452,
+            "dominantShare": 1,
+            "projectedArea": 0.2799585012420067,
+            "contact": "pcb_port_392",
+            "contactGap": 0.8000999999999987
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 602,
+          "relativeResidual": 9.875855106829273e-09,
+          "maxConservationError": 1.0873890420041223e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_CKE",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_CKE-full.svg",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CKE-0-cpu.svg",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 3.2984845004941277,
+            "dominantReturnViaGap": 3.2984845004941277,
+            "returnRadius90": 3.2984845004941277,
+            "transferMilliamps": 10.000000000833372,
+            "dominantShare": 1,
+            "projectedArea": 1.1200000000000006,
+            "contact": "pcb_port_97",
+            "contactGap": 2.5298221281347035
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CKE-0-memory.svg",
+            "escapeLength": 0.5657780591300837,
+            "nearestGroundViaGap": 1.1312131688788796,
+            "dominantReturnViaGap": 1.1312131688788796,
+            "returnRadius90": 1.1312131688788796,
+            "transferMilliamps": 10.00000000005958,
+            "dominantShare": 1,
+            "projectedArea": 0.6399461899129903,
+            "contact": "pcb_port_396",
+            "contactGap": 1.1311530610098675
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 603,
+          "relativeResidual": 9.880572614954638e-09,
+          "maxConservationError": 2.3500343694749068e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CKE-1-cpu.svg",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 3.2984845004941277,
+            "dominantReturnViaGap": 3.2984845004941277,
+            "returnRadius90": 3.2984845004941277,
+            "transferMilliamps": 10.00000000237613,
+            "dominantShare": 1,
+            "projectedArea": 4.440892098500626e-16,
+            "contact": "pcb_port_98",
+            "contactGap": 2.884441020371191
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CKE-1-memory.svg",
+            "escapeLength": 0.5657780591300837,
+            "nearestGroundViaGap": 1.1312131688788796,
+            "dominantReturnViaGap": 1.6002230036444935,
+            "returnRadius90": 1.6002230036444935,
+            "transferMilliamps": 9.999999997865734,
+            "dominantShare": 1,
+            "projectedArea": 0.6401494108000065,
+            "contact": "pcb_port_415",
+            "contactGap": 1.6001999999999992
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 600,
+          "relativeResidual": 9.784272998418703e-09,
+          "maxConservationError": 9.048607420666282e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A6",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A6-full.svg",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A6-0-cpu.svg",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.400000000000001,
+            "dominantReturnViaGap": 2.400000000000001,
+            "returnRadius90": 2.400000000000001,
+            "transferMilliamps": 10.000000001081903,
+            "dominantShare": 1,
+            "projectedArea": 8.881784197001252e-16,
+            "contact": "pcb_port_55",
+            "contactGap": 1.7888543819998315
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A6-0-memory.svg",
+            "escapeLength": 0.5656635062835508,
+            "nearestGroundViaGap": 0.7998920178530277,
+            "dominantReturnViaGap": 0.7998920178530277,
+            "returnRadius90": 0.7998920178530277,
+            "transferMilliamps": 9.999999998808445,
+            "dominantShare": 1,
+            "projectedArea": 0.15992020469698787,
+            "contact": "pcb_port_417",
+            "contactGap": 1.1311530610098663
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 587,
+          "relativeResidual": 9.561188810656309e-09,
+          "maxConservationError": 2.6415537363418855e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A6-1-cpu.svg",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 2.400000000000001,
+            "dominantReturnViaGap": 4.432268042436063,
+            "returnRadius90": 4.432268042436063,
+            "transferMilliamps": 10.000000000571474,
+            "dominantShare": 1,
+            "projectedArea": 0.15999999999999748,
+            "contact": "pcb_port_72",
+            "contactGap": 2.4000000000000004
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A6-1-memory.svg",
+            "escapeLength": 0.5656635062835508,
+            "nearestGroundViaGap": 0.7998920178530277,
+            "dominantReturnViaGap": 2.059174112329746,
+            "returnRadius90": 2.059174112329746,
+            "transferMilliamps": 10.000000000807445,
+            "dominantShare": 1,
+            "projectedArea": 0.5600436965450513,
+            "contact": "pcb_port_419",
+            "contactGap": 1.1313326803889265
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 586,
+          "relativeResidual": 9.802600229365064e-09,
+          "maxConservationError": 3.438811989816561e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_ODT",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_ODT-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_ODT-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.800000000000001,
+            "dominantReturnViaGap": 4.866210024238575,
+            "returnRadius90": 4.866210024238575,
+            "transferMilliamps": 10.00000000257966,
+            "dominantShare": 1,
+            "projectedArea": 1.7600000000000016,
+            "contact": "pcb_port_97",
+            "contactGap": 4.079215610874228
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_ODT-0-memory.png",
+            "escapeLength": 0.5655927971544541,
+            "nearestGroundViaGap": 1.2806798434398068,
+            "dominantReturnViaGap": 1.7886754969655592,
+            "returnRadius90": 1.7886754969655592,
+            "transferMilliamps": 9.999999997469676,
+            "dominantShare": 1,
+            "projectedArea": 0.479859810086964,
+            "contact": "pcb_port_348",
+            "contactGap": 1.1311530610098712
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 599,
+          "relativeResidual": 9.675522386209113e-09,
+          "maxConservationError": 2.126782538083933e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_ODT-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.800000000000001,
+            "dominantReturnViaGap": 4.866210024238575,
+            "returnRadius90": 4.866210024238575,
+            "transferMilliamps": 10.000000000244693,
+            "dominantShare": 1,
+            "projectedArea": 1.3322676295501878e-15,
+            "contact": "pcb_port_98",
+            "contactGap": 4.308131845707603
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_ODT-1-memory.png",
+            "escapeLength": 0.5655927971544541,
+            "nearestGroundViaGap": 1.2806798434398068,
+            "dominantReturnViaGap": 1.2806798434398068,
+            "returnRadius90": 1.2806798434398068,
+            "transferMilliamps": 10.00000000047952,
+            "dominantShare": 1,
+            "projectedArea": 0.1200917107999544,
+            "contact": "pcb_port_335",
+            "contactGap": 1.6001999999999974
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 601,
+          "relativeResidual": 9.569546588191358e-09,
+          "maxConservationError": 2.4009245599506232e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D13",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D13-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D13-0-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 2.5298221281347026,
+            "dominantReturnViaGap": 2.5298221281347026,
+            "returnRadius90": 2.5298221281347026,
+            "transferMilliamps": 9.99999999962989,
+            "dominantShare": 1,
+            "projectedArea": 0.8000000000000003,
+            "contact": "pcb_port_83",
+            "contactGap": 1.7888543819998317
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D13-0-memory.png",
+            "escapeLength": 0.5658162435252282,
+            "nearestGroundViaGap": 0.8002390018219547,
+            "dominantReturnViaGap": 2.2628343440881813,
+            "returnRadius90": 2.2628343440881813,
+            "transferMilliamps": 10.000000000147368,
+            "dominantShare": 1,
+            "projectedArea": 5.5786996995266236e-05,
+            "contact": "pcb_port_325",
+            "contactGap": 1.1313326803889279
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 592,
+          "relativeResidual": 9.994688615525955e-09,
+          "maxConservationError": 2.4986839518710254e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D13-1-cpu.png",
+            "escapeLength": 0.5656854249492379,
+            "nearestGroundViaGap": 2.5298221281347026,
+            "dominantReturnViaGap": 3.2984845004941277,
+            "returnRadius90": 3.2984845004941277,
+            "transferMilliamps": 9.99999999866461,
+            "dominantShare": 1,
+            "projectedArea": 1.120000000000001,
+            "contact": "pcb_port_101",
+            "contactGap": 2.5298221281347035
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D13-1-memory.png",
+            "escapeLength": 0.5658162435252282,
+            "nearestGroundViaGap": 0.8002390018219547,
+            "dominantReturnViaGap": 0.8002390018219547,
+            "returnRadius90": 0.8002390018219547,
+            "transferMilliamps": 10.000000001154964,
+            "dominantShare": 1,
+            "projectedArea": 0.1600770092500099,
+            "contact": "pcb_port_357",
+            "contactGap": 1.1315122712547134
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 595,
+          "relativeResidual": 9.64593350339373e-09,
+          "maxConservationError": 2.6647208444849872e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_WEn",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_WEn-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_WEn-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 1.1313708498984771,
+            "dominantReturnViaGap": 1.1313708498984771,
+            "returnRadius90": 1.1313708498984771,
+            "transferMilliamps": 10.000000000446835,
+            "dominantShare": 1,
+            "projectedArea": 0.6400000000000006,
+            "contact": "pcb_port_0",
+            "contactGap": 1.1313708498984771
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_WEn-0-memory.png",
+            "escapeLength": 0.56573422916154,
+            "nearestGroundViaGap": 1.7887166442578335,
+            "dominantReturnViaGap": 1.7887166442578335,
+            "returnRadius90": 1.7887166442578335,
+            "transferMilliamps": 10.00000000005331,
+            "dominantShare": 1,
+            "projectedArea": 0.9599890076079873,
+            "contact": "pcb_port_348",
+            "contactGap": 1.7888508078976284
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 588,
+          "relativeResidual": 9.725588716311651e-09,
+          "maxConservationError": 8.87706596598703e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_WEn-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 1.1313708498984771,
+            "dominantReturnViaGap": 2.529822128134704,
+            "returnRadius90": 2.529822128134704,
+            "transferMilliamps": 9.999999999906208,
+            "dominantShare": 1,
+            "projectedArea": 1.7763568394002505e-15,
+            "contact": "pcb_port_55",
+            "contactGap": 1.5999999999999996
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_WEn-1-memory.png",
+            "escapeLength": 0.56573422916154,
+            "nearestGroundViaGap": 1.7887166442578335,
+            "dominantReturnViaGap": 2.7202564697824054,
+            "returnRadius90": 2.7202564697824054,
+            "transferMilliamps": 10.0000000004774,
+            "dominantShare": 1,
+            "projectedArea": 0.920134499379003,
+            "contact": "pcb_port_335",
+            "contactGap": 1.7888508078976317
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 599,
+          "relativeResidual": 9.220043067182608e-09,
+          "maxConservationError": 8.121900043787586e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_CSn0",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_CSn0-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CSn0-0-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 4,
+            "dominantReturnViaGap": 4,
+            "returnRadius90": 4,
+            "transferMilliamps": 10.000000000000695,
+            "dominantShare": 1,
+            "projectedArea": 1.4400000000000017,
+            "contact": "pcb_port_97",
+            "contactGap": 3.1999999999999997
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CSn0-0-memory.png",
+            "escapeLength": 0.5658049286149767,
+            "nearestGroundViaGap": 1.599823000661322,
+            "dominantReturnViaGap": 1.9697634531570047,
+            "returnRadius90": 1.9697634531570047,
+            "transferMilliamps": 9.999999999569113,
+            "dominantShare": 1,
+            "projectedArea": 0.6000252882289772,
+            "contact": "pcb_port_335",
+            "contactGap": 1.1313326803889316
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 602,
+          "relativeResidual": 9.646298096445957e-09,
+          "maxConservationError": 4.258628296417022e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_CSn0-1-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 4,
+            "dominantReturnViaGap": 4,
+            "returnRadius90": 4,
+            "transferMilliamps": 10.000000001934369,
+            "dominantShare": 1,
+            "projectedArea": 1.6653345369377348e-15,
+            "contact": "pcb_port_98",
+            "contactGap": 3.298484500494128
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_CSn0-1-memory.png",
+            "escapeLength": 0.5658049286149767,
+            "nearestGroundViaGap": 1.599823000661322,
+            "dominantReturnViaGap": 1.599823000661322,
+            "returnRadius90": 1.599823000661322,
+            "transferMilliamps": 9.999999997406487,
+            "dominantShare": 1,
+            "projectedArea": 0.639999798757998,
+            "contact": "pcb_port_348",
+            "contactGap": 1.5999459999999992
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 599,
+          "relativeResidual": 9.640326781749465e-09,
+          "maxConservationError": 4.5177843105551524e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D0",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D0-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D0-0-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 2.3999999999999995,
+            "dominantReturnViaGap": 2.3999999999999995,
+            "returnRadius90": 2.3999999999999995,
+            "transferMilliamps": 9.999999998230267,
+            "dominantShare": 1,
+            "projectedArea": 0.8000000000000016,
+            "contact": "pcb_port_83",
+            "contactGap": 1.6
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D0-0-memory.png",
+            "escapeLength": 0.5656691646863942,
+            "nearestGroundViaGap": 0.8000460006005958,
+            "dominantReturnViaGap": 0.8000460006005958,
+            "returnRadius90": 0.8000460006005958,
+            "transferMilliamps": 10.000000001985809,
+            "dominantShare": 1,
+            "projectedArea": 0.3200354015500011,
+            "contact": "pcb_port_344",
+            "contactGap": 0.8001000000000005
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 586,
+          "relativeResidual": 9.546892808113073e-09,
+          "maxConservationError": 1.2531676009829406e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D0-1-cpu.png",
+            "escapeLength": 0.5656854249492386,
+            "nearestGroundViaGap": 2.3999999999999995,
+            "dominantReturnViaGap": 3.1999999999999993,
+            "returnRadius90": 3.1999999999999993,
+            "transferMilliamps": 10.000000000150756,
+            "dominantShare": 1,
+            "projectedArea": 1.1200000000000023,
+            "contact": "pcb_port_101",
+            "contactGap": 2.4
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D0-1-memory.png",
+            "escapeLength": 0.5656691646863942,
+            "nearestGroundViaGap": 0.8000460006005958,
+            "dominantReturnViaGap": 2.3998920002002184,
+            "returnRadius90": 2.3998920002002184,
+            "transferMilliamps": 9.99999999947542,
+            "dominantShare": 1,
+            "projectedArea": 0.7999985991630041,
+            "contact": "pcb_port_328",
+            "contactGap": 1.5999459999999992
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 590,
+          "relativeResidual": 9.80958589850034e-09,
+          "maxConservationError": 9.74318514645236e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D8",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D8-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D8-0-cpu.png",
+            "escapeLength": 0.565685424949238,
+            "nearestGroundViaGap": 4.66476151587624,
+            "dominantReturnViaGap": 4.866210024238575,
+            "returnRadius90": 4.866210024238575,
+            "transferMilliamps": 10.000000000060847,
+            "dominantShare": 1,
+            "projectedArea": 9.992007221626409e-16,
+            "contact": "pcb_port_98",
+            "contactGap": 4
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D8-0-memory.png",
+            "escapeLength": 0.5658544310518376,
+            "nearestGroundViaGap": 1.0001756027523403,
+            "dominantReturnViaGap": 1.0001756027523403,
+            "returnRadius90": 1.0001756027523403,
+            "transferMilliamps": 9.999999999015882,
+            "dominantShare": 1,
+            "projectedArea": 0.12010330925001256,
+            "contact": "pcb_port_391",
+            "contactGap": 0.8001000000000005
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 610,
+          "relativeResidual": 9.931489991078164e-09,
+          "maxConservationError": 2.3974924704954384e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D8-1-cpu.png",
+            "escapeLength": 0.565685424949238,
+            "nearestGroundViaGap": 4.66476151587624,
+            "dominantReturnViaGap": 4.66476151587624,
+            "returnRadius90": 4.66476151587624,
+            "transferMilliamps": 9.999999999330349,
+            "dominantShare": 1,
+            "projectedArea": 1.4400000000000004,
+            "contact": "pcb_port_83",
+            "contactGap": 4.000000000000001
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D8-1-memory.png",
+            "escapeLength": 0.5658544310518376,
+            "nearestGroundViaGap": 1.0001756027523403,
+            "dominantReturnViaGap": 1.0001756027523403,
+            "returnRadius90": 1.0001756027523403,
+            "transferMilliamps": 9.999999998469654,
+            "dominantShare": 1,
+            "projectedArea": 0.5200663015500169,
+            "contact": "pcb_port_392",
+            "contactGap": 1.1313326803889303
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 607,
+          "relativeResidual": 9.481788230076785e-09,
+          "maxConservationError": 1.0850333184828e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_DQM0",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_DQM0-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQM0-0-cpu.png",
+            "escapeLength": 0.5656854249492391,
+            "nearestGroundViaGap": 3.2,
+            "dominantReturnViaGap": 3.2,
+            "returnRadius90": 3.2,
+            "transferMilliamps": 10.00000000199623,
+            "dominantShare": 1,
+            "projectedArea": 1.1200000000000006,
+            "contact": "pcb_port_83",
+            "contactGap": 2.4
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQM0-0-memory.png",
+            "escapeLength": 0.5657455292593995,
+            "nearestGroundViaGap": 0.6000460285186523,
+            "dominantReturnViaGap": 0.6000460285186523,
+            "returnRadius90": 0.6000460285186523,
+            "transferMilliamps": 9.999999997559705,
+            "dominantShare": 1,
+            "projectedArea": 0.2800138980080078,
+            "contact": "pcb_port_392",
+            "contactGap": 0.8001000000000005
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 611,
+          "relativeResidual": 9.853210111038932e-09,
+          "maxConservationError": 7.791507668341983e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_DQM0-1-cpu.png",
+            "escapeLength": 0.5656854249492391,
+            "nearestGroundViaGap": 3.2,
+            "dominantReturnViaGap": 4,
+            "returnRadius90": 4,
+            "transferMilliamps": 9.999999999063583,
+            "dominantShare": 1,
+            "projectedArea": 1.4400000000000008,
+            "contact": "pcb_port_101",
+            "contactGap": 3.1999999999999997
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_DQM0-1-memory.png",
+            "escapeLength": 0.5657455292593995,
+            "nearestGroundViaGap": 0.6000460285186523,
+            "dominantReturnViaGap": 0.6000460285186523,
+            "returnRadius90": 0.6000460285186523,
+            "transferMilliamps": 10.0000000014309,
+            "dominantShare": 1,
+            "projectedArea": 0.11994909429199652,
+            "contact": "pcb_port_391",
+            "contactGap": 1.131332680388929
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 604,
+          "relativeResidual": 9.54800060886369e-09,
+          "maxConservationError": 7.799981851814436e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_A1",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_A1-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A1-0-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.8,
+            "dominantReturnViaGap": 4.8,
+            "returnRadius90": 4.8,
+            "transferMilliamps": 9.999999998968303,
+            "dominantShare": 1,
+            "projectedArea": 1.7600000000000022,
+            "contact": "pcb_port_97",
+            "contactGap": 4
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A1-0-memory.png",
+            "escapeLength": 0.5658431156044901,
+            "nearestGroundViaGap": 1.7888333740807154,
+            "dominantReturnViaGap": 1.7888333740807154,
+            "returnRadius90": 1.7888333740807154,
+            "transferMilliamps": 10.00000000069483,
+            "dominantShare": 1,
+            "projectedArea": 0.16017979543707384,
+            "contact": "pcb_port_417",
+            "contactGap": 1.5999459999999956
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 606,
+          "relativeResidual": 9.830949950183828e-09,
+          "maxConservationError": 7.986739542730468e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_A1-1-cpu.png",
+            "escapeLength": 0.5656854249492382,
+            "nearestGroundViaGap": 4.8,
+            "dominantReturnViaGap": 4.8,
+            "returnRadius90": 4.8,
+            "transferMilliamps": 9.999999998099828,
+            "dominantShare": 1,
+            "projectedArea": 2.1094237467877974e-15,
+            "contact": "pcb_port_98",
+            "contactGap": 4.079215610874228
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_A1-1-memory.png",
+            "escapeLength": 0.5658431156044901,
+            "nearestGroundViaGap": 1.7888333740807154,
+            "dominantReturnViaGap": 2.2625076489136977,
+            "returnRadius90": 2.2625076489136977,
+            "transferMilliamps": 10.000000000194673,
+            "dominantShare": 1,
+            "projectedArea": 0.00011499689503580157,
+            "contact": "pcb_port_415",
+            "contactGap": 2.262665332264579
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 610,
+          "relativeResidual": 8.849388629898093e-09,
+          "maxConservationError": 6.672948609624005e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D14",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D14-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D14-0-cpu.png",
+            "escapeLength": 0.5656854249492372,
+            "nearestGroundViaGap": 1.7888543819998304,
+            "dominantReturnViaGap": 1.7888543819998304,
+            "returnRadius90": 1.7888543819998304,
+            "transferMilliamps": 9.999999999419892,
+            "dominantShare": 1,
+            "projectedArea": 0.47999999999999954,
+            "contact": "pcb_port_83",
+            "contactGap": 1.131370849898476
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D14-0-memory.png",
+            "escapeLength": 0.5658219324460676,
+            "nearestGroundViaGap": 2.0394746458303867,
+            "dominantReturnViaGap": 2.039548790488961,
+            "returnRadius90": 2.039548790488961,
+            "transferMilliamps": 10.000000000931687,
+            "dominantShare": 1,
+            "projectedArea": 0.4802559815969971,
+            "contact": "pcb_port_405",
+            "contactGap": 0.7998459999999952
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 593,
+          "relativeResidual": 9.84590019915733e-09,
+          "maxConservationError": 8.526395775944155e-12,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D14-1-cpu.png",
+            "escapeLength": 0.5656854249492372,
+            "nearestGroundViaGap": 1.7888543819998304,
+            "dominantReturnViaGap": 2.5298221281347018,
+            "returnRadius90": 2.5298221281347018,
+            "transferMilliamps": 10.000000000464032,
+            "dominantShare": 1,
+            "projectedArea": 0.7999999999999998,
+            "contact": "pcb_port_101",
+            "contactGap": 1.7888543819998317
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D14-1-memory.png",
+            "escapeLength": 0.5658219324460676,
+            "nearestGroundViaGap": 2.0394746458303867,
+            "dominantReturnViaGap": 2.0394746458303867,
+            "returnRadius90": 2.0394746458303867,
+            "transferMilliamps": 9.999999999636971,
+            "dominantShare": 1,
+            "projectedArea": 0.3198256161030031,
+            "contact": "pcb_port_404",
+            "contactGap": 1.1313326803889265
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 605,
+          "relativeResidual": 9.877706323533884e-09,
+          "maxConservationError": 1.7110015552816715e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_D7",
+    "static": false,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_D7-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D7-0-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.262741699796952,
+            "dominantReturnViaGap": 2.262741699796952,
+            "returnRadius90": 2.262741699796952,
+            "transferMilliamps": 10.000000003500169,
+            "dominantShare": 1,
+            "projectedArea": 0.4800000000000004,
+            "contact": "pcb_port_83",
+            "contactGap": 1.788854381999832
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D7-0-memory.png",
+            "escapeLength": 0.5657780561713202,
+            "nearestGroundViaGap": 0.7997690013228833,
+            "dominantReturnViaGap": 0.7997690013228833,
+            "returnRadius90": 0.7997690013228833,
+            "transferMilliamps": 9.999999997409827,
+            "dominantShare": 1,
+            "projectedArea": 0.16002300800801095,
+            "contact": "pcb_port_394",
+            "contactGap": 1.131332680388929
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 600,
+          "relativeResidual": 9.7380966794601e-09,
+          "maxConservationError": 5.3961061986267296e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_D7-1-cpu.png",
+            "escapeLength": 0.5656854249492376,
+            "nearestGroundViaGap": 2.262741699796952,
+            "dominantReturnViaGap": 2.8844410203711908,
+            "returnRadius90": 2.8844410203711908,
+            "transferMilliamps": 9.999999997375586,
+            "dominantShare": 1,
+            "projectedArea": 0.8000000000000016,
+            "contact": "pcb_port_101",
+            "contactGap": 2.262741699796952
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_D7-1-memory.png",
+            "escapeLength": 0.5657780561713202,
+            "nearestGroundViaGap": 0.7997690013228833,
+            "dominantReturnViaGap": 1.1315285385022356,
+            "returnRadius90": 1.1315285385022356,
+            "transferMilliamps": 10.000000001380009,
+            "dominantShare": 1,
+            "projectedArea": 0.6401370065500203,
+            "contact": "pcb_port_396",
+            "contactGap": 1.1315122712547152
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 594,
+          "relativeResidual": 9.82566158587449e-09,
+          "maxConservationError": 5.664700785811168e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  },
+  {
+    "name": "DDR_RESETn_SIGNAL",
+    "static": true,
+    "differential": false,
+    "cases": [
+      {
+        "label": "Nearest package GND contacts",
+        "fullImage": "/experiments/DDR_RESETn_SIGNAL-full.png",
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_RESETn_SIGNAL-0-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 4.079215610874227,
+            "dominantReturnViaGap": 4.079215610874227,
+            "returnRadius90": 4.079215610874227,
+            "transferMilliamps": 10.000000001800483,
+            "dominantShare": 1,
+            "projectedArea": 1.4400000000000022,
+            "contact": "pcb_port_97",
+            "contactGap": 3.298484500494128
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_RESETn_SIGNAL-0-memory.png",
+            "escapeLength": 0.565799271244671,
+            "nearestGroundViaGap": 1.1311749821424668,
+            "dominantReturnViaGap": 1.1313758106345588,
+            "returnRadius90": 1.1313758106345588,
+            "transferMilliamps": 9.999999998680266,
+            "dominantShare": 1,
+            "projectedArea": 0.159986208855031,
+            "contact": "pcb_port_339",
+            "contactGap": 0.7998460000000023
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 603,
+          "relativeResidual": 9.597623162660321e-09,
+          "maxConservationError": 3.324252381543369e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      },
+      {
+        "label": "Second-nearest package GND contacts",
+        "fullImage": null,
+        "endpoints": [
+          {
+            "end": "Processor",
+            "image": "/experiments/DDR_RESETn_SIGNAL-1-cpu.png",
+            "escapeLength": 0.5656854249492388,
+            "nearestGroundViaGap": 4.079215610874227,
+            "dominantReturnViaGap": 4.079215610874227,
+            "returnRadius90": 4.079215610874227,
+            "transferMilliamps": 10.000000001147592,
+            "dominantShare": 1,
+            "projectedArea": 2.220446049250313e-15,
+            "contact": "pcb_port_98",
+            "contactGap": 3.5777087639996634
+          },
+          {
+            "end": "Memory",
+            "image": "/experiments/DDR_RESETn_SIGNAL-1-memory.png",
+            "escapeLength": 0.565799271244671,
+            "nearestGroundViaGap": 1.1311749821424668,
+            "dominantReturnViaGap": 1.1311749821424668,
+            "returnRadius90": 1.1311749821424668,
+            "transferMilliamps": 9.99999999871907,
+            "dominantShare": 1,
+            "projectedArea": 0.48002898990296217,
+            "contact": "pcb_port_337",
+            "contactGap": 1.7887372156446046
+          }
+        ],
+        "diagnostics": {
+          "converged": true,
+          "iterations": 604,
+          "relativeResidual": 9.463599211601555e-09,
+          "maxConservationError": 5.351994588069682e-11,
+          "connectedGroundComponents": 46,
+          "groundViaCount": 67,
+          "totalGroundViaEdgeCount": 201,
+          "cropped": true,
+          "unconnectedAnchors": 1,
+          "signalCurrentConvention": "Signed instantaneous/in-phase excitations following ordered signal routes",
+          "model": "Image-current preferred fields (inverse-spacing reference split) projected onto a connected sheet/trace/plated-via graph; frequency, coplanar coupling, power-plane displacement current, and wave effects omitted"
+        }
+      }
+    ]
+  }
+]
