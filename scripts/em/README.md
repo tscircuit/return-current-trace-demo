@@ -1,5 +1,31 @@
 # Frequency-domain EM pilot
 
+## Latest-board runs
+
+For both cases, including mesh generation, first/second-order solves, SI export, via integration and refreshed pages, run:
+
+```sh
+.venv-em/bin/python scripts/em/run-latest.py
+```
+
+This uses the pinned local Circuit JSON without downloading a changing upstream version.
+
+The latest pipeline extracts the selected DDR_D8 trace and exported GND geometry directly from the pinned `data/board.circuit.json`; it resolves net connectivity through source-trace IDs and connectivity keys rather than assuming old net IDs. The processor case isolates x [-4,4], y [-22,-15] mm; the memory case isolates x [-1.5,4.5], y [-25.5,-21.5] mm. Source/load test fixtures are recorded in each case JSON and provenance.
+
+```sh
+.venv-em/bin/python scripts/em/prepare-latest.py
+.venv-em/bin/python scripts/em/build.py data/em-latest-ddr-d8-memory
+scripts/em/run.sh data/em-latest-ddr-d8-memory
+.venv-em/bin/python scripts/em/export.py data/em-latest-ddr-d8-memory
+.venv-em/bin/python scripts/em/vias.py data/em-latest-ddr-d8-memory
+```
+
+Replace `memory` with `cpu` for the other case. The builder emits a first-order config. Checked-in `palace-order2.json` runs the second-order check using `scripts/em/run.sh data/em-latest-ddr-d8-memory palace-order2.json`; export and via scripts accept `postpro-order2` as their second argument. Render with `scripts/em/render-latest.py <case_dir> <public/em/latest/case>`, then run `python scripts/em/build-latest-page.py` after both cases have reports and convergence JSON. Configurations, logs and raw port CSV are checked in; volume fields and meshes are ignored.
+
+Ground maps select the inner1 upper and inner2 lower faces, facing top/bottom signal traces respectively. They do not sum both faces of a ground plane. Exported GND vias are top→inner1, signal vias top↔bottom; unknown fabrication stubs are not inferred. Local crops omit any GND stitching through plated holes or other geometry outside them and truncate interplane coupling. The full board may connect the planes outside these domains; the local model cannot establish global plane isolation. These effects, fixture geometry and local-density convergence must be resolved before engineering signoff. The linear solver uses complex SuperLU coarse solves with p-multigrid and `EstimatorMG=true` for the post-solve flux estimator.
+
+## Historical PCB cases
+
 **Historical PCB cases:** these cached geometries and results precede the current board snapshot in `data/board.circuit.json`. The latest board routes DDR on top/bottom and has GND on inner1/inner2. The commands here reproduce the previous board; they do not import or simulate the latest snapshot. New crop geometry, port/load fixtures and meshes are required before rerunning it at 400 MHz / 1 V.
 
 This directory adds a real Palace v0.14.0 Maxwell workflow. The original 94 graph experiments remain frequency independent and are not EM results.

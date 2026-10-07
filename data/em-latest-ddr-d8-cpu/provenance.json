@@ -1,0 +1,11 @@
+{
+  "board_snapshot_sha256": "80ef96cf94a1dac4f3d062f694fe71529a9a57f5a1dd6e8b1abdf92302968b13",
+  "board_url": "https://tscircuit.com/astra/am3352-sbc#pcb",
+  "scope": "Isolated DDR_D8 cpu transition, other signal/power copper omitted",
+  "fixture": "400 MHz, 1 V normalized; 50 ohm test ports. CPU input top trace cut to inner1 GND; memory input actual signal/GND pads; bottom cut load to inner2 GND. Crop fixtures are assumed.",
+  "accuracy": "Provisional; local-density, crop and port-fixture convergence not established",
+  "via_spans": "GND top-to-inner1; signal top-to-bottom, as exported. No unexported stubs or GND connections to inner2 inferred. Fabrication spans unknown.",
+  "palace_image": "benvial/palace@sha256:f0f3a3cbbdf1ee2d8f856ddbe1f5bf4628a92ee8ab87d1e27dc33402ad9c8dda",
+  "frequency_hz": 400000000,
+  "normalization": "1 V signal-to-GND peak phasor"
+}

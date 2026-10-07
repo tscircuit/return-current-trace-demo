@@ -17,7 +17,11 @@
     "inner2"
   ],
   "internal_dielectric_thicknesses": "Not specified by the export; existing layer-depth assumptions are not fabrication data",
-  "results_status": "pending_rerun",
+  "results_status": "partial_em_rerun_complete",
   "published_results_board_sha256": "c868860d9c327475ba597cea196d0eeace169459db16d5ccf266ae9055f26d34",
-  "results_note": "Existing graph and Palace case geometry, contacts, numerical results and images use the previous board. Regenerate geometry and fixtures before rerunning; do not relabel these cached cases as the latest PCB."
+  "results_note": "Latest DDR_D8 isolated processor-side and memory-side transition cases completed at 400 MHz / 1 V normalized, with first/second element-order checks and provisional accuracy. Historical graph cases and earlier EM cases still use the previous PCB; all 47 signals have not been rerun.",
+  "latest_em_completed_cases": [
+    "cpu",
+    "memory"
+  ]
 }

@@ -7,6 +7,6 @@ __pycache__/
 .venv-em/
 data/em-*/mesh.msh
 data/em-*/postpro*/
-data/em-*/surface-triangles.json
+data/em-*/surface-triangles*.json
 data/em-*/geometry.json
 .em-mpl-cache/

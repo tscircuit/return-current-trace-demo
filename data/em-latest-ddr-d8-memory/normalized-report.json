@@ -1,0 +1,70 @@
+{
+  "finite_element_order": 2,
+  "solver": "Palace v0.14.0",
+  "frequency_hz": 400000000.0,
+  "config_file": "palace-order2.json",
+  "postprocessing_folder": "postpro-order2",
+  "input_voltage_V": {
+    "real": 1.0,
+    "imag": 0.0,
+    "magnitude": 1.0,
+    "phase_deg": 0.0
+  },
+  "input_current_A": {
+    "real": 0.00039928384768108733,
+    "imag": 0.0027428603959401814,
+    "magnitude": 0.002771770326458551,
+    "phase_deg": 81.71751350113014
+  },
+  "load_voltage_V": {
+    "real": 0.021126746568565863,
+    "imag": 0.10850855115267702,
+    "magnitude": 0.11054612202074542,
+    "phase_deg": 78.98228402373283
+  },
+  "load_current_A": {
+    "real": 0.00042253493137122024,
+    "imag": 0.0021701710230542614,
+    "magnitude": 0.0022109224404155974,
+    "phase_deg": 78.98228402373888
+  },
+  "input_impedance_ohm": {
+    "real": 51.971740321448365,
+    "imag": -357.01726744940976,
+    "magnitude": 360.78025313074363,
+    "phase_deg": -81.71751350113014
+  },
+  "source_reference_ohm": 50,
+  "load_ohm": 50,
+  "port_csv_normalization_factor": {
+    "real": 0.07212235970022737,
+    "imag": 0.009697475929087256,
+    "magnitude": 0.07277139416092156,
+    "phase_deg": 7.657984315426197
+  },
+  "field_normalization_factor": {
+    "real": -0.07212235970022737,
+    "imag": -0.009697475929087256,
+    "magnitude": 0.07277139416092156,
+    "phase_deg": -172.3420156845738
+  },
+  "native_port_voltage_axis": "GND minus signal",
+  "displayed_input_voltage_axis": "signal minus GND",
+  "surface_current_units": "A/m",
+  "surface_current_SI_scale": 51.5210513090037,
+  "phasor_convention": "exp(+j omega t), terminal phasor magnitude 1 V; Palace documentation describes peak phasors",
+  "s11_db": -0.3404521432699,
+  "s21_db": -13.35804370748,
+  "board_snapshot_sha256": "80ef96cf94a1dac4f3d062f694fe71529a9a57f5a1dd6e8b1abdf92302968b13",
+  "board_url": "https://tscircuit.com/astra/am3352-sbc#pcb",
+  "scope": "Isolated DDR_D8 memory transition, other signal/power copper omitted",
+  "fixture": "400 MHz, 1 V normalized; 50 ohm test ports. CPU input top trace cut to inner1 GND; memory input actual signal/GND pads; bottom cut load to inner2 GND. Crop fixtures are assumed.",
+  "accuracy": "Provisional; local-density, crop and port-fixture convergence not established",
+  "via_spans": "GND top-to-inner1; signal top-to-bottom, as exported. No unexported stubs or GND connections to inner2 inferred. Fabrication spans unknown.",
+  "display_ground_faces_mm": {
+    "top": 1.635,
+    "inner1": 1.4175,
+    "inner2": 0.1825,
+    "bottom": -0.035
+  }
+}

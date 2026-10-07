@@ -1,0 +1,106 @@
+>> /usr/bin/mpirun -n 4 /opt/palace/bin/palace-x86_64.bin palace.json
+
+_____________     _______
+_____   __   \____ __   /____ ____________
+____   /_/  /  __ ` /  /  __ ` /  ___/  _ \
+___   _____/  /_/  /  /  /_/  /  /__/  ___/
+  /__/     \___,__/__/\___,__/\_____\_____/
+
+
+[38;2;255;255;000m--> Warning![0m
+Output folder is not empty; program will overwrite content! (postpro)
+Git changeset ID: v0.14.0
+Running with 4 MPI processes, 1 OpenMP thread
+Device configuration: omp,cpu
+Memory configuration: host-std
+libCEED backend: /cpu/self/xsmm/blocked
+
+Added 5895 boundary elements for material interfaces to the mesh
+Finished partitioning mesh into 4 subdomains
+
+Characteristic length and time scales:
+ L₀ = 1.000e-03 m, t₀ = 3.336e-03 ns
+
+Mesh curvature order: 1
+Mesh bounding box:
+ (Xmin, Ymin, Zmin) = (-6.500e-03, -3.050e-02, -5.000e-03) m
+ (Xmax, Ymax, Zmax) = (+9.500e-03, -1.650e-02, +6.600e-03) m
+
+Parallel Mesh Stats:
+
+                minimum     average     maximum       total
+ vertices          4440        4572        4770       18288
+ edges            22449       22881       23259       91526
+ faces            32333       32754       33373      131017
+ elements         14330       14449       14733       57797
+ neighbors            3           3           3
+
+            minimum     maximum
+ h        0.0022464      3.4009
+ kappa      1.04301     417.443
+
+Configuring Robin absorbing BC (order 1) at attributes:
+ 13
+
+Configuring Robin finite conductivity BC at attributes:
+ 11: σ = 5.800e+07 S/m, n = (-0.1,+0.1,+1.0)
+
+Configuring Robin impedance BC for lumped ports at attributes:
+ 21: Rs = 1.041e+01 Ω/sq, n = (+0.0,+0.0,+1.0)
+ 22: Rs = 2.740e+01 Ω/sq, n = (-0.7,+0.7,+0.0)
+
+Configuring lumped port circuit properties:
+ Index = 1: R = 5.000e+01 Ω
+ Index = 2: R = 5.000e+01 Ω
+
+Configuring lumped port excitation source term at attributes:
+ 21: Index = 1
+
+Computing frequency response for:
+Excitation with index 1 has contributions from:
+ Lumped port  1
+
+Assembling system matrices, number of global unknowns:
+ H1 (p = 1): 18288, ND (p = 1): 91526, RT (p = 1): 131017
+ Operator assembly level: Partial
+ Mesh geometries:
+  Tetrahedron: P = 6, Q = 4 (quadrature order = 2)
+
+Assembling multigrid hierarchy:
+ Level 0 (p = 1): 91526 unknowns
+ Level 0 (auxiliary) (p = 1): 18288 unknowns
+
+It 1/1: ω/2π = 4.000e-01 GHz (total elapsed time = 2.35e-01 s)
+
+  Residual norms for GMRES solve
+  0 (restart 0) KSP residual norm 2.546151e+01
+  1 (restart 0) KSP residual norm 5.843896e-09
+GMRES solver converged in 1 iteration (avg. reduction factor: 2.295e-10)
+ Sol. ||E|| = 2.546151e+01 (||RHS|| = 6.603078e-02)
+ Field energy E (1.178e-01 J) + H (1.592e-03 J) = 1.194e-01 J
+ S[1][1] = +9.065e-01-2.919e-01i, |S[1][1]| = -4.244e-01, arg(S[1][1]) = -1.785e+01
+ S[2][1] = +7.991e-02+2.175e-01i, |S[2][1]| = -1.270e+01, arg(S[2][1]) = +6.983e+01
+
+ Wrote fields to disk at step 1
+ Updating solution error estimates
+
+Completed 0 iterations of adaptive mesh refinement (AMR):
+ Indicator norm = 3.966e-01, global unknowns = 91526
+ Max. iterations = 0, tol. = 1.000e-02
+
+Elapsed Time Report (s)           Min.        Max.        Avg.
+==============================================================
+Initialization                   0.030       0.032       0.031
+  Mesh Preprocessing             0.493       0.494       0.494
+Operator Construction            0.079       0.082       0.081
+Linear Solve                     0.077       0.079       0.078
+  Setup                          0.231       0.233       0.232
+  Preconditioner                 3.239       3.241       3.240
+Estimation                       0.022       0.025       0.023
+  Construction                   0.119       0.120       0.120
+  Solve                          0.948       0.949       0.949
+Postprocessing                   0.024       0.028       0.025
+Disk IO                          1.664       1.665       1.665
+--------------------------------------------------------------
+Total                            6.962       6.969       6.965
+

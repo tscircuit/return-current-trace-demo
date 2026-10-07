@@ -21,6 +21,13 @@ def update(circuit):
         raise ValueError('Unexpected stackup: inspect the new export before replacing this snapshot')
     content = json.dumps(circuit, separators=(',', ':')).encode()
     sha = hashlib.sha256(content).hexdigest()
+    completed = []
+    for name in ['cpu', 'memory']:
+        report_path = ROOT / f'data/em-latest-ddr-d8-{name}/normalized-report.json'
+        if report_path.exists():
+            report = json.loads(report_path.read_text())
+            if report.get('board_snapshot_sha256') == sha and report.get('finite_element_order') == 2:
+                completed.append(name)
     metadata = {
         'board_url': 'https://tscircuit.com/astra/am3352-sbc#pcb',
         'download_endpoint': ENDPOINT,
@@ -30,9 +37,10 @@ def update(circuit):
         'ddr_trace_count': len(ddr), 'ddr_signal_layers': sorted(layers),
         'ground_pour_layers': sorted(e['layer'] for e in pours),
         'internal_dielectric_thicknesses': 'Not specified by the export; existing layer-depth assumptions are not fabrication data',
-        'results_status': 'pending_rerun' if sha != HISTORICAL_SHA else 'historical_snapshot',
+        'results_status': 'partial_em_rerun_complete' if completed else 'pending_rerun' if sha != HISTORICAL_SHA else 'historical_snapshot',
+        'latest_em_completed_cases': completed,
         'published_results_board_sha256': HISTORICAL_SHA,
-        'results_note': 'Existing graph and Palace case geometry, contacts, numerical results and images use the previous board. Regenerate geometry and fixtures before rerunning; do not relabel these cached cases as the latest PCB.',
+        'results_note': ('Latest DDR_D8 isolated transition cases are complete for: ' + ', '.join(completed) + '. 400 MHz, 1 V normalized, provisional accuracy. Historical graph cases and earlier EM cases still use the previous PCB; all 47 signals have not been rerun.' if completed else 'Existing graph and Palace case geometry, contacts, numerical results and images use the previous board. Regenerate geometry and fixtures before rerunning; do not relabel these cached cases as the latest PCB.'),
     }
     (ROOT / 'data/board.circuit.json').write_bytes(content)
     (ROOT / 'data/board-snapshot.json').write_text(json.dumps(metadata, indent=2) + '\n')

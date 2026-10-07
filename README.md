@@ -6,17 +6,19 @@
 
 [data/board.circuit.json](data/board.circuit.json) now contains the latest upstream export: 47 DDR traces routed on **top and bottom**, with **inner1 and inner2 GND pours**. GND is now `source_net_0`. The export specifies a 1.6 mm board but does not specify internal dielectric thicknesses. [Snapshot provenance](data/board-snapshot.json) records the download endpoint, timestamp and content hash.
 
-Refresh with `python scripts/update-board.py`. This validates the layer assignment before replacing the input. **Existing heatmaps and cached Palace cases belong to the previous PCB and have not been rerun.** Their old trace geometry, package contacts and load fixtures need regeneration; the historical graph runner now rejects a mismatched input instead of using obsolete contacts or reusing stale results. The EM reproduction commands below reproduce the historical cases only.
+Refresh with `python scripts/update-board.py`. This validates the layer assignment before replacing the input. **The 94 graph cases and `data/em-ddr-d8-*` Palace cases are historical.** Updated DDR_D8 processor-side and memory-side transition runs are in `data/em-latest-ddr-d8-*`, with four-layer maps at `/em/latest/`. The historical graph runner rejects mismatched input rather than using obsolete contacts or stale results.
 
 The earlier approximation viewer highlights the selected trace on the PCB, overlays modeled GND return density and direction, and zooms into processor and memory dogbones. Labels and arrows remain a fixed screen size. It contains 47 traces × two package-ground contact assumptions, including hypothetical reset and isolated differential-leg cases.
 
 ## 400 MHz electromagnetic pilot
 
-The default page now shows real Palace v0.14.0 frequency-domain Maxwell results for the processor and memory dogbones of DDR_D8. Both use a 1 V normalized input phasor and 50 Ω source-reference/load fixtures. Four layer images combine PCB context, the cyan target trace, surface-current density in A/m and GND via transfer in mA. Labels in the interactive viewer remain a fixed screen size.
+The default page shows Palace v0.14.0 frequency-domain Maxwell results for the latest DDR_D8 processor-side layer transition and memory escape. Both use 400 MHz, a 1 V normalized input phasor and 50 Ω test fixtures. Four layer images combine current-board PCB context, the cyan target trace, surface-current density in A/m and GND via current in mA. Labels remain a fixed screen size.
 
-**These are provisional EM results.** Order/mesh checks changed reactance substantially, so local densities and a “bad loop” verdict are not yet validated. The stackup, material properties and package fixtures are assumptions; other signal/power copper and decoupling are omitted. The earlier 94 graph cases remain separately accessible at `/approximation.html` and have not been relabeled as EM runs.
+The processor-side crop isolates the signal via near (−1, −18) mm rather than the package pad. Its source fixture connects the cut top signal to inner1 GND. The memory source fixture uses actual signal/GND pads. Both load the cut bottom signal against inner2 GND. The input and load fixture locations therefore differ from the historical cases; do not interpret impedance differences as a controlled before/after board comparison.
 
-See [EM reproduction instructions](scripts/em/README.md). Cached PCB-derived case geometry, exact solver configurations, raw SI port CSV files, converged solver logs and convergence comparisons are in `data/em-ddr-d8-cpu/` and `data/em-ddr-d8-memory/`. Raw board input is not required to reproduce these two EM cases.
+**These are provisional EM results.** First/second element-order checks do not establish local-density or crop convergence, so no “bad loop” verdict is validated. Layer depths, materials and test fixtures remain assumptions. Other signal/power copper, package internals and decoupling are omitted. Exported GND vias span top→inner1; signal vias span top↔bottom. The model preserves those spans and does not infer GND connections to inner2. Fabrication spans/stubs and any connections outside the local crop need confirmation. Cropping the inner planes can materially change interplane coupling and the input impedance.
+
+See [EM reproduction instructions](scripts/em/README.md). Latest input geometry, exact solver configurations, raw SI port CSV files, solver logs and order comparisons are in `data/em-latest-ddr-d8-cpu/` and `data/em-latest-ddr-d8-memory/`. Historical EM remains at `/em/`; the old 94 graph cases remain at `/approximation.html` and have not been relabeled as EM runs.
 
 ## Run the viewer
 

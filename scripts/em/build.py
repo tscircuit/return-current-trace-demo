@@ -25,7 +25,7 @@ for (role,layer),shape in shapes.items():
   if p.area<1e-8:continue
   face=polygon(p,z);metal.extend(e for e in occ.extrude([face],0,0,thick) if e[0]==3)
 for e in [*groundvias,*sigvias]:
- z1,z2=(0,1.6) if e in groundvias else sorted([layerz[e['from_layer']],layerz[e['to_layer']]])
+ z1,z2=sorted([layerz[e.get('from_layer','bottom')],layerz[e.get('to_layer','top')]])
  hole=e.get('hole_diameter',e.get('via_hole_diameter',.15))/2;outer=hole+.025
  annulus=Point(e['x'],e['y']).buffer(outer,quad_segs=2).difference(Point(e['x'],e['y']).buffer(hole,quad_segs=2))
  face=polygon(annulus,z1);metal.extend(t for t in occ.extrude([face],0,0,z2-z1) if t[0]==3)
@@ -37,13 +37,15 @@ print('Copper volumes after union:',len(metal),flush=True)
 substrate=(3,occ.addBox(*case['substrate_box']))
 drillvols=[]
 for e in [*groundvias,*sigvias]:
- z1,z2=(0,1.6) if e in groundvias else sorted([layerz[e['from_layer']],layerz[e['to_layer']]])
+ z1,z2=sorted([layerz[e.get('from_layer','bottom')],layerz[e.get('to_layer','top')]])
  hole=e.get('hole_diameter',e.get('via_hole_diameter',.15))/2
  face=polygon(Point(e['x'],e['y']).buffer(hole,quad_segs=2),z1);drillvols.extend(t for t in occ.extrude([face],0,0,z2-z1) if t[0]==3)
 substrate=occ.cut([substrate],drillvols)[0][0]
 print('Fragmenting conductor/air/dielectric interfaces',flush=True)
 air=(3,occ.addBox(*case['air_box']))
-portfaces=[polygon(p,1.6) for p in ports]
+if case.get('source_points'):
+ v=[occ.addPoint(*point) for point in case['source_points']];loop=occ.addCurveLoop([occ.addLine(v[i],v[(i+1)%4]) for i in range(4)]);portfaces=[(2,occ.addPlaneSurface([loop]))]
+else:portfaces=[polygon(p,1.6) for p in ports]
 v=[occ.addPoint(*point) for point in case['load_points']];loop=occ.addCurveLoop([occ.addLine(v[i],v[(i+1)%4]) for i in range(4)]);portfaces.append((2,occ.addPlaneSurface([loop])));directions.append(case['load_direction'])
 fragments,mapping=occ.fragment([air],[substrate,*metal,*portfaces]);occ.synchronize()
 metal_tags={t for desc in mapping[2:2+len(metal)] for d,t in desc if d==3};subtags={t for d,t in mapping[1] if d==3}-metal_tags;airtags={t for d,t in mapping[0] if d==3}-metal_tags-subtags
