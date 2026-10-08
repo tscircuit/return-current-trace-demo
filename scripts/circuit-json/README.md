@@ -45,17 +45,36 @@ bun run simulate:circuit-json \
 
 The CLI creates official experiment/excitation elements and outputs the original PCB with `simulation_pcb_return_current_result`, `simulation_pcb_return_current_field`, `simulation_pcb_return_current_heatmap` and applicable port/via markers. Fields use embedded gzip JSON assets by default (`--field-format json` selects plain JSON); PNG heatmaps are embedded too, so moving the output JSON does not break its assets.
 
-Complex channels are peak phasors with exp(+jωt), row-major from bottom-left, in A/mm. Conductor voids use matching `null` masks in every channel; a finite zero remains a zero-current conductor cell. PNG/vector density is |sheet current| divided by copper thickness, in A/mm². A rerun replaces only the same experiment/frequency's results and descendants, preserving other experiments and frequencies.
+Complex channels are peak phasors with exp(+jωt), row-major from bottom-left, in A/mm. Conductor voids use matching `null` masks in every channel; a finite zero remains a zero-current conductor cell. Heatmap density is |sheet current| divided by copper thickness, in A/mm²: an average through the foil, not the local maximum in its skin layer. A rerun replaces only the same experiment/frequency's results and descendants, preserving other experiments and frequencies.
 
 `--solver approximation` is an explicit frequency-independent alternative; its result is real and has no `frequency_hz`. It is not a substitute for a Palace solve. `--prepare-only` resolves and validates the definition without producing a result.
+
+## Run the finer 100 MHz EM fixture
+
+The latest visual snapshot uses the same PCB and 5 mA peak excitation at 100 MHz, with a 0.05 mm sampling grid (160 × 120 cells), a 1 mm FEM mesh target, and second-order elements:
+
+```sh
+bun run simulate:circuit-json \
+  examples/circuit-json/explicit-port-100mhz.input.circuit.json \
+  --experiment-id simulation_experiment_explicit_port_100mhz \
+  --frequency-hz 100000000 --copper-model surface_impedance \
+  --sample-layer bottom --cell-size 0.05 --mesh-size 1 --order 2 \
+  --air-padding 2 --processes 4 --output work/explicit-port-100mhz \
+  --result-json work/explicit-port-100mhz.result.circuit.json \
+  --result-id simulation_pcb_return_current_result_explicit_port_100mhz
+```
+
+This is a genuine Palace Maxwell solve with an explicit finite-conductivity surface-impedance boundary model. The 35 µm copper foil and via plating are about 5.3 skin depths thick at 100 MHz. The solver retains their physical geometry and conductivity, meshes the air/substrate, and approximates skin currents on exposed copper surfaces. The exported sheet current sums the exposed foil-face currents; it does not resolve volumetric skin-layer current density. This opt-in model is supported by the two-layer mesher and requires copper at least three skin depths thick. The default remains volumetric copper.
+
+The earlier 1 MHz fixture uses volumetric copper and a different FEM resolution. These two cases are integration examples, not a controlled frequency comparison or convergence study. Reducing `--cell-size` changes output sampling resolution independently of the FEM mesh.
 
 ## Render one stored result over its PCB
 
 ```sh
 bun run render:simulation \
-  examples/circuit-json/explicit-port-1mhz.result.circuit.json \
-  --simulation-result-id simulation_pcb_return_current_result_explicit_port_1mhz \
-  --layer bottom --vectors --phase-degrees 0 --density-range 0,0.04 \
+  examples/circuit-json/explicit-port-100mhz.result.circuit.json \
+  --simulation-result-id simulation_pcb_return_current_result_explicit_port_100mhz \
+  --layer bottom --vectors --density-range 0,0.21 \
   --output work/return-current.svg
 ```
 
@@ -65,12 +84,12 @@ The renderer draws PCB context, the selected signal route and actual port/via ma
 import { convertCircuitJsonToPcbSimulationSvg } from "../../prototype/circuit-to-svg/index.js"
 
 const svg = await convertCircuitJsonToPcbSimulationSvg(circuitJson, {
-  simulationResultId: "simulation_pcb_return_current_result_explicit_port_1mhz",
+  simulationResultId: "simulation_pcb_return_current_result_explicit_port_100mhz",
   layer: "bottom",
-  returnCurrent: { showVectors: true, phaseDegrees: 0 },
+  returnCurrent: { showVectors: true },
 })
 ```
 
-For synchronous rendering, `convertCircuitJsonToPcbSvg` accepts the same selector and predecoded `returnCurrent.fieldData`; stored PNG heatmaps can be embedded directly without loading fields. The decoded-field path can render an absolute density scale and phase-dependent vectors.
+For synchronous rendering, `convertCircuitJsonToPcbSvg` accepts the same selector and predecoded `returnCurrent.fieldData`; stored PNG heatmaps can be embedded directly without loading fields. The decoded-field path can render an absolute density scale and current-direction arrows at the excitation's positive peak. AC current reverses during the cycle; the heatmap shows its magnitude.
 
 Rebuild snapshots with [update-prototypes.ts](update-prototypes.ts). Upstream source commits and licenses are saved alongside the snapshots. The checked small-board EM result and its validation receipt make the storage/renderer workflow inspectable without running Palace again.

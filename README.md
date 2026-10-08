@@ -6,6 +6,8 @@
 
 The [CLI and SVG prototype](scripts/circuit-json/README.md) ([simulator draft PR](https://github.com/tscircuit/simulate-return-current/pull/16), [renderer draft PR](https://github.com/tscircuit/circuit-to-svg/pull/818)) reads a pending return-current experiment from Circuit JSON or creates one from command-line flags, runs Palace, and writes the PCB plus official result/field/heatmap/marker elements. The SVG renderer selects one stored result and overlays it on PCB content. Fields and heatmaps are embedded, so the result JSON is portable. See [the small-board end-to-end fixture](examples/circuit-json/) and [upstream snapshot provenance](prototype/sources.json).
 
+The latest renderer snapshot uses a completed **100 MHz / 5 mA** Palace run with **0.05 mm cells** and second-order FEM. Its finite-conductivity surface-impedance copper model is recorded in the fixture and reproduction flags. Current arrows use the excitation's positive peak; the public SVG API has no phase-angle parameter.
+
 ```sh
 bun run simulate:circuit-json --help
 bun run render:simulation --help

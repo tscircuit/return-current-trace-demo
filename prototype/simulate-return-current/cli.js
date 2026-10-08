@@ -15715,6 +15715,8 @@ function createMultilayerPalaceModel(options) {
   if (boards.length !== 1)
     throw new Error("Exactly one PCB board is required");
   const board = boards[0];
+  if (options.copperModel === "surface_impedance_copper")
+    throw new Error("surface_impedance_copper currently supports the two-layer mesher only");
   if (!options.stackup)
     throw new Error("Multilayer boards require an explicit fabrication stackup (--stackup-file); layer spacing is not inferred");
   if (!Number.isInteger(board.num_layers) || board.num_layers < 2)
@@ -16082,7 +16084,12 @@ function createPalaceModel(options) {
   const copperThickness = positiveFinite(options.copperThickness ?? 0.035, "copperThickness");
   const copperConductivity = positiveFinite(options.copperConductivity ?? 58000000, "copperConductivity");
   const skinDepthMm = 1000 / Math.sqrt(Math.PI * frequencyHz * 0.0000004 * Math.PI * copperConductivity);
-  if (copperThickness > skinDepthMm)
+  const copperModel = options.copperModel ?? "volumetric_copper";
+  if (copperModel !== "volumetric_copper" && copperModel !== "surface_impedance_copper")
+    throw new Error("Unknown copperModel");
+  if (copperModel === "surface_impedance_copper" && copperThickness < 3 * skinDepthMm)
+    throw new Error("The half-space surface-impedance model requires foil and via-wall thickness >= 3 skin depths; use volumetric copper at lower frequencies");
+  if (copperModel === "volumetric_copper" && copperThickness > skinDepthMm)
     throw new Error("The current volume mesher requires copper thickness <= skin depth; refine copper through its thickness before using higher frequencies");
   const ports = [];
   for (const [index, signal] of geometry.signals.entries()) {
@@ -16195,7 +16202,15 @@ function createPalaceModel(options) {
     meshSize: positiveFinite(options.meshSize ?? 1, "meshSize"),
     airPadding: positiveFinite(options.airPadding ?? 10, "airPadding"),
     order,
-    copperModel: "volumetric_copper"
+    copperModel,
+    ...copperModel === "surface_impedance_copper" ? {
+      surfaceImpedance: {
+        boundaryModel: "half_space",
+        skinDepthMm,
+        minimumThicknessToSkinDepth: copperThickness / skinDepthMm,
+        currentSampling: "sum_foil_face_surface_currents"
+      }
+    } : {}
   };
 }
 // ../simulate-return-current/lib/palace/geometry-signature.ts
@@ -16237,8 +16252,10 @@ function palaceGeometrySignature(geometry) {
 
 // ../simulate-return-current/lib/palace/validate-reference.ts
 function validatePalaceReference(reference) {
-  if (reference.femOrder !== 1 && reference.femOrder !== 2 || reference.schemaVersion !== 1 || reference.solver !== "palace" || reference.copperModel !== "volumetric_copper" || reference.sampleLayer !== undefined && !/^(top|bottom|inner[1-8])$/.test(reference.sampleLayer))
+  if (reference.femOrder !== 1 && reference.femOrder !== 2 || reference.schemaVersion !== 1 || reference.solver !== "palace" || !["volumetric_copper", "surface_impedance_copper"].includes(reference.copperModel) || reference.sampleLayer !== undefined && !/^(top|bottom|inner[1-8])$/.test(reference.sampleLayer))
     throw new Error("Unsupported Palace reference");
+  if (reference.copperModel === "surface_impedance_copper" && (reference.samplingMethod !== "sum_foil_face_surface_currents" || !Number.isFinite(reference.surfaceCurrentScaleAmpsPerMm) || reference.surfaceCurrentScaleAmpsPerMm <= 0))
+    throw new Error("Surface impedance reference must identify its face-current sampling and finite positive A/mm scale");
   if (![
     reference.frequencyHz,
     reference.copperThickness,
@@ -16349,8 +16366,8 @@ function comparePalaceReference(result, options) {
 function renderPalaceModelSvg(model, options) {
   const { reference } = options;
   validatePalaceReference(reference);
-  if (reference.frequencyHz !== model.frequencyHz || reference.femOrder !== model.order || reference.sampleLayer !== model.multilayer?.sampleLayer)
-    throw new Error("Palace model frequency or FEM order differs from reference");
+  if (reference.frequencyHz !== model.frequencyHz || reference.femOrder !== model.order || reference.copperModel !== model.copperModel || reference.sampleLayer !== model.multilayer?.sampleLayer)
+    throw new Error("Palace model frequency, FEM order, copper model or sample layer differs from reference");
   const outline = model.geometry.boardOutline;
   const bounds = {
     minX: Math.min(...outline.map((point4) => point4.x)),
@@ -16425,11 +16442,11 @@ function renderPalaceReferenceSvg(result, options) {
   }, {
     ...options,
     title: options.title ?? "Palace ground-plane return current",
-    description: "Palace driven Maxwell reference. Colors show magnitude of the complex conduction-current vector averaged through copper thickness. Arrows show the real instantaneous field at the selected phase. Copper is an explicitly meshed conductive volume.",
+    description: reference.copperModel === "surface_impedance_copper" ? "Palace driven Maxwell reference with finite-conductivity surface impedance. Colors show the complex sheet current summed over exposed foil faces, divided by physical foil thickness for display. Arrows show the real instantaneous field at the selected phase. Copper uses a half-space surface-impedance boundary." : "Palace driven Maxwell reference. Colors show magnitude of the complex conduction-current vector averaged through copper thickness. Arrows show the real instantaneous field at the selected phase. Copper is an explicitly meshed conductive volume.",
     subtitle: `Palace ${reference.solverVersion}${reference.sampleLayer ? ` · layer = ${reference.sampleLayer}` : ""} · f = ${reference.frequencyHz / 1e6} MHz · |K|/t (A/mm²) · peak phasors`,
     gridLabel: "sample grid",
     separationLabel: reference.sampleLayer ? "outer foil gap" : undefined,
-    footer: `FEM order ${reference.femOrder} · conductive copper volumes · arrows at ${phaseDegrees}° · air/substrate domain · source currents normalized`
+    footer: `FEM order ${reference.femOrder} · ${reference.copperModel === "surface_impedance_copper" ? "finite-conductivity surface impedance" : "conductive copper volumes"} · arrows at ${phaseDegrees}° · air/substrate domain · source currents normalized`
   });
 }
 // ../simulate-return-current/lib/circuit-json-simulation.ts
@@ -16558,6 +16575,8 @@ function exportReturnCurrentCircuitJson(options) {
       throw new Error("The result grid exceeds 1,000,000 cells");
     if (reference.frequencyHz !== model.frequencyHz)
       throw new Error("Palace model/reference frequencies differ");
+    if (reference.copperModel !== model.copperModel)
+      throw new Error("Palace model/reference copper models differ");
     if (reference.copperThickness !== model.copperThickness)
       throw new Error("Palace model/reference copper thicknesses differ");
     if (model.geometry.excitations.map((e) => e.simulation_return_current_excitation_id).join() !== selected.excitations.map((e) => e.simulation_return_current_excitation_id).join())
@@ -16581,6 +16600,7 @@ function exportReturnCurrentCircuitJson(options) {
       portResistance: model.portResistance,
       portWidth: model.portWidth,
       meshSize: model.meshSize,
+      copperModel: model.copperModel,
       airPadding: model.airPadding,
       order: model.order
     });
@@ -16988,6 +17008,8 @@ async function writePortSpecification(options, destination) {
   const model = await readJson(join2(destination, "model.json"));
   await writeFile4(join2(destination, "excitation-ports.json"), JSON.stringify({
     frequencyHz: options.frequencyHz,
+    copperModel: model.copperModel,
+    ...model.surfaceImpedance ? { surfaceImpedance: model.surfaceImpedance } : {},
     ports: options.ports?.map((port) => ({
       ...port,
       current: parseCurrentAmps(port.current),
@@ -17017,6 +17039,7 @@ async function runPalaceSimulation(options) {
     startedAt,
     completedAt: new Date().toISOString(),
     frequencyHz: options.frequencyHz,
+    copperModel: options.copperModel ?? "volumetric_copper",
     totalSeconds: (performance.now() - started) / 1000,
     reusedCompletedFemSolve: false,
     image
@@ -17154,6 +17177,7 @@ Options:
   --sample-layer <layer>        Reference copper to sample: top, inner1..inner8, bottom
   --via-clearance <mm>          Radial foreign-net antipad clearance (default: board or 0.2)
   --mesh-size <mm>              FEM mesh target (default: 2)
+  --copper-model <volumetric|surface_impedance>  Two-layer copper model (default volumetric)
   --order <1|2>                 FEM polynomial order (default: 2)
   --air-padding <mm>            Air domain padding (default: 6)
   --processes <count>           MPI processes (default: PALACE_PROCESSES or 1)
@@ -17198,6 +17222,7 @@ var definitions = {
   "sample-layer": { type: "string" },
   "via-clearance": { type: "string" },
   "mesh-size": { type: "string" },
+  "copper-model": { type: "string" },
   order: { type: "string" },
   "air-padding": { type: "string" },
   processes: { type: "string" },
@@ -17386,6 +17411,7 @@ async function main() {
       "sample-layer",
       "via-clearance",
       "mesh-size",
+      "copper-model",
       "order",
       "air-padding",
       "processes",
@@ -17435,6 +17461,9 @@ async function main() {
     cellSize: number("cell-size", 0.2),
     imageSize,
     meshSize: number("mesh-size", 2),
+    copperModel: values["copper-model"] === undefined || values["copper-model"] === "volumetric" ? "volumetric_copper" : values["copper-model"] === "surface_impedance" ? "surface_impedance_copper" : (() => {
+      throw new Error("--copper-model must be volumetric or surface_impedance");
+    })(),
     order,
     airPadding: number("air-padding", 6),
     processes: number("processes"),

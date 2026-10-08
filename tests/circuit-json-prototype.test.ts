@@ -11,11 +11,11 @@ import {
 const root = new URL("../", import.meta.url)
 const fixturePath = (name: string) =>
   new URL("examples/circuit-json/" + name, root).pathname
-const resultId = "simulation_pcb_return_current_result_explicit_port_1mhz"
+const resultId = "simulation_pcb_return_current_result_explicit_port_100mhz"
 test("real EM result is portable and renders selected fields over its PCB", async () => {
   const circuit = JSON.parse(
     await readFile(
-      fixturePath("explicit-port-1mhz.result.circuit.json"),
+      fixturePath("explicit-port-100mhz.result.circuit.json"),
       "utf8",
     ),
   )
@@ -26,11 +26,14 @@ test("real EM result is portable and renders selected fields over its PCB", asyn
         e.simulation_pcb_return_current_result_id === resultId,
     ),
   )
-  expect(result.frequency_hz).toBe(1_000_000)
+  expect(result.frequency_hz).toBe(100_000_000)
   const field = simulation_pcb_return_current_field.parse(
     circuit.find((e: any) => e.type === "simulation_pcb_return_current_field"),
   )
   const bytes = Buffer.from(field.field_asset.url.split(",")[1]!, "base64")
+  expect([field.columns, field.rows, field.cell_width, field.cell_height]).toEqual([
+    160, 120, 0.05, 0.05,
+  ])
   const grid = getSimulationReturnCurrentGridJsonSchema(field).parse(
     JSON.parse(gunzipSync(bytes).toString()),
   )
@@ -51,8 +54,7 @@ test("real EM result is portable and renders selected fields over its PCB", asyn
     layer: "bottom",
     returnCurrent: {
       showVectors: true,
-      phaseDegrees: 0,
-      densityRange: { min: 0, max: 0.04 },
+      densityRange: { min: 0, max: 0.21 },
     },
     resolveAsset: () => {
       throw Error("Portable embedded assets must not need a resolver")
@@ -64,7 +66,8 @@ test("real EM result is portable and renders selected fields over its PCB", asyn
   expect(svg).toContain('data-role="return_sink"')
   expect(svg).toContain('data-role="signal_source"')
   expect(svg).toContain('data-pcb-trace-id="pcb_trace_0"')
-  expect(svg).toContain("0.00 – 0.0400 A/mm²")
+  expect(svg).toContain("0.00 – 0.210 A/mm²")
+  expect(svg).toContain("arrows: current at excitation peak")
 })
 test("bundled CLI accepts pending definitions and equivalent named flags without a solver", async () => {
   const work = await mkdtemp(join(tmpdir(), "return-current-prototype-"))
@@ -88,20 +91,22 @@ test("bundled CLI accepts pending definitions and equivalent named flags without
     const common = [
       "--prepare-only",
       "--frequency-hz",
-      "1000000",
+      "100000000",
+      "--copper-model",
+      "surface_impedance",
       "--sample-layer",
       "bottom",
       "--cell-size",
-      "0.25",
+      "0.05",
       "--mesh-size",
       "1",
       "--order",
-      "1",
+      "2",
     ]
     await run([
-      fixturePath("explicit-port-1mhz.input.circuit.json"),
+      fixturePath("explicit-port-100mhz.input.circuit.json"),
       "--experiment-id",
-      "simulation_experiment_explicit_port_1mhz",
+      "simulation_experiment_explicit_port_100mhz",
       "--output",
       join(work, "pending"),
       ...common,
@@ -109,7 +114,7 @@ test("bundled CLI accepts pending definitions and equivalent named flags without
     await run([
       fixturePath("explicit-port-1mhz.board.circuit.json"),
       "--experiment-id",
-      "simulation_experiment_explicit_port_1mhz",
+      "simulation_experiment_explicit_port_100mhz",
       "--source",
       "U1.OUT",
       "--source-reference",

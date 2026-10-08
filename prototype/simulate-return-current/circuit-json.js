@@ -11153,8 +11153,10 @@ function readGeometry(options) {
 
 // ../simulate-return-current/lib/palace/validate-reference.ts
 function validatePalaceReference(reference) {
-  if (reference.femOrder !== 1 && reference.femOrder !== 2 || reference.schemaVersion !== 1 || reference.solver !== "palace" || reference.copperModel !== "volumetric_copper" || reference.sampleLayer !== undefined && !/^(top|bottom|inner[1-8])$/.test(reference.sampleLayer))
+  if (reference.femOrder !== 1 && reference.femOrder !== 2 || reference.schemaVersion !== 1 || reference.solver !== "palace" || !["volumetric_copper", "surface_impedance_copper"].includes(reference.copperModel) || reference.sampleLayer !== undefined && !/^(top|bottom|inner[1-8])$/.test(reference.sampleLayer))
     throw new Error("Unsupported Palace reference");
+  if (reference.copperModel === "surface_impedance_copper" && (reference.samplingMethod !== "sum_foil_face_surface_currents" || !Number.isFinite(reference.surfaceCurrentScaleAmpsPerMm) || reference.surfaceCurrentScaleAmpsPerMm <= 0))
+    throw new Error("Surface impedance reference must identify its face-current sampling and finite positive A/mm scale");
   if (![
     reference.frequencyHz,
     reference.copperThickness,
@@ -11502,6 +11504,8 @@ function createMultilayerPalaceModel(options) {
   if (boards.length !== 1)
     throw new Error("Exactly one PCB board is required");
   const board = boards[0];
+  if (options.copperModel === "surface_impedance_copper")
+    throw new Error("surface_impedance_copper currently supports the two-layer mesher only");
   if (!options.stackup)
     throw new Error("Multilayer boards require an explicit fabrication stackup (--stackup-file); layer spacing is not inferred");
   if (!Number.isInteger(board.num_layers) || board.num_layers < 2)
@@ -11895,7 +11899,12 @@ function createPalaceModel(options) {
   const copperThickness = positiveFinite(options.copperThickness ?? 0.035, "copperThickness");
   const copperConductivity = positiveFinite(options.copperConductivity ?? 58000000, "copperConductivity");
   const skinDepthMm = 1000 / Math.sqrt(Math.PI * frequencyHz * 0.0000004 * Math.PI * copperConductivity);
-  if (copperThickness > skinDepthMm)
+  const copperModel = options.copperModel ?? "volumetric_copper";
+  if (copperModel !== "volumetric_copper" && copperModel !== "surface_impedance_copper")
+    throw new Error("Unknown copperModel");
+  if (copperModel === "surface_impedance_copper" && copperThickness < 3 * skinDepthMm)
+    throw new Error("The half-space surface-impedance model requires foil and via-wall thickness >= 3 skin depths; use volumetric copper at lower frequencies");
+  if (copperModel === "volumetric_copper" && copperThickness > skinDepthMm)
     throw new Error("The current volume mesher requires copper thickness <= skin depth; refine copper through its thickness before using higher frequencies");
   const ports = [];
   for (const [index, signal] of geometry.signals.entries()) {
@@ -12008,7 +12017,15 @@ function createPalaceModel(options) {
     meshSize: positiveFinite(options.meshSize ?? 1, "meshSize"),
     airPadding: positiveFinite(options.airPadding ?? 10, "airPadding"),
     order,
-    copperModel: "volumetric_copper"
+    copperModel,
+    ...copperModel === "surface_impedance_copper" ? {
+      surfaceImpedance: {
+        boundaryModel: "half_space",
+        skinDepthMm,
+        minimumThicknessToSkinDepth: copperThickness / skinDepthMm,
+        currentSampling: "sum_foil_face_surface_currents"
+      }
+    } : {}
   };
 }
 
@@ -12467,6 +12484,8 @@ function exportReturnCurrentCircuitJson(options) {
       throw new Error("The result grid exceeds 1,000,000 cells");
     if (reference.frequencyHz !== model.frequencyHz)
       throw new Error("Palace model/reference frequencies differ");
+    if (reference.copperModel !== model.copperModel)
+      throw new Error("Palace model/reference copper models differ");
     if (reference.copperThickness !== model.copperThickness)
       throw new Error("Palace model/reference copper thicknesses differ");
     if (model.geometry.excitations.map((e) => e.simulation_return_current_excitation_id).join() !== selected.excitations.map((e) => e.simulation_return_current_excitation_id).join())
@@ -12490,6 +12509,7 @@ function exportReturnCurrentCircuitJson(options) {
       portResistance: model.portResistance,
       portWidth: model.portWidth,
       meshSize: model.meshSize,
+      copperModel: model.copperModel,
       airPadding: model.airPadding,
       order: model.order
     });

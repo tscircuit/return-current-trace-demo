@@ -16266,7 +16266,7 @@ function getReturnCurrentResult(circuitJson, resultId) {
     throw new Error(`Missing PCB board '${result.pcb_board_id}'`);
   return result;
 }
-function values(grid, i, phase) {
+function values(grid, i) {
   if (grid.field_type === "real") {
     const x = grid.sheet_current_x[i];
     const y = grid.sheet_current_y[i];
@@ -16279,8 +16279,8 @@ function values(grid, i, phase) {
   if (xr == null || xi == null || yr == null || yi == null)
     return null;
   return {
-    x: xr * Math.cos(phase) - xi * Math.sin(phase),
-    y: yr * Math.cos(phase) - yi * Math.sin(phase),
+    x: xr,
+    y: yr,
     magnitude: Math.hypot(xr, xi, yr, yi)
   };
 }
@@ -16310,9 +16310,6 @@ function createReturnCurrentSvgObjects({
   const opacity = options.opacity ?? 0.65;
   if (!Number.isFinite(opacity) || opacity < 0 || opacity > 1)
     throw new Error("Return-current opacity must be between 0 and 1");
-  const phaseDegrees = options.phaseDegrees ?? 0;
-  if (!Number.isFinite(phaseDegrees))
-    throw new Error("Return-current phaseDegrees must be finite");
   const range = options.densityRange;
   if (range && (!Number.isFinite(range.min) || !Number.isFinite(range.max) || range.min < 0 || range.max <= range.min))
     throw new Error("Return-current densityRange requires 0 <= min < max");
@@ -16337,7 +16334,7 @@ function createReturnCurrentSvgObjects({
   let maximum = 0;
   for (const { field, grid } of decoded)
     for (let i = 0;i < field.columns * field.rows; i++)
-      maximum = Math.max(maximum, (values(grid, i, 0)?.magnitude ?? 0) / field.copper_thickness);
+      maximum = Math.max(maximum, (values(grid, i)?.magnitude ?? 0) / field.copper_thickness);
   const minimum = range?.min ?? 0;
   const upper = range?.max ?? (maximum || 1);
   const heat = [];
@@ -16376,7 +16373,7 @@ function createReturnCurrentSvgObjects({
     for (let row = 0;row < field.rows; row++) {
       for (let column = 0;column < field.columns; column++) {
         const i = row * field.columns + column;
-        const current2 = values(grid, i, phaseDegrees * Math.PI / 180);
+        const current2 = values(grid, i);
         if (!current2)
           continue;
         const density = current2.magnitude / field.copper_thickness;
@@ -16424,7 +16421,7 @@ function createReturnCurrentSvgObjects({
           "data-sheet-current-x": String(current2.x),
           "data-sheet-current-y": String(current2.y),
           "data-units": "A/mm",
-          "data-phase-degrees": String(phaseDegrees)
+          "data-arrow-reference": "excitation-current-peak"
         }));
       }
     }
@@ -16537,7 +16534,7 @@ function createReturnCurrentSvgObjects({
   const legend = [];
   if (options.showLegend !== false) {
     const frequency2 = result.frequency_hz === undefined ? "frequency not specified" : `${result.frequency_hz / 1e6} MHz`;
-    const labels = `${frequency2} · ${ctx.layer ?? "all result layers"} · density A/mm² · cyan: top signal · orange: bottom signal · magenta: return`;
+    const labels = `${frequency2} · ${ctx.layer ?? "all result layers"} · average density A/mm² · cyan: top signal · orange: bottom signal · magenta: return${options.showVectors ? " · arrows: current at excitation peak" : ""}`;
     legend.push(node("rect", {
       x: "0",
       y: String(height - 28),

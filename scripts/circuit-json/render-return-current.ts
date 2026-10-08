@@ -11,7 +11,6 @@ const { values, positionals } = parseArgs({
     layer: { type: "string", default: "inner1" },
     output: { type: "string", short: "o" },
     vectors: { type: "boolean", default: false },
-    "phase-degrees": { type: "string", default: "0" },
     opacity: { type: "string", default: "0.65" },
     viewport: { type: "string" },
     "density-range": { type: "string" },
@@ -20,7 +19,7 @@ const { values, positionals } = parseArgs({
 })
 
 if (values.help) {
-  console.log(`Usage: bun scripts/circuit-json/render-return-current.ts INPUT.circuit.json --simulation-result-id ID --layer inner1 --output overlay.svg [--vectors] [--phase-degrees 90] [--viewport minX,minY,maxX,maxY] [--density-range min,max]
+  console.log(`Usage: bun scripts/circuit-json/render-return-current.ts INPUT.circuit.json --simulation-result-id ID --layer inner1 --output overlay.svg [--vectors] [--viewport minX,minY,maxX,maxY] [--density-range min,max]
 
 Renders the real PCB with one selected simulation result. Embedded plain/gzip
 field assets are supported. External assets resolve locally relative to INPUT;
@@ -88,7 +87,6 @@ const svg = await convertCircuitJsonToPcbSimulationSvg(circuitJson, {
   viewport,
   returnCurrent: {
     showVectors: values.vectors,
-    phaseDegrees: Number(values["phase-degrees"]),
     opacity: Number(values.opacity),
     densityRange,
   },

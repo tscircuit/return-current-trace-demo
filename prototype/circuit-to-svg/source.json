@@ -1,6 +1,6 @@
 {
   "repository": "tscircuit/circuit-to-svg",
-  "source_commit": "0996c1e4f42bb86cefde51a3ab9207cf0c1f0389",
+  "source_commit": "26360b744945d624d5211ab7190910dd574308c9",
   "source_branch": "feat/pcb-return-current-overlay",
   "package_version": "0.0.446",
   "license": "ISC"

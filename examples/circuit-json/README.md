@@ -1,4 +1,37 @@
-# Circuit JSON return-current integration fixture
+# Circuit JSON return-current integration fixtures
+
+## Latest: 100 MHz with 0.05 mm cells
+
+The latest snapshot uses a completed **Palace v0.14.0, 100 MHz, 5 mA peak** EM run on the same two-layer PCB, with the same separate signal/GND terminals and 25/100 Ω ports. Sampling cells were reduced from 0.1 mm to **0.05 mm**, giving a 160 × 120 grid. The FEM mesh target is 1 mm with second-order elements: 45,493 tetrahedra and 314,698 unknowns.
+
+![Real 100 MHz EM result over its PCB](explicit-port-100mhz.overlay.png)
+
+The copper model is explicitly finite-conductivity **surface impedance**. At 100 MHz the unchanged 35 µm foil and via plating are about 5.3 skin depths thick. Palace solves the Maxwell fields in air/substrate and models the copper's frequency-dependent surface impedance. The stored complex sheet current sums the actual exposed foil-face currents and is normalized to the declared 5 mA source. No volumetric skin-depth mesh is claimed.
+
+The 19,176 finite conductor cells and 24 drill voids pass the official Circuit JSON schemas. Input impedance is approximately **100.01625 + j0.391499 Ω**. Input/load average power is 1.250203 / 1.249167 mW. The physical geometry, material properties and resolved source/load contacts are documented in `explicit-port-100mhz.validation.json`, with actual configuration, completion log, terminal CSVs and surface-sampling receipts in `explicit-port-100mhz.evidence/`.
+
+The result file, `explicit-port-100mhz.result.circuit.json`, contains portable embedded gzip field data and a PNG heatmap. The preview uses a full-range 0–0.21 A/mm² scale and shows arrows at the excitation's positive-current peak; no phase-angle option is needed. Density is the equivalent foil average, not the local maximum in the copper skin layer. Near-edge, via-wall and local-density convergence has not been established. The earlier 1 MHz model/resolution differ, so these are integration fixtures rather than a controlled frequency comparison.
+
+Reproduce the latest run and render it with:
+
+```sh
+bun run simulate:circuit-json examples/circuit-json/explicit-port-100mhz.input.circuit.json \
+  --experiment-id simulation_experiment_explicit_port_100mhz \
+  --frequency-hz 100000000 --copper-model surface_impedance \
+  --sample-layer bottom --cell-size 0.05 --mesh-size 1 --order 2 \
+  --air-padding 2 --processes 4 --output work/explicit-port-100mhz \
+  --result-json work/explicit-port-100mhz.result.circuit.json \
+  --result-id simulation_pcb_return_current_result_explicit_port_100mhz
+
+bun run render:simulation work/explicit-port-100mhz.result.circuit.json \
+  --simulation-result-id simulation_pcb_return_current_result_explicit_port_100mhz \
+  --layer bottom --vectors --density-range 0,0.21 \
+  --output work/explicit-port-100mhz.overlay.svg
+```
+
+Run from the repository root. See [setup instructions](../../scripts/circuit-json/README.md) for Python and Palace prerequisites.
+
+## Earlier: 1 MHz volumetric-copper fixture
 
 This small two-layer board exercises the CLI and renderer with a **real Palace v0.14.0 EM run**. It is a workflow fixture, separate from the AM3352 DDR results. Its coarse first-order mesh has not been converged for engineering accuracy.
 
@@ -67,7 +100,7 @@ Add `--prepare-only` to validate and resolve this second input without another E
 bun scripts/circuit-json/render-return-current.ts \
   examples/circuit-json/explicit-port-1mhz.result.circuit.json \
   --simulation-result-id simulation_pcb_return_current_result_explicit_port_1mhz \
-  --layer bottom --vectors --phase-degrees 0 --density-range 0,0.04 \
+  --layer bottom --vectors --density-range 0,0.04 \
   --output work/explicit-port-1mhz.overlay.svg
 ```
 
