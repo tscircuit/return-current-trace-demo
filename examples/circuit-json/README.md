@@ -1,5 +1,9 @@
 # Circuit JSON return-current integration fixtures
 
+## TSX-authored experiment with explicit return contacts
+
+The [TSX-to-EM example](tsx-explicit-ports-100mhz/) declares the experiment and separate driver/load GND contacts in TSX, then runs the existing CLI at 100 MHz. It includes the actual result, PCB overlay, solver evidence, and portable reproduction steps using the proposed core and props packages.
+
 ## Latest: 100 MHz with 0.05 mm cells
 
 The latest snapshot uses a completed **Palace v0.14.0, 100 MHz, 5 mA peak** EM run on the same two-layer PCB, with the same separate signal/GND terminals and 25/100 Ω ports. Sampling cells were reduced from 0.1 mm to **0.05 mm**, giving a 160 × 120 grid. The FEM mesh target is 1 mm with second-order elements: 45,493 tetrahedra and 314,698 unknowns.

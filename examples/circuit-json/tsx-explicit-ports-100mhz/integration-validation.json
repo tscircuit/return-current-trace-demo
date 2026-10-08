@@ -1,0 +1,54 @@
+{
+  "purpose": "TSX declaration and explicit return terminal integration check",
+  "core_pr_base": "b22223c201285dd82e3968cd95c1775371890520",
+  "core_pr_head": "a565bddc8520f4794f5dc6512d34bf122bcd354e",
+  "props_pr_head": "0dcdae136e1907daab97c87c80b1657c9a32f057",
+  "solver": "palace",
+  "solver_version": "v0.14.0",
+  "copper_model": "surface_impedance_copper",
+  "frequency_hz": 100000000,
+  "peak_source_current_amperes": {
+    "real": 0.004999999999999999,
+    "imag": 0
+  },
+  "fem_order": 2,
+  "mesh_size_mm": 1,
+  "field_grid": {
+    "columns": 160,
+    "rows": 120,
+    "cell_size_mm": 0.05,
+    "conductor_cells": 19176,
+    "drill_void_cells": 24
+  },
+  "source_impedance_ohms": 25,
+  "load_impedance_ohms": 100,
+  "return_source": {
+    "x": 2,
+    "y": 1.5,
+    "layer": "top",
+    "contact_type": "pcb_port",
+    "pcb_port_id": "pcb_port_3"
+  },
+  "return_sink": {
+    "x": -2,
+    "y": 1.5,
+    "layer": "top",
+    "contact_type": "pcb_port",
+    "pcb_port_id": "pcb_port_1"
+  },
+  "validation": {
+    "all_simulation_records_pass_official_schemas": 9,
+    "exported_complex_samples_exactly_match_actual_fem_reference": true,
+    "unsampled_drill_cells_remain_null_in_all_channels": true,
+    "all_terminal_marker_references_resolve": true,
+    "separate_signal_and_ground_ports": true,
+    "physical_geometry_matches_previous_real_100mhz_fixture": true,
+    "renderer_loaded_embedded_field_and_heatmap_successfully": true
+  },
+  "input_sha256": "aedf2c75ea0c8d34dc98e67c8adbe15f735bd4d31f8961c94d9df9e39d9fb3eb",
+  "result_sha256": "206af84e145dd73738bac6b43f89cf36572c65665d87d8e8eb75e8638f9f1337",
+  "model_sha256": "5cbd899b224382092942862ef1921787b0cf734ed71c6daef7e88103b4173018",
+  "mesh_sha256": "3046dc5f78c9c6922cb9f81b39fc485829d3c143ecc5b2b9002fb323960b0619",
+  "fixture_note": "Via-in-pad ground contacts and copper to the board edge are intentional. Manufacturing DRC is disabled for this EM fixture; physical copper and terminal geometry are unchanged.",
+  "limitations": "Integration verification, not an EM convergence or local-density accuracy claim. Uses finite-conductivity surface impedance and equivalent foil-average density."
+}

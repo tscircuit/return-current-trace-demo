@@ -1,0 +1,45 @@
+{
+  "frequencyHz": 100000000,
+  "copperModel": "surface_impedance_copper",
+  "surfaceImpedance": {
+    "boundaryModel": "half_space",
+    "skinDepthMm": 0.006608549310080563,
+    "minimumThicknessToSkinDepth": 5.2961699092736785,
+    "currentSampling": "sum_foil_face_surface_currents"
+  },
+  "ports": null,
+  "groundNet": null,
+  "resolvedTerminals": [
+    {
+      "signal": {
+        "x": -2,
+        "y": 0
+      },
+      "reference": {
+        "x": -2,
+        "y": 1.5
+      },
+      "referenceLayer": "top",
+      "resistance": 25,
+      "signalPcbPortId": "pcb_port_0",
+      "referencePcbPortId": "pcb_port_1"
+    },
+    {
+      "signal": {
+        "x": 2,
+        "y": 0
+      },
+      "reference": {
+        "x": 2,
+        "y": 1.5
+      },
+      "referenceLayer": "top",
+      "resistance": 100,
+      "signalPcbPortId": "pcb_port_2",
+      "referencePcbPortId": "pcb_port_3"
+    }
+  ],
+  "metadataSource": "circuit_json",
+  "reference": "explicit reference pins; omitted references use plane beneath signal",
+  "currentConvention": "signed in-phase peak amperes"
+}

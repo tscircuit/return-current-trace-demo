@@ -1,0 +1,52 @@
+{
+  "experiment": {
+    "type": "simulation_experiment",
+    "simulation_experiment_id": "simulation_experiment_0",
+    "name": "Explicit GND terminals: TSX 5 mA",
+    "experiment_type": "pcb_return_current"
+  },
+  "excitation": {
+    "type": "simulation_return_current_excitation",
+    "simulation_return_current_excitation_id": "simulation_return_current_excitation_0",
+    "simulation_experiment_id": "simulation_experiment_0",
+    "pcb_trace_id": "pcb_trace_0",
+    "ground_source_net_id": "source_net_0",
+    "current": 0.005,
+    "return_source": {
+      "contact_type": "pcb_port",
+      "pcb_port_id": "pcb_port_3",
+      "x": 2,
+      "y": 1.5,
+      "layer": "top"
+    },
+    "return_sink": {
+      "contact_type": "pcb_port",
+      "pcb_port_id": "pcb_port_1",
+      "x": -2,
+      "y": 1.5,
+      "layer": "top"
+    },
+    "source_port": {
+      "signal_pcb_port_id": "pcb_port_0",
+      "reference_pcb_port_id": "pcb_port_1",
+      "reference_layer": "top",
+      "resistance": 25
+    },
+    "load_port": {
+      "signal_pcb_port_id": "pcb_port_2",
+      "reference_pcb_port_id": "pcb_port_3",
+      "reference_layer": "top",
+      "resistance": 100
+    }
+  },
+  "checks": {
+    "errors": 0,
+    "real_separate_gnd_ports": true,
+    "return_source_at_load_side": true,
+    "return_sink_at_driver_side": true,
+    "current_amperes": 0.005,
+    "source_impedance_ohms": 25,
+    "load_impedance_ohms": 100,
+    "pending_definition_only": true
+  }
+}

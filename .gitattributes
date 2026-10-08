@@ -1,2 +1,3 @@
 # Preserve the generated Palace log, including its final blank line.
 examples/circuit-json/explicit-port-100mhz.evidence/palace.log whitespace=-blank-at-eof
+examples/circuit-json/tsx-explicit-ports-100mhz/evidence/palace.log whitespace=-blank-at-eof
