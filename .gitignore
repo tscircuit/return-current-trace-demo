@@ -16,3 +16,6 @@ data/mesh-pcb-processor/model.json
 data/mesh-pcb-processor/preview.json
 data/mesh-pcb-processor/cad-solids.json
 data/mesh-pcb-processor/gmsh.log
+
+work/
+.return-current-python/

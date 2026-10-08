@@ -1,0 +1,16 @@
+[
+  {
+    "repository": "tscircuit/simulate-return-current",
+    "source_commit": "9723c5eabcbc2de415eed6c68b86f37339c0def0",
+    "source_branch": "codex/circuit-json-return-current-results",
+    "package_version": "0.0.1",
+    "license": "MIT"
+  },
+  {
+    "repository": "tscircuit/circuit-to-svg",
+    "source_commit": "060ee8f958a3c9e282596c67fa617860a57f52b5",
+    "source_branch": "feat/pcb-return-current-overlay",
+    "package_version": "0.0.446",
+    "license": "ISC"
+  }
+]

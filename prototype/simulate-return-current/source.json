@@ -1,0 +1,7 @@
+{
+  "repository": "tscircuit/simulate-return-current",
+  "source_commit": "9723c5eabcbc2de415eed6c68b86f37339c0def0",
+  "source_branch": "codex/circuit-json-return-current-results",
+  "package_version": "0.0.1",
+  "license": "MIT"
+}

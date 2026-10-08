@@ -2,6 +2,15 @@
 
 [Live public viewer](https://am3352-ddr-heatmaps.seveibar.chatgpt.site) for individual DDR traces on [astra/am3352-sbc](https://tscircuit.com/astra/am3352-sbc).
 
+## Circuit JSON CLI and renderer prototype
+
+The [CLI and SVG prototype](scripts/circuit-json/README.md) ([simulator draft PR](https://github.com/tscircuit/simulate-return-current/pull/16), [renderer draft PR](https://github.com/tscircuit/circuit-to-svg/pull/818)) reads a pending return-current experiment from Circuit JSON or creates one from command-line flags, runs Palace, and writes the PCB plus official result/field/heatmap/marker elements. The SVG renderer selects one stored result and overlays it on PCB content. Fields and heatmaps are embedded, so the result JSON is portable. See [the small-board end-to-end fixture](examples/circuit-json/) and [upstream snapshot provenance](prototype/sources.json).
+
+```sh
+bun run simulate:circuit-json --help
+bun run render:simulation --help
+```
+
 ## Latest PCB snapshot
 
 [data/board.circuit.json](data/board.circuit.json) now contains the latest upstream export: 47 DDR traces routed on **top and bottom**, with **inner1 and inner2 GND pours**. GND is now `source_net_0`. The export specifies a 1.6 mm board but does not specify internal dielectric thicknesses. [Snapshot provenance](data/board-snapshot.json) records the download endpoint, timestamp and content hash.
@@ -29,7 +38,7 @@ bun install --ignore-scripts --frozen-lockfile
 bun start
 ```
 
-Install skips dependency lifecycle scripts because this static viewer and solver do not require native image-rendering dependencies.
+These commands run the static viewer. The Circuit JSON CLI and renderer use the dependencies described in [their setup instructions](scripts/circuit-json/README.md).
 
 Open http://localhost:3000. `public/` is also a complete static site that can be hosted directly. The checked-in visual assets require no simulation to view.
 
