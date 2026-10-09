@@ -31,7 +31,7 @@ flowchart LR
   B --> C[Separate Node noise solver]
   C --> D[Validated results and full-resolution assets]
   D --> E[circuit-to-svg: eyes, waveforms, spectra]
-  B --> F[Official PCBViewer and trace highlights]
+  B --> F[Browser UI: PCBViewer and selected plots]
   E --> F
 ```
 
@@ -50,7 +50,7 @@ The solver and visual README are merged in [simulate-pcb-noise](https://github.c
 | [core #4472](https://github.com/tscircuit/core/pull/4472) | TSX to physical pending inputs; stacked on #4460 |
 | [circuit-to-svg #820](https://github.com/tscircuit/circuit-to-svg/pull/820) | Eye, waveform, spectrum and contact plots |
 | [demo #1](https://github.com/tscircuit/return-current-trace-demo/pull/1) | Reproducible four-case command-line example |
-| This live-demo PR | Browser UI and real background-run orchestration; stacked on demo #1 |
+| [demo #2](https://github.com/tscircuit/return-current-trace-demo/pull/2) | Browser UI and real background-run orchestration; stacked on demo #1 |
 | [simulate-return-current #17](https://github.com/tscircuit/simulate-return-current/pull/17) | Supporting native provenance/meshing fixes |
 | [native crosstalk #4](https://github.com/tscircuit/circuit-json-crosstalk-simulation/pull/4) | Import archived native artifacts while retaining their unvalidated status |
 
