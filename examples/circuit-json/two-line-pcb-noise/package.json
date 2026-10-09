@@ -1,0 +1,28 @@
+{
+  "name": "pcb-noise-two-line-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "bun generate-input.tsx",
+    "demo": "bun run-demo.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "@tscircuit/core": "https://pkg.pr.new/@tscircuit/core@e4edc8b689ecb6a0aa6f5495be1e83d245fdc463",
+    "@tscircuit/props": "https://pkg.pr.new/@tscircuit/props@9f7a3088217ce32edcfe5f4c19b3163bff08e395",
+    "circuit-json": "https://pkg.pr.new/circuit-json@6c41978a11b31fa91dafa57b613d505b65c2b1f8",
+    "circuit-to-svg": "https://pkg.pr.new/circuit-to-svg@62c2d7573d8478ba5b3f14da144e94bfb9432390",
+    "react": "19.1.0",
+    "simulate-pcb-noise": "https://pkg.pr.new/tscircuit/simulate-pcb-noise@1c6b322fb548b78116fb60e19d887ad7399774f7"
+  },
+  "devDependencies": {
+    "@types/bun": "1.3.14",
+    "@types/react": "19.1.8",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "@tscircuit/props": "https://pkg.pr.new/@tscircuit/props@9f7a3088217ce32edcfe5f4c19b3163bff08e395",
+    "circuit-json": "https://pkg.pr.new/circuit-json@6c41978a11b31fa91dafa57b613d505b65c2b1f8"
+  }
+}
