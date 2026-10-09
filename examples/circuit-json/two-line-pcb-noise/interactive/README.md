@@ -46,7 +46,7 @@ The solver and visual README are merged in [simulate-pcb-noise](https://github.c
 | PR | Role |
 | --- | --- |
 | [circuit-json #895](https://github.com/tscircuit/circuit-json/pull/895) | Shared experiments, result/asset schemas and validation |
-| [props #927](https://github.com/tscircuit/props/pull/927) | Compact channel and eye TSX props; stacked on #926 |
+| [props #927](https://github.com/tscircuit/props/pull/927) | Compact channel and eye TSX props; builds on merged [#926](https://github.com/tscircuit/props/pull/926) |
 | [core #4472](https://github.com/tscircuit/core/pull/4472) | TSX to physical pending inputs; stacked on #4460 |
 | [circuit-to-svg #820](https://github.com/tscircuit/circuit-to-svg/pull/820) | Eye, waveform, spectrum and contact plots |
 | [demo #1](https://github.com/tscircuit/return-current-trace-demo/pull/1) | Reproducible four-case command-line example |
