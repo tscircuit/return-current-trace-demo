@@ -2,6 +2,8 @@
 
 [Live public viewer](https://am3352-ddr-heatmaps.seveibar.chatgpt.site) for individual DDR traces on [astra/am3352-sbc](https://tscircuit.com/astra/am3352-sbc).
 
+The [two-line PCB noise example](examples/circuit-json/two-line-pcb-noise/) adds quiet/active-victim crosstalk, a paired no-aggressor baseline, a termination comparison, and known-UI/nominal-clock eyes through a separate bounded solver. Its source and receipts distinguish unreleased packages and the ideal-ground model from the existing Palace return-current runs.
+
 ## Circuit JSON CLI and renderer prototype
 
 The [CLI and SVG prototype](scripts/circuit-json/README.md) ([simulator draft PR](https://github.com/tscircuit/simulate-return-current/pull/16), [renderer draft PR](https://github.com/tscircuit/circuit-to-svg/pull/818)) reads a pending return-current experiment from Circuit JSON or creates one from command-line flags, runs Palace, and writes the PCB plus official result/field/heatmap/marker elements. The SVG renderer selects one stored result and overlays it on PCB content. Fields and heatmaps are embedded, so the result JSON is portable. See [the small-board end-to-end fixture](examples/circuit-json/) and [upstream snapshot provenance](prototype/sources.json).

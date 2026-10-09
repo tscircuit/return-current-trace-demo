@@ -1,0 +1,39 @@
+{
+  "extraction": {
+    "grid_mm": 0.025,
+    "margin_mm": 4,
+    "top_mm": 4,
+    "relative_tolerance": 1e-9,
+    "maximum_iterations": 20000
+  },
+  "transient": {
+    "initial_condition": "dc_equilibrium",
+    "padding_duration_s": 2.56e-7,
+    "maximum_wrap_error_v": 1e-4,
+    "maximum_wrap_error_a": 2e-6,
+    "maximum_fft_size": 1048576
+  },
+  "convergence": {
+    "coupling_relative_tolerance": 0.02,
+    "capacitance_absolute_f_per_m": 1e-13,
+    "inductance_absolute_h_per_m": 1e-10,
+    "domain_scale": 2,
+    "maximum_reciprocity_error": 1e-6,
+    "sampling_relative_tolerance": 0.01,
+    "sampling_absolute_v": 1e-4,
+    "sampling_absolute_a": 2e-6
+  },
+  "frequency": {
+    "frequencies_hz": [0, 250000000, 500000000, 1000000000, 1750000000, 100000000000],
+    "reference_impedance_ohms": 50
+  },
+  "copper": {
+    "kind": "finite_slab",
+    "relative_permeability": 1,
+    "current_distribution": "one_sided"
+  },
+  "spectrum": { "window": "hann", "dc_treatment": "mean_removed" },
+  "eyes": {
+    "victim_load_voltage": { "threshold_v": 0.25, "rise_time_s": 6e-10 }
+  }
+}
