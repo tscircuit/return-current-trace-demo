@@ -1,0 +1,65 @@
+{
+  "format": "live_pcb_noise_demo_screenshot_v1",
+  "image": "live-eye-demo.png",
+  "sha256": "ebf740db9bae013553370ae65d139ead1d168b7a673385471d36dcc29554b3c0",
+  "description": "Unedited actual browser screenshot after a genuine submitted 100-ohm victim-load run completed.",
+  "run": {
+    "label": "edited-100ohm",
+    "id": "7bfda6e6-0643-440f-ab78-c3aee43a497a",
+    "sourceSha256": "3e85b96e2f672799a8870dcfd25c5108f5164f0832ee0959bb5aa414c955c715",
+    "inputSha256": "f7185f7df41225547267ffa08c83b13b71264d7e510b03ed0b8542139148c2d4",
+    "runId": "live_7955e6c8_93de_42a1_a193_e3fd7b5cb6a6",
+    "resultId": "simulation_pcb_noise_result_7955e6c8_93de_42a1_a193_e3fd7b5cb6a6",
+    "processes": [
+      {
+        "kind": "author",
+        "pid": 12939,
+        "startedAt": "2026-10-09T16:12:35.263Z",
+        "exitedAt": "2026-10-09T16:12:35.852Z",
+        "exitCode": 0
+      },
+      {
+        "kind": "solver",
+        "pid": 12940,
+        "startedAt": "2026-10-09T16:12:35.854Z",
+        "exitedAt": "2026-10-09T16:14:57.500Z",
+        "exitCode": 0
+      }
+    ],
+    "validation": {
+      "status": "validated",
+      "passed": 82,
+      "total": 82
+    },
+    "imageSrc": "/api/runs/7bfda6e6-0643-440f-ab78-c3aee43a497a/files/observation-5-eye.svg",
+    "eyeMetrics": {
+      "windows": 94,
+      "crossings": 45,
+      "jitterStdDevPs": 94.11001031213155,
+      "timingLabel": "Known UI, no clock",
+      "baselineJitterStdDevPs": 93.7789878191644
+    },
+    "waveformSha256": "0dc835cd1ca5b23f58e596916014c494cc0f1d656a6543f70a3d937894148456",
+    "samples": 38401,
+    "modelSha256": "95a3272c3d715b3c124f35483309e6ac938e9aede18d91a2d61844602177473d",
+    "geometrySha256": "b2109e3f15aa3af101685d0897a9ef4895ef09ba1d11bae4e970e3cd9421d001",
+    "configurationSha256": "388c6bcb5711debe32e17d8a558263894aa73b812c0e358ae0304b47cd1f0078"
+  },
+  "source_file_sha256": {
+    "interactive/App.tsx": "5c0e149a47b0a00c547dc0932d73cd283bfd63508ea4d820d40c1085b201ea41",
+    "interactive/PcbPane.tsx": "7c9bded7f71732200cfd8797104b68577cd206a4ace8508a91abbbbe826c50c1",
+    "interactive/style.css": "0d822dd909eead498ca5e99ff6b791a52a44537f88dfcf1707f0c2157e1b4c4a",
+    "interactive/server.ts": "e3caf589cc92fbc7d6d17314527cf6f0272de5aead52047d5b1f70d92b181688",
+    "interactive/author.ts": "4a4bd5db43d77f8aca492c25b785c6f143759bdfcc9dbce18e7f1e9f7009ddda",
+    "interactive/simulate.ts": "e997022589253f81100db7840f7e04cf88474e3010d53f7b67e0149fc4af8841",
+    "interactive/types.ts": "08a3c14ca5d215326662dfd015df429b7f89d854ba3f50b8fae2417ab20c45a6",
+    "interactive/main.tsx": "033d20b370ffff155e1f98cc3291a1fd0fef6d1881cbe59403732279d50bf524",
+    "interactive/index.html": "2e0815c501930dda7c80abbe3c0a217860a45f14a605e3475e95a1b5f4015dc8",
+    "package.json": "668e27a1db07c05c7dd9f64b756841c76fcae16cf93fadbfb25470f6e2ec6ca1",
+    "bun.lock": "45bf3cb0cf1b1981c7258faf2a5ecbc1a2f0088deb5adba6b3645c206e210f57",
+    "tsconfig.json": "6b970aee046da1fc1259ed02893fb7c9ee2003aea87854d1257874f9d3a52955"
+  },
+  "browser": "151.0.7922.34",
+  "scope": "Two-trace ideal-ground model, known-UI receiver eye, fixed 0.25 V threshold. Crossing spread includes load/reflection effects; paired baseline preserves the victim.",
+  "display_followup": "Component endpoint labels are subsequently clarified by matching source_component records exactly; numerical inputs, processes, solver code and results are unchanged."
+}

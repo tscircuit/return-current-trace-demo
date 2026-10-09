@@ -1,5 +1,7 @@
 # Two-line PCB crosstalk and victim noise
 
+For an editable TSX page with the actual PCB viewer and a real background **Run simulation** button, see the [live browser demo](interactive/README.md).
+
 This compact example authors two channels with four physical signal/reference port pairs in TSX, emits a pending PCB noise experiment, and runs a separate `simulate-pcb-noise` CLI. The selected result supplies full-resolution total, paired baseline and induced-difference waveforms, spectra, PCB contacts, and active-NRZ eyes with both known UI and a nominal authored symbol clock.
 
 The two 20 mm × 0.3 mm top traces have a 0.3 mm edge gap. A 24 mm × 5 mm bottom GND pour connects four actual bottom reference pads. The fabrication stackup is explicitly supplied after core authors the copper: 35 µm copper, 0.2 mm dielectric with εᵣ = 4.2 and zero dielectric loss, then 35 µm copper. The authoring receipt records this material annotation. DRC is disabled for this intentional board-edge-plane test fixture.
@@ -10,7 +12,7 @@ The `explicit_clock` eye uses authored symbol epochs as a **nominal reference**,
 
 ## Reproduce
 
-Use Bun and Node ≥20.11 on PATH. Choose a fresh output directory for every run; the CLI preserves existing completed and failed receipts. The noise APIs require the unreleased package previews pinned in this folder. Preview availability and stable npm publication are separate checks. Install here, then run from this folder:
+Use Bun and Node 24 on PATH. Choose a fresh output directory for every run; the CLI preserves existing completed and failed receipts. The noise APIs require the unreleased package previews pinned in this folder. Preview availability and stable npm publication are separate checks. Install here, then run from this folder:
 
 ```sh
 bun install --frozen-lockfile
