@@ -26,6 +26,8 @@ import { Circuit, simulation } from "@tscircuit/core"
 
 These JSX elements declare an experiment; they do not launch the solver during `renderUntilSettled()`. See [generate-input.tsx](generate-input.tsx) and the unchanged [ExplicitPortBoard.tsx](ExplicitPortBoard.tsx) geometry for the complete source. Via-in-pad GND contacts and copper reaching the board edge are intentional in this EM fixture. Its authoring script enables via-in-pad and disables manufacturing DRC without changing the copper geometry.
 
+The `simulation` export from `@tscircuit/core` provides the JSX components. For prop validation, import `simulationProps` from `@tscircuit/props` and use `simulationProps.pcbreturncurrentsimulation.parse(...)` or `simulationProps.pcbreturncurrentexcitation.parse(...)`.
+
 ## Archived output and validation
 
 - [input.circuit.json](input.circuit.json): the TSX-generated board plus pending experiment/excitation, with no results.
@@ -41,7 +43,7 @@ The preserved result SHA-256 is `206af84e145dd73738bac6b43f89cf36572c65665d87d8e
 
 ## Reproduce with the unreleased previews
 
-The TSX API is proposed in draft core PRs [#4459](https://github.com/tscircuit/core/pull/4459) and [#4460](https://github.com/tscircuit/core/pull/4460), using props PR [#926](https://github.com/tscircuit/props/pull/926). It requires the **unreleased** [core `3eff6a6` preview](https://pkg.pr.new/tscircuit/core/@tscircuit/core@3eff6a6) and [props `0dcdae1` preview](https://pkg.pr.new/tscircuit/props/@tscircuit/props@0dcdae1), pinned in this folder's `package.json`. The archived receipts identify the commits used for the original EM run. A stable npm release is not assumed to support these JSX elements yet.
+The TSX API is proposed in draft core PRs [#4459](https://github.com/tscircuit/core/pull/4459) and [#4460](https://github.com/tscircuit/core/pull/4460), using props PR [#926](https://github.com/tscircuit/props/pull/926). It requires the **unreleased** [core `2be501d` preview](https://pkg.pr.new/tscircuit/core/@tscircuit/core@2be501d) and [props `4d8e087` preview](https://pkg.pr.new/tscircuit/props/@tscircuit/props@4d8e087), pinned in this folder's `package.json`. The archived receipts identify the commits used for the original EM run. A stable npm release is not assumed to support these JSX elements yet.
 
 From the repository root, install the example's preview packages and generate a fresh pending input outside the checked archive:
 

@@ -6,12 +6,12 @@
     "generate": "bun generate-input.tsx"
   },
   "dependencies": {
-    "@tscircuit/core": "https://pkg.pr.new/tscircuit/core/@tscircuit/core@3eff6a6",
-    "@tscircuit/props": "https://pkg.pr.new/tscircuit/props/@tscircuit/props@0dcdae1",
+    "@tscircuit/core": "https://pkg.pr.new/tscircuit/core/@tscircuit/core@2be501d",
+    "@tscircuit/props": "https://pkg.pr.new/tscircuit/props/@tscircuit/props@4d8e087",
     "circuit-json": "0.0.522",
     "react": "^19.1.0"
   },
   "overrides": {
-    "@tscircuit/props": "https://pkg.pr.new/tscircuit/props/@tscircuit/props@0dcdae1"
+    "@tscircuit/props": "https://pkg.pr.new/tscircuit/props/@tscircuit/props@4d8e087"
   }
 }
