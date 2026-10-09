@@ -1,6 +1,6 @@
 /** @jsxImportSource react */
 import * as React from "react"
-import { Circuit } from "@tscircuit/core"
+import { Circuit, simulation } from "@tscircuit/core"
 import { ExplicitPortBoard } from "./ExplicitPortBoard"
 import { mkdir, writeFile } from "node:fs/promises"
 import { resolve } from "node:path"
@@ -9,8 +9,8 @@ import { strict as assert } from "node:assert"
 // Reuse the actual EM fixture's TSX geometry. Only the declaration is new.
 const board = ExplicitPortBoard({})
 const declaration = (
-  <pcbreturncurrentsimulation name="Explicit GND terminals: TSX 5 mA">
-    <pcbreturncurrentexcitation
+  <simulation.pcbreturncurrentsimulation name="Explicit GND terminals: TSX 5 mA">
+    <simulation.pcbreturncurrentexcitation
       name="U1 OUT to U2 IN"
       source=".U1 > .OUT"
       load=".U2 > .IN"
@@ -21,7 +21,7 @@ const declaration = (
       sourceImpedance="25ohm"
       loadImpedance="100ohm"
     />
-  </pcbreturncurrentsimulation>
+  </simulation.pcbreturncurrentsimulation>
 )
 // This EM fixture intentionally uses via-in-pad ground contacts and a plane
 // reaching the board edge. Keep its geometry while bypassing manufacturing DRC.

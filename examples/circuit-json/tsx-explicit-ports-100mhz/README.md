@@ -7,8 +7,10 @@ This example archives a completed **Palace v0.14.0, 100 MHz, 5 mA peak** run aut
 The 8 × 6 mm two-layer PCB has a 4 mm top-layer signal trace between `U1.OUT` and `U2.IN`. Separate `U1.GND` and `U2.GND` pads connect through plated vias to the bottom GND plane. The declaration uses the load-side GND pad as `returnSource` at **(2, 1.5) mm** and the driver-side GND pad as `returnSink` at **(−2, 1.5) mm**:
 
 ```tsx
-<pcbreturncurrentsimulation name="Explicit GND terminals: TSX 5 mA">
-  <pcbreturncurrentexcitation
+import { Circuit, simulation } from "@tscircuit/core"
+
+<simulation.pcbreturncurrentsimulation name="Explicit GND terminals: TSX 5 mA">
+  <simulation.pcbreturncurrentexcitation
     name="U1 OUT to U2 IN"
     source=".U1 > .OUT"
     load=".U2 > .IN"
@@ -19,7 +21,7 @@ The 8 × 6 mm two-layer PCB has a 4 mm top-layer signal trace between `U1.OUT` a
     sourceImpedance="25ohm"
     loadImpedance="100ohm"
   />
-</pcbreturncurrentsimulation>
+</simulation.pcbreturncurrentsimulation>
 ```
 
 These JSX elements declare an experiment; they do not launch the solver during `renderUntilSettled()`. See [generate-input.tsx](generate-input.tsx) and the unchanged [ExplicitPortBoard.tsx](ExplicitPortBoard.tsx) geometry for the complete source. Via-in-pad GND contacts and copper reaching the board edge are intentional in this EM fixture. Its authoring script enables via-in-pad and disables manufacturing DRC without changing the copper geometry.
@@ -39,7 +41,7 @@ The preserved result SHA-256 is `206af84e145dd73738bac6b43f89cf36572c65665d87d8e
 
 ## Reproduce with the unreleased previews
 
-The TSX API is proposed in draft core PRs [#4459](https://github.com/tscircuit/core/pull/4459) and [#4460](https://github.com/tscircuit/core/pull/4460), using props PR [#926](https://github.com/tscircuit/props/pull/926). It requires the **unreleased** [core `a565bdd` preview](https://pkg.pr.new/tscircuit/core/@tscircuit/core@a565bdd) and [props `0dcdae1` preview](https://pkg.pr.new/tscircuit/props/@tscircuit/props@0dcdae1), pinned in this folder's `package.json`. The archived receipts identify the full source commits. A stable npm release is not assumed to support these JSX elements yet.
+The TSX API is proposed in draft core PRs [#4459](https://github.com/tscircuit/core/pull/4459) and [#4460](https://github.com/tscircuit/core/pull/4460), using props PR [#926](https://github.com/tscircuit/props/pull/926). It requires the **unreleased** [core `3eff6a6` preview](https://pkg.pr.new/tscircuit/core/@tscircuit/core@3eff6a6) and [props `0dcdae1` preview](https://pkg.pr.new/tscircuit/props/@tscircuit/props@0dcdae1), pinned in this folder's `package.json`. The archived receipts identify the commits used for the original EM run. A stable npm release is not assumed to support these JSX elements yet.
 
 From the repository root, install the example's preview packages and generate a fresh pending input outside the checked archive:
 
@@ -49,7 +51,7 @@ bun examples/circuit-json/tsx-explicit-ports-100mhz/generate-input.tsx \
   work/tsx-explicit-ports-100mhz
 ```
 
-Installing these public previews and running this script was verified to reproduce the archived pending input byte for byte.
+Regeneration with these public previews and namespaced declarations preserves every PCB and simulation element in the archived input. The only change is the core software-version metadata, from `0.0.2114` to `0.0.2117`. The authoring validation receipt is byte-identical; the archived input, EM result, and solver evidence remain preserved.
 
 Follow the [CLI setup instructions](../../../scripts/circuit-json/README.md) for Python/Gmsh/VTK and Docker Palace. Then run from the repository root:
 

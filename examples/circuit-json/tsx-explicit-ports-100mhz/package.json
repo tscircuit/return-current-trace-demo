@@ -6,7 +6,7 @@
     "generate": "bun generate-input.tsx"
   },
   "dependencies": {
-    "@tscircuit/core": "https://pkg.pr.new/tscircuit/core/@tscircuit/core@a565bdd",
+    "@tscircuit/core": "https://pkg.pr.new/tscircuit/core/@tscircuit/core@3eff6a6",
     "@tscircuit/props": "https://pkg.pr.new/tscircuit/props/@tscircuit/props@0dcdae1",
     "circuit-json": "0.0.522",
     "react": "^19.1.0"
