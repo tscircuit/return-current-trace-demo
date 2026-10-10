@@ -1,0 +1,220 @@
+{
+  "frequency_hz": 400000000,
+  "cell_size_mm": 0.01,
+  "source_current_peak_a": 0.005,
+  "copper_model": "surface_impedance_copper",
+  "copper_thickness_mm": 0.035,
+  "density_range_a_per_mm2": [
+    0,
+    0.25
+  ],
+  "cases": [
+    {
+      "name": "first-order",
+      "mesh_target_mm": 0.5,
+      "fem_order": 1,
+      "columns": 800,
+      "rows": 600,
+      "tetrahedra": 103877,
+      "source_currents": [
+        {
+          "real": 0.005,
+          "imag": 0.0
+        }
+      ],
+      "load_currents": [
+        {
+          "real": 0.004967460817045743,
+          "imag": -0.0004939152961343599
+        }
+      ],
+      "linear_solver": {
+        "Type": "SuperLU",
+        "KSPType": "GMRES",
+        "Tol": 1e-09,
+        "MaxIts": 200,
+        "ComplexCoarseSolve": true,
+        "PCMatShifted": false
+      },
+      "hashes": {
+        "circuit.json": "9a303f130e9cfdc011976849e2f8958849f18263a6097c1fa9d7c84cde3b92b3",
+        "model.json": "0b1f6cfb6c0744aa6ca3475b0716a817c789733acd90080ee8d0ed633989f5a7",
+        "mesh.msh": "5b52163e65cc8f32d41e8c4ff4644f3c2ef85a9e9220bb2978ae22a20e136b76",
+        "palace.json": "017b489b7996e2f316b88693423d9d62515dc75ea68cafdead82c81d5a2f0bf4",
+        "normalization.json": "50def019511b4a3d8467e1ea14ac20b9e4680a9c1cc3c1afad75d4630ccb0c03",
+        "reference.json": "a6d3f2c1814b82e40bf9b9c6b9b1811f1284438bf31e93c0bc403ce66850843e"
+      },
+      "display": {
+        "sourceJsonSha256": "0efdcd80dc6ac96d7d02a08237a647fe6c3bb20dddac816cab68119fcc8a8ac1",
+        "simulationResultId": "simulation_pcb_return_current_result_e6a316f6-fca3-433d-88a1-f9f02e9fd381",
+        "frequencyHz": 400000000,
+        "layer": "bottom",
+        "densityRange": {
+          "min": 0,
+          "max": 0.25
+        },
+        "densityUnits": "A/mm\u00b2",
+        "densityMeaning": "Through-thickness average: sheet-current phasor magnitude / copper thickness",
+        "display": "One PNG pixel per actual grid cell; exported PNG uses nearest-neighbor scaling; no field interpolation, smoothing or mask filling",
+        "palette": "circuit-to-svg 0.0.447 decoded-field palette",
+        "arrows": "Current at excitation positive peak",
+        "svgBytes": 386726,
+        "fields": [
+          {
+            "fieldId": "simulation_pcb_return_current_field_8539c91b-625e-41f2-b1b1-d126a9b7f503",
+            "decodedGridSha256": "560a214ae2ba04c6a62bbe6581ee43c5f0872e41127043d9ae6fb6592e49c74d",
+            "columns": 800,
+            "rows": 600,
+            "cellWidthMm": 0.01,
+            "cellHeightMm": 0.01,
+            "conductorCells": 424968,
+            "maskedCells": 55032,
+            "clippedCells": 0,
+            "minimumDensityAmpsPerMm2": 0.0004385001025371531,
+            "maximumDensityAmpsPerMm2": 0.21889364715409304
+          }
+        ]
+      }
+    },
+    {
+      "name": "finer-mesh",
+      "mesh_target_mm": 0.25,
+      "fem_order": 1,
+      "columns": 800,
+      "rows": 600,
+      "tetrahedra": 381956,
+      "source_currents": [
+        {
+          "real": 0.004999999999999999,
+          "imag": 0.0
+        }
+      ],
+      "load_currents": [
+        {
+          "real": 0.0049700571997343835,
+          "imag": -0.0004806496924428728
+        }
+      ],
+      "linear_solver": {
+        "Type": "AMS",
+        "KSPType": "GMRES",
+        "Tol": 1e-09,
+        "MaxIts": 500,
+        "ComplexCoarseSolve": false,
+        "PCMatShifted": true,
+        "MaxSize": 100
+      },
+      "hashes": {
+        "circuit.json": "9a303f130e9cfdc011976849e2f8958849f18263a6097c1fa9d7c84cde3b92b3",
+        "model.json": "5561e34fac3534714fe823b91629c96f10bc671797d885cb7d5f0330273e83cd",
+        "mesh.msh": "5a4c4e27d7dbbd3fd4ad747dfbf3d8cbd22c30a5ac3433577bb0d565ad0f9cf3",
+        "palace.json": "290b6746d95c4c039a1781eb206503de02261d799413854b05143331b51387b5",
+        "normalization.json": "5df5860af71d8ce1aabd013214df4f7308efc0426ced746c561ba11636540470",
+        "reference.json": "50c6758c76b158535fe20cad0385c669064437de9cf1716687f83f8c266ed55a"
+      },
+      "display": {
+        "sourceJsonSha256": "f72332479606dcc0336d063653c33149774c18a6dd0b76619ebada2e4a26fb5b",
+        "simulationResultId": "simulation_pcb_return_current_result_8443038d-4e56-43e4-890a-f694fb070c4c",
+        "frequencyHz": 400000000,
+        "layer": "bottom",
+        "densityRange": {
+          "min": 0,
+          "max": 0.25
+        },
+        "densityUnits": "A/mm\u00b2",
+        "densityMeaning": "Through-thickness average: sheet-current phasor magnitude / copper thickness",
+        "display": "One PNG pixel per actual grid cell; exported PNG uses nearest-neighbor scaling; no field interpolation, smoothing or mask filling",
+        "palette": "circuit-to-svg 0.0.447 decoded-field palette",
+        "arrows": "Current at excitation positive peak",
+        "svgBytes": 416423,
+        "fields": [
+          {
+            "fieldId": "simulation_pcb_return_current_field_072762ec-0a28-4626-9423-c5de07e3773b",
+            "decodedGridSha256": "817af9c2c17d1d749d8960abd1e6acdb6ce0c91887466f74d8f6d5cd0f0a3b11",
+            "columns": 800,
+            "rows": 600,
+            "cellWidthMm": 0.01,
+            "cellHeightMm": 0.01,
+            "conductorCells": 424968,
+            "maskedCells": 55032,
+            "clippedCells": 0,
+            "minimumDensityAmpsPerMm2": 0.00043135404476205496,
+            "maximumDensityAmpsPerMm2": 0.2072974943138637
+          }
+        ]
+      }
+    },
+    {
+      "name": "second-order",
+      "mesh_target_mm": 0.5,
+      "fem_order": 2,
+      "columns": 800,
+      "rows": 600,
+      "tetrahedra": 103877,
+      "source_currents": [
+        {
+          "real": 0.005000000000000001,
+          "imag": 0.0
+        }
+      ],
+      "load_currents": [
+        {
+          "real": 0.0049753865454463374,
+          "imag": -0.0004519545483872376
+        }
+      ],
+      "linear_solver": {
+        "Type": "SuperLU",
+        "KSPType": "GMRES",
+        "Tol": 1e-09,
+        "MaxIts": 200,
+        "ComplexCoarseSolve": true,
+        "PCMatShifted": false
+      },
+      "hashes": {
+        "circuit.json": "9a303f130e9cfdc011976849e2f8958849f18263a6097c1fa9d7c84cde3b92b3",
+        "model.json": "9bb29a2c1a365edf7e60f09be5d9cd520dca5de050cf3aa6a2760637bd40364e",
+        "mesh.msh": "5b52163e65cc8f32d41e8c4ff4644f3c2ef85a9e9220bb2978ae22a20e136b76",
+        "palace.json": "30b9bd8ac90fb2b2c36bcbd1eb25482e593e71562a12ab3a716351db0b2940a2",
+        "normalization.json": "cb67a21b75f1097621d964d25ef069c47638ec84b0dc1086bb70a2ae5527979b",
+        "reference.json": "b0ccada301d383d25a2a43a38636fa8fdf3a6816f6d535067f1fee1930729967"
+      },
+      "display": {
+        "sourceJsonSha256": "46e46c8763985169e45de75d1eb96f147408ad435cfcec90afb675d0ffcb0d0f",
+        "simulationResultId": "simulation_pcb_return_current_result_7c731526-541d-43f2-ab66-1c7214e9d0ce",
+        "frequencyHz": 400000000,
+        "layer": "bottom",
+        "densityRange": {
+          "min": 0,
+          "max": 0.25
+        },
+        "densityUnits": "A/mm\u00b2",
+        "densityMeaning": "Through-thickness average: sheet-current phasor magnitude / copper thickness",
+        "display": "One PNG pixel per actual grid cell; exported PNG uses nearest-neighbor scaling; no field interpolation, smoothing or mask filling",
+        "palette": "circuit-to-svg 0.0.447 decoded-field palette",
+        "arrows": "Current at excitation positive peak",
+        "svgBytes": 468704,
+        "fields": [
+          {
+            "fieldId": "simulation_pcb_return_current_field_0b38bfd8-a6ee-49a7-9367-28f1b97cb139",
+            "decodedGridSha256": "3e927b5e0a8244c06acd1782bbca95e74d2696c3039eb08cdfa98fbd79f287c9",
+            "columns": 800,
+            "rows": 600,
+            "cellWidthMm": 0.01,
+            "cellHeightMm": 0.01,
+            "conductorCells": 424968,
+            "maskedCells": 55032,
+            "clippedCells": 0,
+            "minimumDensityAmpsPerMm2": 0.0004155888228218097,
+            "maximumDensityAmpsPerMm2": 0.22228431262499768
+          }
+        ]
+      }
+    }
+  ],
+  "comparisons": {
+    "mesh_p1_05_to_025_relative_magnitude_rms": 0.1035,
+    "order_p1_to_p2_mesh05_relative_magnitude_rms": 0.0935,
+    "mesh_convergence_established": false
+  }
+}
