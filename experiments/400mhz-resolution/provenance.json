@@ -1,0 +1,58 @@
+{
+  "frequency_hz": 400000000,
+  "fem_order": 1,
+  "source_current_peak_a": 0.005,
+  "copper_model": "surface_impedance_copper",
+  "copper_thickness_mm": 0.035,
+  "density_range_a_per_mm2": [
+    0,
+    0.25
+  ],
+  "cases": [
+    {
+      "name": "original",
+      "cell_size_mm": 0.1,
+      "mesh_target_mm": 2,
+      "columns": 80,
+      "rows": 60,
+      "tetrahedra": 25643,
+      "hashes": {
+        "circuit.json": "9a303f130e9cfdc011976849e2f8958849f18263a6097c1fa9d7c84cde3b92b3",
+        "model.json": "c6a177b674723de2daaf73955ec30bcefc4b7c3203d1d42b3fbea02367896be0",
+        "mesh.msh": "c5f3bae90e428c4404c92afc789ba883f6a6d0887f5962faf6def055312ff2cb",
+        "normalization.json": "e21e14d1619d74a203132dc4f5001e13d507723b0aa99b15d63e4e5ce53bf054",
+        "reference.json": "812ed4e258a49607391746e633e685f6ae6f99fba4be85e24d2159e1f80addab"
+      }
+    },
+    {
+      "name": "finer-cells",
+      "cell_size_mm": 0.025,
+      "mesh_target_mm": 2,
+      "columns": 320,
+      "rows": 240,
+      "tetrahedra": 25643,
+      "hashes": {
+        "circuit.json": "9a303f130e9cfdc011976849e2f8958849f18263a6097c1fa9d7c84cde3b92b3",
+        "model.json": "c6a177b674723de2daaf73955ec30bcefc4b7c3203d1d42b3fbea02367896be0",
+        "mesh.msh": "c5f3bae90e428c4404c92afc789ba883f6a6d0887f5962faf6def055312ff2cb",
+        "normalization.json": "e21e14d1619d74a203132dc4f5001e13d507723b0aa99b15d63e4e5ce53bf054",
+        "reference.json": "469f7621d8b5093bd678ed86805e19630753a3bbba1926c764ef55a42422eb42"
+      }
+    },
+    {
+      "name": "finer-mesh",
+      "cell_size_mm": 0.025,
+      "mesh_target_mm": 0.5,
+      "columns": 320,
+      "rows": 240,
+      "tetrahedra": 103877,
+      "hashes": {
+        "circuit.json": "9a303f130e9cfdc011976849e2f8958849f18263a6097c1fa9d7c84cde3b92b3",
+        "model.json": "0b1f6cfb6c0744aa6ca3475b0716a817c789733acd90080ee8d0ed633989f5a7",
+        "mesh.msh": "5b52163e65cc8f32d41e8c4ff4644f3c2ef85a9e9220bb2978ae22a20e136b76",
+        "normalization.json": "50def019511b4a3d8467e1ea14ac20b9e4680a9c1cc3c1afad75d4630ccb0c03",
+        "reference.json": "3edf49cf593eb3a124d64cc217b937d92e1adca49b74edd3bfbc54c0b38131b3"
+      }
+    }
+  ]
+}
